@@ -44,7 +44,6 @@ Class-13-HTML-Best-Practices
 
 Mini-Projects
 Notes
-PDFs
 Practice
 ```
 

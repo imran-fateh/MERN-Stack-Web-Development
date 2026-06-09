@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+
+<body>
+
+    <!-- PAGE HEADER -->
+
+    <header>
+
+        <h1>Job Application Form</h1>
+
+        <p>Apply for the Frontend Web Developer Position.</p>
+
+        <hr>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+        <form>
+
+            <!-- Full Name -->
+
+            <label for="fullname">Full Name:</label>
+
+            <br>
+
+            <input type="text" id="fullname" placeholder="Enter your full name" minlength="3" maxlength="30" required>
+
+            <br><br>
+
+            <!-- Email -->
+
+            <label for="email">Email Address:</label>
+
+            <br>
+
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <br><br>
+
+            <!-- Phone Number -->
+
+            <label for="phone">Phone Number:</label>
+
+            <br>
+
+            <input type="tel" id="phone" placeholder="03XX-XXXXXXX" required>
+
+            <br><br>
+
+            <!-- Password -->
+
+            <label for="password">Password:</label>
+
+            <br>
+
+            <input type="password" id="password" minlength="6" maxlength="12" required>
+
+            <br><br>
+
+            <!-- Gender -->
+
+            <label>Gender:</label>
+
+            <br>
+
+            <input type="radio" id="male" name="gender">
+
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender">
+
+            <label for="female">Female</label>
+
+            <br><br>
+
+            <!-- Skills -->
+
+            <label>Technical Skills:</label>
+
+            <br>
+
+            <input type="checkbox" id="html">
+            <label for="html">HTML</label>
+
+            <br>
+
+            <input type="checkbox" id="css">
+            <label for="css">CSS</label>
+
+            <br>
+
+            <input type="checkbox" id="javascript">
+            <label for="javascript">JavaScript</label>
+
+            <br>
+
+            <input type="checkbox" id="react">
+            <label for="react">React JS</label>
+
+            <br><br>
+
+            <!-- Country -->
+
+            <label for="country">Select Country:</label>
+
+            <br>
+
+            <select id="country">
+
+                <optgroup label="Asia">
+                    <option>Pakistan</option>
+                    <option>India</option>
+                    <option>China</option>
+                </optgroup>
+
+                <optgroup label="Europe">
+                    <option>Germany</option>
+                    <option>France</option>
+                </optgroup>
+
+            </select>
+
+            <br><br>
+
+            <!-- Preferred Browser -->
+
+            <label for="browser">Preferred Browser:</label>
+
+            <br>
+
+            <input list="browsers" id="browser" placeholder="Select browser">
+
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Edge">
+                <option value="Safari">
+            </datalist>
+
+            <br><br>
+
+            <!-- Favorite Color -->
+
+            <label for="color">Favorite Color:</label>
+
+            <br>
+
+            <input type="color" id="color">
+
+            <br><br>
+
+            <!-- Available Date -->
+
+            <label for="date">Available Joining Date:</label>
+
+            <br>
+
+            <input type="date" id="date">
+
+            <br><br>
+
+            <!-- Portfolio URL -->
+
+            <label for="portfolio">Portfolio Website:</label>
+
+            <br>
+
+            <input type="url" id="portfolio" placeholder="https://yourportfolio.com">
+
+            <br><br>
+
+            <!-- Resume Upload -->
+
+            <label for="resume">Upload Resume:</label>
+
+            <br>
+
+            <input type="file" id="resume">
+
+            <br><br>
+
+            <!-- Cover Letter -->
+
+            <label for="message">Cover Letter:</label>
+
+            <br>
+
+            <textarea id="message" rows="8" cols="40" placeholder="Write your cover letter here...">
+            </textarea>
+
+            <br><br>
+
+            <!-- Buttons -->
+
+            <button type="submit">Submit Application</button>
+
+            <button type="reset">Reset Form</button>
+
+        </form>
+
+    </main>
+
+    <hr>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>© 2026 Job Application Portal</p>
+
+    </footer>
+
+</body>
+
+</html>

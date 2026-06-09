@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+
+<body>
+
+    <h1>Job Application Form</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            <br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <br><br>
+
+            <label for="website">Website or Portfolio:</label><br>
+            <input type="url" id="website" name="website" placeholder="https://example.com" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <br>
+
+        <!-- Job Details -->
+        <fieldset>
+            <legend>Job Details</legend>
+
+            <label for="position">Job Position:</label><br>
+            <select id="position" name="position" required>
+                <option value="">-- Select Position --</option>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="UI/UX Designer">UI/UX Designer</option>
+                <option value="QA Engineer">QA Engineer</option>
+            </select>
+
+            <br><br>
+
+            <label>Preferred Work Location:</label><br>
+
+            <input type="radio" id="onsite" name="location" value="On-site" required>
+            <label for="onsite">On-site</label>
+
+            <input type="radio" id="remote" name="location" value="Remote">
+            <label for="remote">Remote</label>
+
+            <input type="radio" id="hybrid" name="location" value="Hybrid">
+            <label for="hybrid">Hybrid</label>
+
+            <br><br>
+
+            <label>Skills:</label><br>
+
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label><br>
+
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label><br>
+
+            <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+
+            <input type="checkbox" id="react" name="skills" value="React">
+            <label for="react">React</label><br>
+
+            <input type="checkbox" id="nodejs" name="skills" value="Node.js">
+            <label for="nodejs">Node.js</label>
+
+            <br><br>
+
+            <label for="resume">Resume Upload:</label><br>
+            <input type="file" id="resume" name="resume" required>
+
+            <br><br>
+
+            <label for="about">Write About Yourself:</label><br>
+            <textarea id="about" name="about" rows="5" cols="40" placeholder="Tell us about yourself..."
+                required></textarea>
+        </fieldset>
+
+        <br>
+
+        <!-- Extra Section -->
+        <fieldset>
+            <legend>Extra Information</legend>
+
+            <label for="techstack">Search Your Favorite Tech Stack:</label><br>
+            <input type="search" id="techstack" name="techstack" placeholder="Search here...">
+            <br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <br><br>
+
+            <label for="confirmPassword">Confirm Password:</label><br>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
+        </fieldset>
+
+        <br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Application">
+
+        <!-- Image Submit Button (Alternative) -->
+        <!--
+        <input type="image"
+               src="submit.png"
+               alt="Submit"
+               width="120">
+        -->
+
+    </form>
+
+</body>
+
+</html>

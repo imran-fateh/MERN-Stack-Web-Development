@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced Form Elements</title>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <!-- Form Start -->
+    <form action="#" method="post">
+
+        <!-- Username Field -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" minlength="3" maxlength="20"
+            required>
+
+        <br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="4"
+            maxlength="12" required>
+
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <br>
+
+        <input type="radio" id="male" name="gender" value="Male">
+
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <!-- Checkboxes -->
+        <label>Hobbies:</label>
+        <br>
+
+        <input type="checkbox" id="football" name="hobby" value="Football">
+
+        <label for="football">Football</label>
+
+        <br>
+
+        <input type="checkbox" id="cricket" name="hobby" value="Cricket">
+
+        <label for="cricket">Cricket</label>
+
+        <br>
+
+        <input type="checkbox" id="tennis" name="hobby" value="Tennis">
+
+        <label for="tennis">Tennis</label>
+
+        <br><br>
+
+        <!-- Simple Dropdown -->
+        <label for="country">Country:</label>
+
+        <select id="country" name="country">
+
+            <option value="pakistan">Pakistan</option>
+            <option value="india">India</option>
+            <option value="china">China</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Grouped Dropdown -->
+        <label for="city">City:</label>
+
+        <select id="city" name="city">
+
+            <optgroup label="Pakistan">
+
+                <option>Lahore</option>
+                <option>Karachi</option>
+                <option>Peshawar</option>
+
+            </optgroup>
+
+            <optgroup label="Afghanistan">
+
+                <option>Kabul</option>
+                <option>Herat</option>
+                <option>Kandahar</option>
+
+            </optgroup>
+
+        </select>
+
+        <br><br>
+
+        <!-- Date Picker -->
+        <label>Date of Birth:</label>
+        <input type="date">
+
+        <br><br>
+
+        <!-- Date & Time Picker -->
+        <label>Meeting Time:</label>
+        <input type="datetime-local">
+
+        <br><br>
+
+        <!-- Color Picker -->
+        <label>Favorite Color:</label>
+        <input type="color">
+
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+    <!-- Form End -->
+
+</body>
+
+</html>

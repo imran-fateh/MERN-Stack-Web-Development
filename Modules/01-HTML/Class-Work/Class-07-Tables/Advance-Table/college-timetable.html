@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Time Table</title>
+    <style>
+        table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 20px;
+            font-weight: bold;
+            color: cadetblue;
+        }
+
+        caption:hover {
+            color: rgba(1, 26, 26, 0.71);
+
+        }
+
+
+        th,
+        td {
+            padding: 20px;
+            text-align: center;
+
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2">
+
+        <!-- Table Caption  -->
+        <caption>
+            <h1>College Time Table</h1>
+        </caption>
+
+        <!-- Table Head -->
+        <thead>
+
+            <!-- Table Row  -->
+            <tr>
+                <th>Day</th>
+                <th>8:00 to 9:00</th>
+                <th>9:00 to 10:00</th>
+                <th>10:00 to 11:00</th>
+                <th>11:00 to 12:00</th>
+                <th>12:00 to 1:00</th>
+                <th>1:00 to 1:30</th>
+                <th>1:30 to 2:30</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body  -->
+
+        <tbody>
+            <tr>
+                <th>Monday</th>
+                <td rowspan="3">Computer</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>English</td>
+                <td>History</td>
+                <td rowspan="4">Lunch</td>
+                <td>Math</td>
+
+            </tr>
+
+            <tr>
+                <th>Tuesday</th>
+                <td>Chemistry</td>
+                <td colspan="2">Physics</td>
+                <td>English</td>
+                <td>History</td>
+
+            </tr>
+
+            <tr>
+                <th>Wednesday</th>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>Computer</td>
+                <td>History</td>
+                <td>English</td>
+
+            </tr>
+
+            <tr>
+                <th>Thursday</th>
+                <td>Physics</td>
+                <td>Computer</td>
+                <td>English</td>
+                <td>History</td>
+                <td>Lunch</td>
+                <td>Chemistry</td>
+
+            </tr>
+
+            <tr>
+                <th>Friday</th>
+                <td>Math</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>English</td>
+
+
+        </tbody>
+    </table>
+</body>
+
+</html>

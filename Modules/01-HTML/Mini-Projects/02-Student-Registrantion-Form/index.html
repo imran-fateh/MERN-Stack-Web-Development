@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <!-- ===================================== -->
+    <!-- MAIN HEADING -->
+    <!-- ===================================== -->
+
+    <h1>Student Registration Form</h1>
+
+    <p>
+        Please fill out the form below to register
+        for the Web Development Course.
+    </p>
+
+    <hr>
+
+    <!-- ===================================== -->
+    <!-- REGISTRATION FORM START -->
+    <!-- ===================================== -->
+
+    <form action="#" method="post">
+
+        <!-- Student Full Name -->
+
+        <label for="fullName">
+            Full Name:
+        </label>
+
+        <br>
+
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+        <br><br>
+
+        <!-- Father Name -->
+
+        <label for="fatherName">
+            Father Name:
+        </label>
+
+        <br>
+
+        <input type="text" id="fatherName" name="fatherName" placeholder="Enter father name" required>
+
+        <br><br>
+
+        <!-- Email Address -->
+
+        <label for="email">
+            Email:
+        </label>
+
+        <br>
+
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <br><br>
+
+        <!-- Password -->
+
+        <label for="password">
+            Password:
+        </label>
+
+        <br>
+
+        <input type="password" id="password" name="password" placeholder="Enter password" minlength="6" required>
+
+        <br><br>
+
+        <!-- Date Of Birth -->
+
+        <label for="dob">
+            Date of Birth:
+        </label>
+
+        <br>
+
+        <input type="date" id="dob" name="dob">
+
+        <br><br>
+
+        <!-- Gender Selection -->
+
+        <label>
+            Gender:
+        </label>
+
+        <br>
+
+        <input type="radio" id="male" name="gender" value="Male">
+
+        <label for="male">
+            Male
+        </label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+
+        <label for="female">
+            Female
+        </label>
+
+        <br><br>
+
+        <!-- Course Selection -->
+
+        <label for="course">
+            Select Course:
+        </label>
+
+        <br>
+
+        <select id="course" name="course">
+
+            <option value="">
+                Choose Course
+            </option>
+
+            <option value="html">
+                HTML
+            </option>
+
+            <option value="css">
+                CSS
+            </option>
+
+            <option value="javascript">
+                JavaScript
+            </option>
+
+            <option value="react">
+                React JS
+            </option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Skills Selection -->
+
+        <label>
+            Skills:
+        </label>
+
+        <br>
+
+        <input type="checkbox" id="html" name="skills" value="HTML">
+
+        <label for="html">
+            HTML
+        </label>
+
+        <br>
+
+        <input type="checkbox" id="css" name="skills" value="CSS">
+
+        <label for="css">
+            CSS
+        </label>
+
+        <br>
+
+        <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+
+        <label for="javascript">
+            JavaScript
+        </label>
+
+        <br><br>
+
+        <!-- Profile Picture Upload -->
+
+        <label for="photo">
+            Upload Profile Picture:
+        </label>
+
+        <br>
+
+        <input type="file" id="photo" name="photo">
+
+        <br><br>
+
+        <!-- Student Address -->
+
+        <label for="address">
+            Address:
+        </label>
+
+        <br>
+
+        <textarea id="address" name="address" rows="5" cols="30" placeholder="Enter your address">
+        </textarea>
+
+        <br><br>
+
+        <!-- Additional Comments -->
+
+        <label for="comments">
+            Comments:
+        </label>
+
+        <br>
+
+        <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Write your comments">
+        </textarea>
+
+        <br><br>
+
+        <!-- Submit Button -->
+
+        <button type="submit">
+            Register Now
+        </button>
+
+        <!-- Reset Button -->
+
+        <button type="reset">
+            Reset Form
+        </button>
+
+    </form>
+
+    <!-- ===================================== -->
+    <!-- REGISTRATION FORM END -->
+    <!-- ===================================== -->
+
+</body>
+
+</html>

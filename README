@@ -1,0 +1,305 @@
+🚀 Modern Web Development Journey
+
+Welcome to my complete Web Development learning journey.
+
+This repository contains my class work, practice exercises, assignments, notes, mini projects, portfolio projects, and real-world applications developed while learning the MERN Stack.
+
+---
+
+👨‍💻 Developer
+
+Name: Imran Fateh
+
+Program: MERN Stack Web Development
+
+Institute: Saylani Mass IT Training (SMIT)
+
+Goal: Become a Professional Full Stack MERN Developer
+
+---
+
+📚 Learning Roadmap
+
+Module 01 — HTML5
+
+Topics Covered
+
+- Introduction to HTML
+- Headings
+- Paragraphs
+- Horizontal Rules
+- Text Formatting
+- Semantic Text Tags
+- Lists
+- Hyperlinks
+- Tables
+- Basic Forms
+- Advanced Form Elements
+- Semantic Layout
+- iframe
+- Multimedia (Audio & Video)
+- Meta Tags
+- SEO Basics
+- Accessibility
+- HTML Entities
+- Favicon
+- File Paths
+- Best Practices
+
+Projects Completed
+
+- Personal Portfolio Website
+- Student Registration Form
+- Blog Website Structure
+
+Status: ✅ Completed
+
+---
+
+Module 02 — CSS3
+
+Topics to Learn
+
+- CSS Introduction
+- Selectors
+- Colors
+- Units
+- Typography
+- Box Model
+- Display Properties
+- Positioning
+- Flexbox
+- CSS Grid
+- Responsive Design
+- Media Queries
+- Animations
+- Transitions
+- CSS Variables
+- Advanced Layout Techniques
+
+Projects Planned
+
+- Restaurant Website
+- Landing Page
+- Responsive Portfolio
+- Dashboard UI
+
+Status: 🔄 In Progress
+
+---
+
+Module 03 — JavaScript (ES6+)
+
+Topics to Learn
+
+- Variables
+- Data Types
+- Operators
+- Conditions
+- Loops
+- Functions
+- Arrays
+- Objects
+- DOM Manipulation
+- Events
+- Local Storage
+- JSON
+- Fetch API
+- Async JavaScript
+- Promises
+- Async/Await
+
+Projects Planned
+
+- Calculator
+- To-Do App
+- Weather App
+- Quiz App
+
+Status: ⏳ Upcoming
+
+---
+
+Module 04 — React.js
+
+Topics to Learn
+
+- JSX
+- Components
+- Props
+- State
+- Hooks
+- Forms
+- Routing
+- API Integration
+- Context API
+- Custom Hooks
+
+Projects Planned
+
+- Movie App
+- E-Commerce Frontend
+- Admin Dashboard
+
+Status: ⏳ Upcoming
+
+---
+
+Module 05 — Next.js
+
+Topics to Learn
+
+- App Router
+- Server Components
+- Client Components
+- Dynamic Routes
+- API Routes
+- SEO Optimization
+- Authentication
+- Deployment
+
+Projects Planned
+
+- Professional Portfolio
+- Blog Platform
+- SaaS Landing Page
+
+Status: ⏳ Upcoming
+
+---
+
+Module 06 — Node.js
+
+Topics to Learn
+
+- Node.js Fundamentals
+- File System
+- Modules
+- NPM
+- Express.js
+- REST APIs
+- Middleware
+- Authentication
+- Error Handling
+
+Projects Planned
+
+- REST API Server
+- Authentication System
+
+Status: ⏳ Upcoming
+
+---
+
+Module 07 — MongoDB
+
+Topics to Learn
+
+- Database Fundamentals
+- Collections
+- Documents
+- CRUD Operations
+- Relationships
+- Aggregation
+- Indexing
+
+Projects Planned
+
+- Student Management System
+- Blog Database
+
+Status: ⏳ Upcoming
+
+---
+
+🛠 Tech Stack
+
+Frontend
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- React.js
+- Next.js
+
+Backend
+
+- Node.js
+- Express.js
+
+Database
+
+- MongoDB
+
+Tools
+
+- VS Code
+- Git
+- GitHub
+- Chrome DevTools
+- Postman
+
+---
+
+📂 Repository Structure
+
+Modern-Web-Development
+│
+├── Assignments
+├── Modules
+│ ├── 01-HTML
+│ ├── 02-CSS
+│ ├── 03-JavaScript
+│ ├── 04-React
+│ ├── 05-NextJS
+│ ├── 06-NodeJS
+│ └── 07-MongoDB
+│
+├── Notes
+├── Projects
+├── Portfolio-Projects
+└── README.md
+
+---
+
+🎯 Career Goal
+
+To become a highly skilled Full Stack MERN Developer capable of building modern, responsive, scalable, and production-ready web applications.
+
+---
+
+🌟 Learning Philosophy
+
+«Learn Today, Lead Tomorrow.
+
+Consistency beats intensity.
+
+Code every day, improve every day.»
+
+---
+
+📌 Current Progress
+
+✅ HTML5 Completed
+
+🔄 CSS3 In Progress
+
+⏳ JavaScript
+
+⏳ React.js
+
+⏳ Next.js
+
+⏳ Node.js
+
+⏳ MongoDB
+
+---
+
+🔗 Connect With Me
+
+GitHub: (https://github.com/imran-fateh)
+
+LinkedIn: (" Coming Soon")
+
+Portfolio: (Coming Soon)

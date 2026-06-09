@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Forms Practice</title>
+</head>
+
+<body>
+
+    <!-- PAGE HEADING -->
+
+    <h1>Advanced Forms Practice</h1>
+
+    <p>Practice of advanced HTML form elements.</p>
+
+    <hr>
+
+    <!-- FORM START -->
+
+    <form>
+
+        <!-- Username -->
+
+        <label for="username">Username:</label>
+        <br>
+
+        <input type="text" id="username" minlength="3" maxlength="15" placeholder="Enter username" required>
+
+        <br><br>
+
+        <!-- Password -->
+
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" id="password" minlength="6" maxlength="12" required>
+
+        <br><br>
+
+        <!-- Gender -->
+
+        <label>Gender:</label>
+        <br>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <!-- Hobbies -->
+
+        <label>Hobbies:</label>
+        <br>
+        <input type="checkbox" id="cricket">
+        <label for="cricket">Cricket</label>
+
+        <input type="checkbox" id="football">
+        <label for="football">Football</label>
+
+        <input type="checkbox" id="coding">
+        <label for="coding">Coding</label>
+
+        <br><br>
+
+        <!-- Country -->
+
+        <label for="country">Select Country:</label>
+        <br>
+        <select id="country">
+
+            <optgroup label="Asia">
+                <option>Pakistan</option>
+                <option>India</option>
+                <option>China</option>
+            </optgroup>
+
+            <optgroup label="Europe">
+                <option>Germany</option>
+                <option>France</option>
+            </optgroup>
+
+        </select>
+
+        <br><br>
+
+        <!-- Browser Suggestions -->
+
+        <label for="browser">Select Browser:</label>
+        <br>
+        <input list="browsers" id="browser" placeholder="Choose browser">
+
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Safari">
+        </datalist>
+
+        <br><br>
+
+        <!-- Favorite Color -->
+
+        <label for="color">Favorite Color:</label>
+        <br>
+        <input type="color" id="color">
+
+        <br><br>
+
+        <!-- Date & Time -->
+
+        <label for="meeting">Meeting Time:</label>
+        <br>
+        <input type="datetime-local" id="meeting">
+
+        <br><br>
+
+        <!-- Resume Upload -->
+
+        <label for="resume">Upload Resume:</label>
+        <br>
+        <input type="file" id="resume">
+
+        <br><br>
+
+        <!-- Submit Button -->
+
+        <button type="submit">Submit</button>
+
+        <!-- Reset Button -->
+
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <!-- FORM END -->
+
+
+</body>
+
+</html>

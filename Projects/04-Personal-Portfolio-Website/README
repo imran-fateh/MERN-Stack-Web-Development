@@ -1,0 +1,112 @@
+Personal Portfolio Website
+
+📌 Project Overview
+
+This is my Personal Portfolio Website built using pure HTML5.
+
+The purpose of this project is to showcase my web development learning journey, skills, projects, achievements, and future goals in a professional way.
+
+This project was created as part of my HTML learning journey in the SMIT MERN Stack Development Program.
+
+---
+
+🚀 Features
+
+- Semantic HTML5 Structure
+- Professional Portfolio Layout
+- Navigation Menu
+- Hero Section
+- About Me Section
+- Education Section
+- Skills Section
+- Tools & Technologies
+- Services Section
+- Projects Showcase
+- Learning Roadmap
+- Achievements Section
+- Gallery Section
+- Contact Form
+- Social Links
+- Footer Section
+- SEO Meta Tags
+- Favicon Support
+
+---
+
+🛠️ Technologies Used
+
+- HTML5
+
+---
+
+📂 Folder Structure
+
+04-Personal-Portfolio-Website
+
+├── Assets
+│ ├── images
+│ │ ├── profile.jpg
+│ │ ├── portfolio-screenshot.jpg
+│ │ ├── html-learning-journey.jpg
+│ │ └── favicon.png
+│
+├── index.html
+│
+└── README.md
+
+---
+
+📸 Project Screenshots
+
+Portfolio Website
+
+![alt text](Portfolio-Screeshort-1.png)
+
+HTML Learning Journey
+
+![alt text](HTML-Learning-Journey-image.jpeg)
+
+---
+
+🎯 Learning Outcomes
+
+Through this project, I practiced:
+
+- Semantic HTML
+- Website Structure Planning
+- Navigation Design
+- Forms
+- Images
+- Tables
+- Lists
+- SEO Basics
+- Project Organization
+- Documentation
+
+---
+
+📈 Current Status
+
+✅ HTML5 Completed
+
+🔄 Currently Learning CSS3 & Responsive Web Design
+
+⏳ Next Target: JavaScript, React.js, Node.js
+
+---
+
+👨‍💻 Author
+
+Imran Fateh
+
+Future Full Stack MERN Developer
+
+---
+
+🙏 Special Thanks
+
+Special thanks to my respected instructor Abdul Musavir and Saylani Mass IT Training (SMIT) for their guidance, support, and encouragement throughout this learning journey.
+
+---
+
+🧑‍💻 Learn Today, Lead Tomorrow ✊

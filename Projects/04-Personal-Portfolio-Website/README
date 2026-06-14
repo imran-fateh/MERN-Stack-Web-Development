@@ -46,8 +46,8 @@ This project was created as part of my HTML learning journey in the SMIT MERN St
 ├── Assets
 │ ├── images
 │ │ ├── profile.jpg
-│ │ ├── portfolio-screenshot.jpg
-│ │ ├── html-learning-journey.jpg
+│ │ ├── Portfolio-Screenshot-1.jpg
+│ │ ├── Html-Learning-Journey-image.jpg
 │ │ └── favicon.png
 │
 ├── index.html
@@ -56,17 +56,15 @@ This project was created as part of my HTML learning journey in the SMIT MERN St
 
 ---
 
-📸 Project Screenshots
+## 📸 Portfolio Website
 
-Portfolio Website
-
-![alt text](Portfolio-Screeshort-1.png)
-
-HTML Learning Journey
-
-![alt text](HTML-Learning-Journey-image.jpeg)
+![Portfolio Website](Assets/images/Portfolio-Screeshort-1.png)
 
 ---
+
+## 📸 HTML Learning Journey
+
+## ![HTML Learning Journey](Assets/images/HTML-Learning-Journey-image.jpeg)
 
 🎯 Learning Outcomes
 

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>CSS Selectors</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Main Heading -->
+  <h1 style="color: rgb(43, 110, 187);">CSS Selectors - Day 2</h1>
+  <p style="font-size: 20px; color: rgb(204, 33, 247);   text-shadow: 1px 0px 0px rgb(0.1, 0.1, 1);">
+    Today I learned CSS Selectors, which are used to target HTML elements and
+    apply styles efficiently. I practiced Universal, Type, Class, ID,
+    Descendant, Child, Adjacent Sibling, and General Sibling Selectors.
+    Understanding selectors is a fundamental skill for writing clean,
+    maintainable, and scalable CSS.
+  </p>
+
+  <hr />
+
+  <!-- Universal Selector -->
+
+  <section>
+    <h2>Universal Selector</h2>
+
+    <p>This is a paragraph.</p>
+
+    <div>This is a div.</div>
+
+    <span>This is a span.</span>
+
+    <button>Click Me</button>
+  </section>
+
+  <hr />
+
+  <!-- Type Selector -->
+
+  <section>
+    <h2>Type Selector</h2>
+
+    <p>Paragraph One</p>
+
+    <p>Paragraph Two</p>
+
+    <p>Paragraph Three</p>
+  </section>
+
+  <hr />
+
+  <!-- Class Selector -->
+
+  <section>
+    <h2>Class Selector</h2>
+
+    <p class="highlight">First Highlighted Paragraph</p>
+
+    <p class="highlight">Second Highlighted Paragraph</p>
+
+    <div class="highlight">Highlighted Div</div>
+  </section>
+
+  <hr />
+
+  <!-- ID Selector -->
+
+  <section>
+    <h2>ID Selector</h2>
+
+    <p id="special">Unique Paragraph</p>
+  </section>
+
+  <hr />
+
+  <!-- Descendant Selector -->
+
+  <section>
+    <h2>Descendant Selector</h2>
+
+    <div class="container">
+      <p>Paragraph Inside Container</p>
+
+      <div>
+        <p>Nested Paragraph Inside Container</p>
+      </div>
+    </div>
+
+    <p>Paragraph Outside Container</p>
+  </section>
+
+  <hr />
+
+  <!-- Child Selector -->
+
+  <section>
+    <h2>Child Selector</h2>
+
+    <div class="parent">
+      <p>Direct Child Paragraph</p>
+
+      <div>
+        <p>Nested Paragraph</p>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+  <!-- Adjacent Sibling Selector -->
+
+  <section>
+    <h2>Adjacent Sibling Selector</h2>
+
+    <p>First Paragraph</p>
+
+    <p>Second Paragraph</p>
+
+    <p>Third Paragraph</p>
+  </section>
+
+  <hr />
+
+  <!-- General Sibling Selector -->
+
+  <section>
+    <h2>General Sibling Selector</h2>
+
+    <div>Main Div</div>
+
+    <p>Paragraph One</p>
+
+    <p>Paragraph Two</p>
+
+    <p>Paragraph Three</p>
+  </section>
+
+  <hr />
+
+  <!-- Navigation -->
+
+  <section>
+    <h2>Navigation Links</h2>
+
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+
+      <li>
+        <a href="#">About</a>
+      </li>
+
+      <li>
+        <a href="#">Services</a>
+      </li>
+
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <!-- Form -->
+
+  <section>
+    <h2>Form Elements</h2>
+
+    <form>
+      <label for="name"> Name </label>
+
+      <br />
+
+      <input type="text" id="name" />
+
+      <br /><br />
+
+      <label for="email"> Email </label>
+
+      <br />
+
+      <input type="email" id="email" />
+
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Adjacent Sibling Selector</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Definition Box */
+
+        .definition-box {
+            background-color: #f5f5f5;
+            border-left: 5px solid green;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Adjacent Sibling Selector */
+
+        h2+p {
+            color: white;
+            background-color: yellowgreen;
+            border: 1px solid green;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        form {
+            max-width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        form div {
+            margin-bottom: 7px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        label+input {
+            border: 2px solid green;
+            padding: 6px;
+            width: 94%;
+        }
+
+        label+textarea {
+            border: 2px solid blue;
+            padding: 6px;
+            width: 94%;
+        }
+
+        button {
+            padding: 7px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Adjacent Sibling Selector Practice</h1>
+
+    <hr />
+
+    <!-- Definition -->
+
+    <div class="definition-box">
+        <h2>Definition</h2>
+
+        <p>
+            Adjacent Sibling Selector selects the element that comes immediately
+            after another element.
+        </p>
+
+        <h3>Syntax</h3>
+
+        <code> element1 + element2 { property: value; } </code>
+
+        <h3>Example</h3>
+
+        <code> h2 + p { color: green; } </code>
+    </div>
+
+    <hr />
+
+    <h2>HTML</h2>
+
+    <p>This paragraph is immediately after h2.</p>
+
+    <p>This paragraph will NOT be selected.</p>
+
+    <hr />
+
+    <h2>CSS</h2>
+
+    <p>This paragraph is immediately after h2.</p>
+
+    <div>Some Content</div>
+
+    <p>This paragraph will NOT be selected.</p>
+
+    <hr />
+
+    <h2>JavaScript</h2>
+
+    <p>This paragraph is immediately after h2.</p>
+
+    <p>This paragraph will NOT be selected.</p>
+
+    <hr />
+
+    <h2>React</h2>
+
+    <p>This paragraph is immediately after h2.</p>
+
+    <hr />
+
+    <h2>Form Example</h2>
+    <form>
+        <div>
+            <label> Full Name </label>
+
+            <input type="text" placeholder="Enter Your Name" required />
+        </div>
+
+        <br />
+
+        <div>
+            <label> Email Address </label>
+
+            <input type="email" placeholder="Enter Your Email" required />
+        </div>
+
+        <br />
+
+        <div>
+            <label> Message </label>
+
+            <textarea rows="5" cols="40"> </textarea>
+        </div>
+
+        <br />
+
+        <button>Send Message</button>
+    </form>
+</body>
+
+</html>

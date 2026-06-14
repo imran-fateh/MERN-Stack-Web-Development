@@ -1,0 +1,12 @@
+div p {
+  color: rgb(235, 38, 179);
+  background-color: yellow;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 10px;
+  text-shadow: 2px 2px 2px rgb(43, 8, 8);
+}
+
+div h1 {
+  color: rgb(82, 60, 192);
+}

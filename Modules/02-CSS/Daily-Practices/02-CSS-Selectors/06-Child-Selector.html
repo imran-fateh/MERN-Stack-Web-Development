@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Child Selector</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Definition Box */
+
+        .definition-box {
+            background-color: #f5f5f5;
+            border-left: 5px solid blue;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Child Selector */
+
+        .parent>p {
+            color: red;
+            font-weight: bold;
+            font-size: 19px;
+            background-color: lightskyblue;
+            border: 2px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Child Selector Practice</h1>
+
+    <hr />
+
+    <!-- Definition -->
+
+    <div class="definition-box">
+        <h2>Definition</h2>
+
+        <p>
+            Child Selector selects only the direct child elements of a parent
+            element.
+        </p>
+
+        <h3>Syntax</h3>
+
+        <code> parent > child { property: value; } </code>
+
+        <h3>Example</h3>
+
+        <code> .parent > p { color: red; } </code>
+
+        <p>This selector will only target direct child paragraphs.</p>
+    </div>
+
+    <hr />
+
+    <h2>Child Selector Example</h2>
+
+    <div class="parent">
+        <p>Direct Child Paragraph 1</p>
+
+        <p>Direct Child Paragraph 2</p>
+
+        <div>
+            <p>Nested Paragraph (Not Selected)</p>
+        </div>
+    </div>
+
+    <hr />
+
+    <h2>Real World Example</h2>
+
+    <section class="card">
+        <p>Card Description (Selected)</p>
+
+        <div>
+            <p>Nested Card Text (Not Selected)</p>
+        </div>
+    </section>
+</body>
+
+</html>

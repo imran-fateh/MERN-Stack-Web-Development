@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ID Selector</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #main-heading {
+            color: blue;
+        }
+
+        #definition-box {
+            background-color: lightyellow;
+            border-left: 5px solid orange;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        #special {
+            background-color: gold;
+            color: darkred;
+            border: 3px solid red;
+            padding: 15px;
+        }
+
+        #submit-btn {
+            background-color: green;
+            color: white;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-heading">ID Selector Practice</h1>
+
+    <hr />
+
+    <div id="definition-box">
+        <h2>Definition</h2>
+
+        <p>ID Selector is used to select one unique HTML element.</p>
+
+        <p>CSS Syntax:</p>
+
+        <code> #id-name { property: value; } </code>
+
+        <p>An ID should only be used once in a web page.</p>
+    </div>
+
+    <hr />
+
+    <h2>Class Selector Example</h2>
+
+    <div class="box">
+        <h3>HTML</h3>
+
+        <p>HTML creates website structure.</p>
+    </div>
+
+    <div class="box">
+        <h3>CSS</h3>
+
+        <p>CSS adds styling.</p>
+    </div>
+
+    <hr />
+
+    <h2>ID Selector Example</h2>
+
+    <div id="special">
+        <h3>JavaScript</h3>
+
+        <p>JavaScript adds interactivity.</p>
+    </div>
+
+    <hr />
+
+    <h2>Form Example</h2>
+
+    <form>
+        <label for="name"> Name </label>
+
+        <br />
+
+        <input type="text" id="name" />
+
+        <br /><br />
+
+        <input type="submit" id="submit-btn" value="Submit" />
+    </form>
+</body>
+
+</html>

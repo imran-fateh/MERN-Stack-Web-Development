@@ -1,0 +1,54 @@
+/* Universal Selector */
+
+* {
+  color: red;
+  padding: 5px;
+}
+
+/* Type Selector */
+
+h2 {
+  color: blue;
+}
+
+p {
+  color: rgb(224, 147, 3);
+}
+
+/* Class Selector */
+
+.highlight {
+  color: green;
+  font-size: 22px;
+}
+
+/* ID Selector */
+
+#special {
+  color: purple;
+  font-size: 24px;
+}
+
+/* Descendant Selector */
+
+.container p {
+  color: teal;
+}
+
+/* Child Selector */
+
+.parent > p {
+  color: red;
+}
+
+/* Adjacent Sibling Selector */
+
+h2 + p {
+  color: darkgreen;
+}
+
+/* General Sibling Selector */
+
+div ~ p {
+  color: royalblue;
+}

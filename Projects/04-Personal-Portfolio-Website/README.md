@@ -44,12 +44,16 @@ This project was created as part of my HTML learning journey in the SMIT MERN St
 04-Personal-Portfolio-Website
 
 ├── Assets
+│ ├── audio
+│ │ └── audio-sound.mp3
 │ ├── images
-│ │ ├── profile.jpg
-│ │ ├── Portfolio-Screenshot-1.jpg
-│ │ ├── Html-Learning-Journey-image.jpg
-│ │ └── favicon.png
-│
+│ │ ├── GitHub-Profile-Screenshort.png
+│ │ ├── Imran-Fateh-image.jpeg
+│ │ ├── Portfolio-Screenshot-1.png
+│ │ ├── Html-Learning-Journey-image.jpeg
+│ │ └── HTML-favicon.png
+│ │── videos
+│ │ └── flower-video.jpg.mp4
 ├── index.html
 │
 └── README.md
@@ -64,7 +68,7 @@ This project was created as part of my HTML learning journey in the SMIT MERN St
 
 ## 📸 HTML Learning Journey
 
-## ![HTML Learning Journey](Assets/images/HTML-Learning-Journey-image.jpeg)
+![HTML Learning Journey](Assets/images/HTML-Learning-Journey-image.jpeg)
 
 🎯 Learning Outcomes
 

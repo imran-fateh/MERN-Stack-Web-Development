@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Roles Practice</title>
+
+    <style>
+        /* PRACTICE 01 APPLY LAST RULE */
+
+        .last-rule {
+            color: red;
+        }
+
+        .last-rule {
+            color: blue;
+        }
+
+        .last-rule {
+            color: green;
+        }
+
+        /* PRACTICE 02 SPECIFICITY RULE */
+
+        h2 {
+            color: blue;
+        }
+
+        .heading {
+            color: purple;
+        }
+
+        #title {
+            color: orange;
+        }
+
+        /* PRACTICE 03 IMPORTANT RULE */
+
+        h3 {
+            color: red !important;
+        }
+
+        #important-title {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Roles Practice</h1>
+
+    <p>Today I practiced CSS Rules, Specificity, and !important.</p>
+
+    <hr />
+
+    <!-- PRACTICE 01 LAST RULE WINS -->
+
+    <h2>Practice 01 - Last Rule Wins</h2>
+
+    <p class="last-rule">The last CSS rule is applied.</p>
+
+    <hr />
+
+    <!-- PRACTICE 02 SPECIFICITY -->
+
+    <h2 id="title" class="heading">Practice 02 - Specificity Rule</h2>
+
+    <p>
+        ID Selector has higher priority than Class Selector and Element Selector.
+    </p>
+
+    <hr />
+
+    <!-- PRACTICE 03 IMPORTANT RULE -->
+
+    <h3 id="important-title">Practice 03 - Important Rule</h3>
+
+    <p>The !important rule overrides normal CSS specificity.</p>
+
+    <hr />
+
+    <!-- PRACTICE SUMMARY -->
+
+    <h2>What I Practiced Today</h2>
+
+    <ul>
+        <li>Apply Last Rule</li>
+
+        <li>Specificity Rule</li>
+
+        <li>!important Rule</li>
+    </ul>
+</body>
+
+</html>

@@ -26,3 +26,22 @@ This repository contains my CSS learning progress, including:
 - Child Selector
 - Adjacent Sibling Selector
 - General Sibling Selector
+
+## Topics Covered
+
+### 03 - CSS Rules & Colors
+
+- Last Rule Wins
+- Specificity
+- Element Selector Priority
+- Class Selector Priority
+- ID Selector Priority
+- !important
+- Foreground Colors
+- Background Colors
+- HEX
+- RGB
+- RGBA
+- Opacity
+- Alpha Channel
+- Inherit

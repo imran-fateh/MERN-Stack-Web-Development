@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Rules & Specificity</title>
+
+    <style>
+        /* CSS RULES */
+
+        /* A CSS Rule consists of: Selector + Property + Value */
+
+
+
+
+        /*
+        h1 {
+            color: red;
+        }
+        */
+
+
+
+        /* LAST RULE WINS */
+
+        /* When multiple rules target the same element and have the same specificity,the last rule is applied. */
+
+
+
+        /*
+        h1 {
+            color: red;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        h1 {
+            color: green;
+        }
+        */
+
+
+        /* CSS SPECIFICITY */
+
+        /* Element Selector And !important*/
+
+        h2 {
+            color: lightgreen !important;
+        }
+
+        /* ID Selector */
+
+        #title {
+            color: yellowgreen;
+        }
+
+        /* Class Selector */
+
+        .heading {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: blueviolet">CSS Rules & Specificity Day - 3</h1>
+
+    <p>
+        This page demonstrates different CSS Rules, Specificity, Selector
+        Priority, and the !important keyword. These concepts help developers
+        understand how CSS decides which style should be applied when multiple
+        rules target the same element.
+    </p>
+
+    <hr />
+
+    <!-- CSS RULES DEFINITION -->
+
+    <h2>What Are CSS Rules?</h2>
+
+    <p>CSS Rules define how styles are applied to HTML elements.</p>
+
+    <p>A CSS Rule contains:</p>
+
+    <ul>
+        <li>Selector</li>
+
+        <li>Property</li>
+
+        <li>Value</li>
+    </ul>
+
+    <hr />
+
+    <!-- LAST RULE WINS -->
+
+    <h2>Last Rule Wins</h2>
+
+    <p>
+        If multiple CSS rules target the same element and have equal priority, the
+        last rule is applied.
+    </p>
+
+    <hr />
+
+    <!-- CSS SPECIFICITY -->
+
+    <h2>CSS Specificity</h2>
+
+    <p>
+        Specificity is the priority system used by CSS to determine which style
+        should be applied.
+    </p>
+
+    <ol>
+        <li>!important</li>
+
+        <li>Inline CSS</li>
+
+        <li>ID Selector</li>
+
+        <li>Class Selector</li>
+
+        <li>Element Selector</li>
+    </ol>
+
+    <hr />
+
+    <!-- PRACTICAL EXAMPLE -->
+
+    <h2>Practical Example</h2>
+
+    <h2 class="heading" id="title">CSS Rules Example</h2>
+
+    <p>This heading contains:</p>
+
+    <ul>
+        <li>Element Selector</li>
+
+        <li>Class Selector</li>
+
+        <li>ID Selector</li>
+
+        <li>!important</li>
+    </ul>
+
+    <p>
+        Because !important has the highest priority, its style is applied first.
+    </p>
+
+    <hr />
+
+    <!-- SUMMARY -->
+
+    <h2>What I Learned Today</h2>
+
+    <ul>
+        <li>CSS Rules</li>
+
+        <li>Last Rule Wins</li>
+
+        <li>CSS Specificity</li>
+
+        <li>Element Selector</li>
+
+        <li>Class Selector</li>
+
+        <li>ID Selector</li>
+
+        <li>!important</li>
+    </ul>
+</body>
+
+</html>

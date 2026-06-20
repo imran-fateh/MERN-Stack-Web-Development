@@ -1,0 +1,76 @@
+/* FOREGROUND COLOR */
+
+h1 {
+  color: blue;
+}
+
+/* BACKGROUND COLOR */
+
+.container {
+  background-color: lightyellow;
+  padding: 20px;
+  border: 2px solid gold;
+}
+
+/* HEX COLOR */
+
+.hex-color {
+  color: #ee3e80;
+}
+
+/* RGB COLOR */
+
+.rgb-color {
+  color: rgb(255, 0, 0);
+}
+
+/* RGBA COLOR */
+
+.rgba-color {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+/* INHERIT PROPERTY */
+
+.inherit-box {
+  color: darkgreen;
+  border: 3px solid darkgreen;
+  padding: 15px;
+}
+
+.inherit-box p {
+  border: inherit;
+  padding: 10px;
+}
+
+/* OPACITY */
+
+.opacity-box {
+  background-color: blue;
+  color: white;
+  padding: 15px;
+  opacity: 0.5;
+}
+
+/* ALPHA CHANNEL */
+
+.alpha-box {
+  background-color: rgba(0, 128, 0, 0.5);
+  color: white;
+  padding: 15px;
+}
+
+/* COMMON STYLING */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  color: darkblue;
+}
+
+p {
+  line-height: 1.6;
+}

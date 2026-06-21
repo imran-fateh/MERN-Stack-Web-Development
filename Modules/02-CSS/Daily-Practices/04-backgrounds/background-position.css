@@ -1,0 +1,31 @@
+/* Page Styling */
+
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 20px;
+}
+
+/* Background Position Practice */
+
+.position-box {
+  width: 800px;
+  height: 400px;
+  color: bisque;
+  background-image: url("images/html-image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  border: 1px solid black;
+}
+
+/* Background Attachment Practice */
+
+.attachment-box {
+  width: 900px;
+  height: 400px;
+  background-image: url("images/software-houses.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 1px solid black;
+}

@@ -1,0 +1,60 @@
+/* Page Styling */
+
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 20px;
+}
+
+/* Background Color Practice */
+
+.bg-color {
+  background-color: lightgreen;
+
+  padding: 20px;
+}
+
+/* Background Image Practice */
+
+.bg-image {
+  width: 700px;
+
+  height: 450px;
+
+  color: beige;
+
+  background-image: url("images/life-image.png");
+  background-size: cover;
+
+  border: 1px solid black;
+}
+
+/* Background Repeat Practice */
+
+.bg-repeat {
+  width: 700px;
+
+  height: 450px;
+
+  color: beige;
+
+  background-image: url("images/html-image.png");
+
+  background-repeat: no-repeat;
+
+  border: 1px solid black;
+}
+
+/* Background Size Practice */
+
+.bg-size {
+  width: 700px;
+
+  height: 450px;
+
+  background-image: url("images/software-houses.png");
+
+  background-size: cover;
+
+  border: 1px solid black;
+}

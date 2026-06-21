@@ -1,0 +1,181 @@
+/* Page Styling */
+
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 20px;
+}
+
+/* Background Color Example
+
+   Background Color applies color
+   behind an element.
+
+*/
+
+.bg-color {
+  background-color: rgba(61, 4, 80, 0.308);
+  opacity: 0.5;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+}
+
+/* Background Image Example
+
+   Background Image places an image
+   behind an element.
+
+*/
+
+.bg-image {
+  width: 800px;
+  height: 300px;
+  text-align: center;
+  background-image: url("images/html-image.jpg.jpeg");
+
+  /* fixed makes the background image stay in place */
+  background-attachment: fixed;
+  border: 1px solid black;
+}
+
+/* Background Repeat Example
+
+   no-repeat prevents the image
+   from repeating.
+
+*/
+
+.bg-repeat {
+  width: 800px;
+  height: 300px;
+  color: azure;
+  background-image: url("images/css-image.jpg.jpeg");
+  background-repeat: no-repeat;
+  border: 1px solid black;
+}
+
+/* Background Size Example
+
+   auto:
+   Default image size.
+
+*/
+
+/*
+background-size: auto;
+*/
+
+/* contain:
+
+   Shows the complete image.
+   Empty space may remain.
+
+*/
+
+/*
+background-size: contain;
+*/
+
+/* cover:
+
+   Covers the entire container.
+   Image may be cropped.
+
+*/
+
+/*
+background-size: cover;
+*/
+
+/* Active Example */
+
+.bg-image {
+  background-size: contain;
+}
+
+/* Background Attachment
+
+   scroll:
+   Default behavior.
+
+*/
+
+/*
+background-attachment: scroll;
+*/
+
+/* fixed:
+
+   Background remains fixed
+   while page scrolls.
+
+*/
+
+/*
+background-attachment: fixed;
+*/
+
+/* local:
+
+   Background scrolls with
+   the element content.
+
+*/
+
+/*
+background-attachment: local;
+*/
+
+/* Background Position
+
+   Controls image placement.
+
+*/
+
+/*
+background-position: top left;
+background-position: top center;
+background-position: top right;
+
+background-position: center left;
+background-position: center center;
+background-position: center right;
+
+background-position: bottom left;
+background-position: bottom center;
+background-position: bottom right;
+
+background-position: 50% 50%;
+*/
+
+/* Active Example */
+
+.bg-image {
+  background-position: center center;
+}
+
+/* Background Shorthand
+
+   Combines multiple properties
+   into a single declaration.
+
+*/
+
+/*
+background:
+url("images/html-image.jpg.jpeg")
+red
+no-repeat
+fixed;
+*/
+
+/* Summary Container */
+
+code {
+  display: block;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+}

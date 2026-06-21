@@ -45,3 +45,55 @@ This repository contains my CSS learning progress, including:
 - Opacity
 - Alpha Channel
 - Inherit
+
+## Topics Covered
+
+### 04 - CSS Backgrounds
+
+---
+
+🎨 Background Color
+
+- background-color
+
+🖼️ Background Image
+
+- background-image
+
+🔁 Background Repeat
+
+- repeat
+- no-repeat
+
+📏 Background Size
+
+- auto
+- contain
+- cover
+
+📌 Background Attachment
+
+- scroll
+- fixed
+- local
+
+🎯 Background Position
+
+- top left
+- top center
+- top right
+- center center
+- bottom left
+- bottom center
+- bottom right
+- 50% 50%
+
+⚡ Background Shorthand
+
+- background
+
+---
+
+🎯 Learning Objective
+
+This class focuses on understanding how CSS Background properties work and how background images can be controlled using different CSS properties.

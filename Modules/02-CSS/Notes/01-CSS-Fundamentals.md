@@ -1,10 +1,18 @@
-# CSS Fundamentals
+## 📘 CSS Fundamentals Notes
 
-## 1. What is CSS?
+---
+
+# 📌 What is CSS?
 
 CSS (Cascading Style Sheets) is used to style and design web pages.
 
-## With CSS, we can:
+It controls the appearance of HTML elements such as colors, fonts, spacing, borders, and layouts.
+
+---
+
+# ❓ Why Do We Use CSS?
+
+CSS helps us:
 
 - Change text colors
 - Change font sizes
@@ -12,62 +20,80 @@ CSS (Cascading Style Sheets) is used to style and design web pages.
 - Add borders
 - Create layouts
 - Build responsive websites
+- Improve website design
 
 ---
 
-## 2. CSS Syntax
+# 💻 CSS Syntax
 
 selector {
 property: value;
 }
 
-# Example
+---
+
+# 🔍 Parts of CSS Syntax
+
+Part| Description
+Selector| Selects the HTML element
+Property| Defines the style
+Value| Assigns the style value
+Declaration Block| Code inside braces
+
+---
+
+# 💻 Example
 
 h1 {
 color: red;
 font-size: 30px;
 }
 
-## Parts of CSS
+---
 
-Part: Description
-h1: Selector
-color: Property
-red: Value
-{}: Declaration Block
+# 🔍 Explanation
+
+- "h1" → Selector
+- "color" → Property
+- "red" → Value
+- "font-size" → Property
+- "30px" → Value
 
 ---
 
-## 3. Types of CSS
+# 📌 Types of CSS
 
 CSS can be applied in three different ways.
 
-# 1. Inline CSS
+---
 
-Inline CSS is applied directly inside an HTML element using the style attribute.
+# 1️⃣ Inline CSS
 
-# Example
+Inline CSS is written directly inside an HTML element.
+
+# 💻 Example
 
 <h1 style="color: blue;">
     Inline CSS
 </h1>
 
-# Advantages
+# ✅ Advantages
 
 - Quick styling
+- Easy testing
 
-# Disadvantages
+# ❌ Disadvantages
 
 - Difficult to maintain
 - Not reusable
 
 ---
 
-## 2. Internal CSS
+# 2️⃣ Internal CSS
 
-Internal CSS is written inside the style tag within the head section.
+Internal CSS is written inside the "<style>" tag.
 
-# Example
+# 💻 Example
 
 <style>
 h1 {
@@ -75,88 +101,91 @@ h1 {
 }
 </style>
 
-# Advantages
+# ✅ Advantages
 
-- Styles a single page easily
+- Easy for single pages
+- Good for small projects
 
-# Disadvantages
+# ❌ Disadvantages
 
-- Not reusable across multiple pages
+- Cannot be reused
+- Difficult for large websites
 
 ---
 
-## 3. External CSS
+# 3️⃣ External CSS
 
-External CSS is written in a separate CSS file and linked to the HTML document.
+External CSS is written inside a separate CSS file.
 
-# Example
-
-# HTML File:
+# 💻 HTML File
 
 <link rel="stylesheet" href="styles.css">
 
-# CSS File:
+# 💻 CSS File
 
 h1 {
 color: red;
 }
 
-# Advantages
+# ✅ Advantages
 
 - Reusable
 - Professional approach
+- Cleaner code
 - Easy maintenance
 
-# Disadvantages
+# ❌ Disadvantages
 
 - Requires an additional file
 
 ---
 
-## 4. Common CSS Properties
+## 🎨 Common CSS Properties
 
-Color
+---
 
-Used to change the text color.
+# 🎨 Color
+
+Changes the text color.
 
 color: red;
 
 ---
 
-# Font Size
+# 🔠 Font Size
 
-Used to change the size of text.
+Changes the size of text.
 
 font-size: 30px;
 
 ---
 
-# Text Align
+# 📄 Text Align
 
-Used to align text.
+Aligns text.
 
 text-align: center;
 
-# Possible values:
+Possible values:
 
-left
-center
-right
-justify
+- left
+- center
+- right
+- justify
 
 ---
 
-# Background Color
+# 🖌 Background Color
 
-Used to change the background color.
+Changes the background color.
 
 background-color: yellow;
 
 ---
 
-# Border
+# 🟦 Border
 
-Used to add a border around an element.
+Adds a border around an element.
 
 border: 2px solid red;
 
@@ -164,55 +193,95 @@ Border Structure
 
 border: width style color;
 
-# Example:
+Example:
 
 border: 1px solid black;
 
 ---
 
-## 5. RGB Colors
+# 🌈 RGB Colors
 
-CSS also supports RGB colors.
-
-# Example
+CSS supports RGB colors.
 
 color: rgb(106, 106, 204);
 
-# RGB Structure
+RGB Structure
 
 rgb(red, green, blue)
 
-# Range:
+Range:
 
-0 to 255
+- 0 to 255
 
 ---
 
-## 6. Linking External CSS
-
-To connect an external CSS file:
+# 🔗 Linking External CSS
 
 <link rel="stylesheet" href="styles.css">
 
 rel Attribute
 
-Defines the relationship between the HTML file and the linked file.
-
 rel="stylesheet"
+
+This attribute defines the relationship between the HTML file and CSS file.
 
 ---
 
-## 7. CSS Priority
+# ⚡ CSS Priority
 
-When all three CSS types are used together, the priority order is:
+When multiple CSS types are used together:
 
 1. Inline CSS
 2. Internal CSS
 3. External CSS
 
+Higher priority styles override lower priority styles.
+
 ---
 
-## Today's Class Summary
+# ⚠ Important Notes
+
+- CSS stands for Cascading Style Sheets.
+- External CSS is preferred for real projects.
+- Every declaration ends with a semicolon.
+- CSS makes websites attractive.
+- CSS separates design from HTML.
+
+---
+
+# ❌ Common Mistakes
+
+- Forgetting semicolons.
+- Missing curly braces.
+- Incorrect file paths.
+- Wrong property names.
+- Typing mistakes in selectors.
+
+---
+
+# 🌍 Real World Usage
+
+CSS is used in:
+
+- Portfolio Websites
+- Landing Pages
+- Blogs
+- Admin Panels
+
+---
+
+# 🚀 Practice Activities
+
+- Change text colors.
+- Apply font sizes.
+- Add borders.
+- Create background colors.
+- Link external CSS files.
+- Practice all three CSS types.
+
+---
+
+# ✅ Topics Covered
 
 ✔ CSS Introduction
 
@@ -246,28 +315,12 @@ When all three CSS types are used together, the priority order is:
 
 ✔ Linking CSS File
 
-## Folder Structure
+✔ CSS Priority
 
-02-CSS
-│
-├── Class-Works
-│ ├── 01-CSS-Introduction
-│ └── 02-CSS-Selectors
-│
-├── Daily-Practices
-│ ├── 01-CSS-Introduction
-│ └── 02-CSS-Selectors
-│
-├── Notes
-│ ├── 01-CSS-Fundamentals.md
-│ └── 02-CSS-Selectors.md
-│
-├── Mini-Projects
-│
-├── Resources
-│ ├── Images
-│ ├── PDFs
-│ ├── UI-Inspirations
-│ └── Icons
-│
-└── README.md
+---
+
+# 🗂 CSS Folder Structure
+
+![CSS Folder Structure](Resources/images/css-folder-str.jpeg)
+
+This diagram represents the complete folder organization of the CSS module.

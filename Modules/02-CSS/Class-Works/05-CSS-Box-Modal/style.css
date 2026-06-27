@@ -1,0 +1,100 @@
+/* Page Styling */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* Content Area, Content is the actual area where text and elements appear.*/
+
+.content-box {
+  width: 300px;
+  height: 120px;
+  background-color: lightblue;
+  border: 2px solid black;
+}
+
+/* Border Properties, Border surrounds the content.*/
+
+.border-box {
+  width: 300px;
+  padding: 20px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: darkblue;
+}
+
+/* Individual Border Properties */
+
+.border-box {
+  border-top: 5px solid red;
+  border-right: 5px solid blue;
+  border-bottom: 5px solid green;
+  border-left: 5px solid orange;
+}
+
+/* Border Shorthand */
+/* border: 5px solid black; */
+
+/* Padding Properties, Padding creates space inside the border.*/
+
+.padding-box {
+  border: 2px solid black;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+
+/* Padding Shorthand */
+/*
+padding: 20px;
+padding: 20px 40px;
+padding: 10px 20px 30px 40px; */
+
+/* Margin Properties, Margin creates space outside the element.*/
+
+.margin-box {
+  border: 2px solid black;
+  margin-top: 30px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+/* Margin Shorthand */
+/*
+margin: 20px;
+margin: 20px 40px;
+margin: 10px 20px 30px 40px; */
+
+/* Border Radius creates rounded corners. */
+
+.radius-box {
+  width: 300px;
+  padding: 30px;
+  background-color: wheat;
+  border: 3px solid brown;
+  border-radius: 20px;
+}
+
+/* Individual Border Radius */
+
+.radius-box {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Circle Example */
+
+.circle-box {
+  width: 120px;
+  height: 120px;
+  background-color: crimson;
+  color: white;
+  text-align: center;
+  line-height: 120px;
+  border-radius: 50%;
+}

@@ -1,49 +1,53 @@
-🎯 CSS Selectors
+## 🎯 CSS Selectors Notes
 
-📖 What is a CSS Selector?
-
-CSS Selectors are used to select HTML elements and apply styles to them.
+CSS Selectors are patterns used to target HTML elements so that styles can be applied accurately and efficiently.
 
 ---
 
-🌍 1. Universal Selector
+# 📖 What are CSS Selectors?
 
-📌 Definition
+CSS Selectors help developers select HTML elements and apply styles to them.
+
+They are one of the most important concepts in CSS because every style rule starts with a selector.
+
+---
+
+# 🌍 Universal Selector
 
 The Universal Selector selects all HTML elements on a webpage.
 
-🛠 Syntax
+# 🛠 Syntax
 
 - {
   property: value;
+
   }
 
-💻 Example
+# 💻 Example
 
 - {
   color: blue;
+
   }
 
-⚡ Important Notes
+# ⚡ Important Notes
 
 - Uses the "\*" symbol.
 - Applies styles to every element.
-- Useful for resetting margin and padding.
+- Commonly used for resetting margin and padding.
 
-❌ Common Mistakes
+# ❌ Common Mistakes
 
-- Applying too many styles globally.
-- Overriding element-specific styles unintentionally.
+- Applying too many global styles.
+- Overriding specific element styles.
 
-📝 Summary
+# 📝 Summary
 
-The Universal Selector affects all HTML elements.
+The Universal Selector affects every HTML element.
 
 ---
 
-🏷️ 2. Type Selector
-
-📌 Definition
+# 🏷 Type Selector
 
 The Type Selector selects elements based on their HTML tag name.
 
@@ -51,252 +55,249 @@ The Type Selector selects elements based on their HTML tag name.
 
 tag-name {
 property: value;
+
 }
 
-💻 Example
+# 💻 Example
 
 p {
 color: red;
+
 }
 
-⚡ Important Notes
+# ⚡ Important Notes
 
-- Targets all elements of the same type.
-- Simple and commonly used.
+- Targets all elements of the same tag.
+- Simple and widely used.
 
-❌ Common Mistakes
+# ❌ Common Mistakes
 
-- Forgetting that all matching tags will be affected.
+- Forgetting that every matching tag will be affected.
 
-📝 Summary
+# 📝 Summary
 
-Type Selectors target elements by tag name.
+Type Selectors target elements by their tag names.
 
 ---
 
-🎨 3. Class Selector
-
-📌 Definition
+# 🎨 Class Selector
 
 The Class Selector selects elements using the class attribute.
 
-🛠 Syntax
+# 🛠 Syntax
 
 .class-name {
 property: value;
+
 }
 
-💻 Example
+# 💻 Example
 
 .highlight {
 color: green;
+
 }
 
-⚡ Important Notes
+# ⚡ Important Notes
 
 - Starts with a dot (".").
-- Can be reused on multiple elements.
-- Most commonly used selector in web development.
+- Reusable on multiple elements.
+- Most commonly used selector.
 
-❌ Common Mistakes
+# ❌ Common Mistakes
 
-- Forgetting the dot (".") before the class name.
+- Forgetting the dot before the class name.
 
-📝 Summary
+# 📝 Summary
 
-Class Selectors are reusable and flexible.
+Class Selectors provide reusable styling for multiple elements.
 
 ---
 
-🆔 4. ID Selector
-
-📌 Definition
+# 🆔 ID Selector
 
 The ID Selector selects a unique HTML element using its ID.
 
-🛠 Syntax
+# 🛠 Syntax
 
 #id-name {
 property: value;
+
 }
 
-💻 Example
+# 💻 Example
 
 #header {
 color: blue;
+
 }
 
-⚡ Important Notes
+# ⚡ Important Notes
 
-- Starts with a hash ("#").
-- Should be unique within a page.
-- Has higher specificity than Class Selectors.
+- Starts with the "#" symbol.
+- Should only be used once per page.
+- Has higher priority than Class Selectors.
 
-❌ Common Mistakes
+# ❌ Common Mistakes
 
 - Using the same ID multiple times.
 
-📝 Summary
+# 📝 Summary
 
-ID Selectors target one unique element.
+ID Selectors target a single unique element.
 
 ---
 
-🌳 5. Descendant Selector
+# 🌳 Descendant Selector
 
-📌 Definition
+The Descendant Selector selects all matching elements inside a parent element.
 
-The Descendant Selector selects all matching elements inside a specified parent element.
-
-🛠 Syntax
+# 🛠 Syntax
 
 parent child {
 property: value;
+
 }
 
-💻 Example
+# 💻 Example
 
 .container p {
 color: blue;
+
 }
 
-⚡ Important Notes
+# ⚡ Important Notes
 
-- Selects direct and nested descendants.
-- Frequently used in layouts and components.
+- Selects children and nested descendants.
+- Frequently used in layouts.
 
-❌ Common Mistakes
+# ❌ Common Mistakes
 
 - Confusing it with Child Selector.
 
-📝 Summary
+# 📝 Summary
 
 Descendant Selectors target all matching elements inside a parent.
 
 ---
 
-👨‍👩‍👧 6. Child Selector
+# 👨‍👩‍👧 Child Selector
 
-📌 Definition
+The Child Selector selects only direct child elements.
 
-The Child Selector selects only direct child elements of a parent.
-
-🛠 Syntax
+# 🛠 Syntax
 
 parent > child {
 property: value;
+
 }
 
-💻 Example
+# 💻 Example
 
 .container > p {
 color: red;
+
 }
 
-⚡ Important Notes
+# ⚡ Important Notes
 
 - Uses the ">" symbol.
-- Does not select nested children.
+- Only selects direct children.
 
-❌ Common Mistakes
+# ❌ Common Mistakes
 
 - Expecting nested elements to be selected.
 
-📝 Summary
+# 📝 Summary
 
-Child Selectors only target direct children.
+Child Selectors only target direct child elements.
 
 ---
 
-➕ 7. Adjacent Sibling Selector
+# ➕ Adjacent Sibling Selector
 
-📌 Definition
-
-The Adjacent Sibling Selector selects the first matching sibling immediately after an element.
+The Adjacent Sibling Selector selects the immediate next sibling.
 
 🛠 Syntax
 
 element1 + element2 {
 property: value;
+
 }
 
-💻 Example
+# 💻 Example
 
 h2 + p {
 color: green;
+
 }
 
-⚡ Important Notes
+# 🌍 Real World Example
+
+label + input {
+border: 2px solid green;
+
+}
+
+# ⚡ Important Notes
 
 - Selects only one sibling.
 - The sibling must come immediately after the first element.
 
-❌ Common Mistakes
+# ❌ Common Mistakes
 
-- Expecting all following siblings to be selected.
+- Expecting all siblings to be selected.
 
-🌍 Real World Example
-
-label + input {
-border: 2px solid green;
-}
-
-Used in forms where an input comes immediately after a label.
-
-📝 Summary
+# 📝 Summary
 
 Adjacent Sibling Selectors target the immediate next sibling.
 
 ---
 
-🚀 8. General Sibling Selector
+# 🚀 General Sibling Selector
 
-📌 Definition
+The General Sibling Selector selects all matching siblings that come later.
 
-The General Sibling Selector selects all matching sibling elements that come after a specified element.
-
-🛠 Syntax
+# 🛠 Syntax
 
 element1 ~ element2 {
 property: value;
+
 }
 
-💻 Example
+# 💻 Example
 
 h2 ~ p {
 color: purple;
+
 }
 
-⚡ Important Notes
+# ⚡ Important Notes
 
-- Selects all matching siblings after the first element.
+- Selects all following siblings.
 - Both elements must share the same parent.
 
-❌ Common Mistakes
+# ❌ Common Mistakes
 
 - Confusing it with Adjacent Sibling Selector.
 
-📝 Summary
+# 📝 Summary
 
-General Sibling Selectors target all matching siblings that appear later.
-
----
-
-📊 Selector Comparison Table
-
-Selector| Symbol| Selects
-Universal| \*| All Elements
-Type| tag| Specific Tag
-Class| .| Multiple Elements
-ID| #| Unique Element
-Descendant| Space| All Matching Descendants
-Child| >| Direct Children
-Adjacent Sibling| +| Immediate Next Sibling
-General Sibling| ~| All Following Siblings
+General Sibling Selectors target all following matching siblings.
 
 ---
 
-🎓 Final Summary
+# 🖼 CSS Selector Comparison Diagram
+
+![CSS Selector Comparison](Resources/images/css-selector-table.jpeg)
+
+This diagram provides a visual comparison of all major CSS selectors, their symbols, and their behavior.
+
+It helps developers quickly understand the difference between Universal, Class, ID, Child, Descendant,Sibling Selectors & General Sibling Selector.
+
+---
+
+# 🎓 Final Summary
 
 In this module, I learned:
 
@@ -316,12 +317,12 @@ In this module, I learned:
 
 ✅ General Sibling Selector
 
-These selectors form the foundation of CSS and are used extensively in professional web development projects.
+CSS Selectors are the foundation of styling in CSS. They help developers target elements accurately and build professional user interfaces.
 
-💡 Mastering Selectors is essential before learning:
+💡 Before moving forward, it is important to master selectors because they are used in:
 
 - CSS Box Model
 - Display Properties
 - Flexbox
-- Grid
+- CSS Grid
 - Responsive Web Design

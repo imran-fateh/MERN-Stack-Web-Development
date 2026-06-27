@@ -1,22 +1,44 @@
-# CSS Learning Journey
+## 🎨 CSS Learning Journey
 
-This repository contains my CSS learning progress, including:
+This repository represents my CSS learning journey, documenting concepts, practical exercises, class activities, and project-based implementations.
 
-- Class Work
-- Daily Practice
-- Notes Documentation
-- Mini Projects
-- Learning Resources
+Each topic is organized through structured notes and hands-on practice to strengthen both theoretical understanding and real-world development skills.
 
-## Topics Covered
+The goal is to build a solid CSS foundation while maintaining clean documentation, continuous improvement, and professional learning standards throughout the web development journey.
 
-### 01 - CSS Introduction
+---
 
+## 📖 Topics Covered
+
+---
+
+## 01 - CSS Fundamentals
+
+# Topics
+
+- CSS Introduction
+- CSS Syntax
+- Selector
+- Property
+- Value
+- Declaration Block
 - Inline CSS
 - Internal CSS
 - External CSS
+- Color
+- RGB Color
+- Font Size
+- Text Align
+- Background Color
+- Border
+- Linking CSS File
+- CSS Priority
 
-### 02 - CSS Selectors
+---
+
+## 02 - CSS Selectors
+
+# Topics
 
 - Universal Selector
 - Type Selector
@@ -27,57 +49,54 @@ This repository contains my CSS learning progress, including:
 - Adjacent Sibling Selector
 - General Sibling Selector
 
-## Topics Covered
+---
 
-### 03 - CSS Rules & Colors
+## 03 - CSS Rules & Colors
+
+# Topics
 
 - Last Rule Wins
 - Specificity
 - Element Selector Priority
 - Class Selector Priority
 - ID Selector Priority
-- !important
+- !important Rule
 - Foreground Colors
 - Background Colors
-- HEX
-- RGB
-- RGBA
+- HEX Colors
+- RGB Colors
+- RGBA Colors
 - Opacity
 - Alpha Channel
-- Inherit
-
-## Topics Covered
-
-### 04 - CSS Backgrounds
+- Inherit Property
 
 ---
 
-🎨 Background Color
+## 04 - CSS Backgrounds
 
-- background-color
+# Topics
 
-🖼️ Background Image
+- Background Color
+- Background Image
+- Background Repeat
+- Background Size
+- Background Attachment
+- Background Position
+- Background Shorthand
 
-- background-image
-
-🔁 Background Repeat
-
-- repeat
-- no-repeat
-
-📏 Background Size
+# Background Size Values
 
 - auto
 - contain
 - cover
 
-📌 Background Attachment
+# Background Attachment Values
 
 - scroll
 - fixed
 - local
 
-🎯 Background Position
+# Background Position Values
 
 - top left
 - top center
@@ -88,12 +107,40 @@ This repository contains my CSS learning progress, including:
 - bottom right
 - 50% 50%
 
-⚡ Background Shorthand
+---
 
-- background
+## 05 - CSS Box Model
+
+# Topics
+
+- Content Area
+- Width & Height
+- Border Properties
+- Padding Properties
+- Margin Properties
+- Border Radius
+- Box Sizing
+- Box Model Structure
 
 ---
 
-🎯 Learning Objective
+## 🚀 Future Learning Path
 
-This class focuses on understanding how CSS Background properties work and how background images can be controlled using different CSS properties.
+- Display Properties
+- Flexbox
+- CSS Grid
+- Position Properties
+- Animations & Transitions
+- Media Queries
+- Responsive Web Design
+- Tailwind CSS
+
+---
+
+## 👨‍💻 Author
+
+# Imran Fateh
+
+Aspiring MERN Stack Developer
+SMIT Modern Web Development Student
+Documenting My Web Development Journey

@@ -1,0 +1,42 @@
+body {
+  background-color: rgba(135, 47, 47, 0.1);
+}
+
+nav {
+  background-color: rgba(135, 47, 47, 0.1);
+  background-attachment: fixed;
+}
+
+nav img {
+  width: 30px;
+  border-radius: 50%;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: rgba(135, 47, 47, 0.1);
+  border: 2px dashed rgb(135, 47, 47);
+}
+
+.container {
+  width: 1190px;
+  height: 500px;
+  padding: 30px;
+  margin-top: 3px;
+  color: rgb(47, 10, 10);
+  opacity: 0.9;
+  background-image: url("./images/Ai.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* background shorthand */
+
+/* .container {
+    background:
+        rgba(255, 255, 255, 0.2)
+        url("./images/logo.png")
+        no-repeat
+        fixed
+        right center;
+} */

@@ -14,7 +14,7 @@ The goal is to build a solid CSS foundation while maintaining clean documentatio
 
 ## 01 - CSS Fundamentals
 
-# Topics
+Topics
 
 - CSS Introduction
 - CSS Syntax
@@ -38,7 +38,7 @@ The goal is to build a solid CSS foundation while maintaining clean documentatio
 
 ## 02 - CSS Selectors
 
-# Topics
+Topics
 
 - Universal Selector
 - Type Selector
@@ -53,7 +53,7 @@ The goal is to build a solid CSS foundation while maintaining clean documentatio
 
 ## 03 - CSS Rules & Colors
 
-# Topics
+Topics
 
 - Last Rule Wins
 - Specificity
@@ -74,7 +74,7 @@ The goal is to build a solid CSS foundation while maintaining clean documentatio
 
 ## 04 - CSS Backgrounds
 
-# Topics
+Topics
 
 - Background Color
 - Background Image
@@ -111,7 +111,7 @@ The goal is to build a solid CSS foundation while maintaining clean documentatio
 
 ## 05 - CSS Box Model
 
-# Topics
+Topics
 
 - Content Area
 - Width & Height
@@ -121,6 +121,30 @@ The goal is to build a solid CSS foundation while maintaining clean documentatio
 - Border Radius
 - Box Sizing
 - Box Model Structure
+
+---
+
+## 06 - CSS Sizing & Text Properties
+
+Topics
+
+- Width & Height
+- Box Sizing
+- Min & Max Width & Height
+- Text Properties
+- Font Properties
+- Text Align
+- Text Transform
+- Text Decoration
+- Text Indent
+- Letter Spacing
+- Word Spacing
+- Line Height
+- Text Shadow
+- Vertical Align
+- White Space
+- Text Overflow
+- Text Direction
 
 ---
 
@@ -137,9 +161,9 @@ The goal is to build a solid CSS foundation while maintaining clean documentatio
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-# Imran Fateh
+## Imran Fateh
 
 Aspiring MERN Stack Developer
 SMIT Modern Web Development Student

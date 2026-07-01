@@ -1,53 +1,52 @@
-## 🎯 CSS Selectors Notes
+🎯 CSS Selectors Notes
 
 CSS Selectors are patterns used to target HTML elements so that styles can be applied accurately and efficiently.
 
 ---
 
-# 📖 What are CSS Selectors?
+📖 What are CSS Selectors?
 
 CSS Selectors help developers select HTML elements and apply styles to them.
-
 They are one of the most important concepts in CSS because every style rule starts with a selector.
 
 ---
 
-# 🌍 Universal Selector
+🌍 Universal Selector
 
 The Universal Selector selects all HTML elements on a webpage.
 
-# 🛠 Syntax
+🛠 Syntax
 
 - {
   property: value;
 
   }
 
-# 💻 Example
+💻 Example
 
 - {
   color: blue;
 
   }
 
-# ⚡ Important Notes
+⚡ Important Notes
 
 - Uses the "\*" symbol.
 - Applies styles to every element.
 - Commonly used for resetting margin and padding.
 
-# ❌ Common Mistakes
+❌ Common Mistakes
 
 - Applying too many global styles.
 - Overriding specific element styles.
 
-# 📝 Summary
+📝 Summary
 
 The Universal Selector affects every HTML element.
 
 ---
 
-# 🏷 Type Selector
+🏷 Type Selector
 
 The Type Selector selects elements based on their HTML tag name.
 
@@ -58,163 +57,163 @@ property: value;
 
 }
 
-# 💻 Example
+💻 Example
 
 p {
 color: red;
 
 }
 
-# ⚡ Important Notes
+⚡ Important Notes
 
 - Targets all elements of the same tag.
 - Simple and widely used.
 
-# ❌ Common Mistakes
+❌ Common Mistakes
 
 - Forgetting that every matching tag will be affected.
 
-# 📝 Summary
+📝 Summary
 
 Type Selectors target elements by their tag names.
 
 ---
 
-# 🎨 Class Selector
+🎨 Class Selector
 
 The Class Selector selects elements using the class attribute.
 
-# 🛠 Syntax
+🛠 Syntax
 
 .class-name {
 property: value;
 
 }
 
-# 💻 Example
+💻 Example
 
 .highlight {
 color: green;
 
 }
 
-# ⚡ Important Notes
+⚡ Important Notes
 
 - Starts with a dot (".").
 - Reusable on multiple elements.
 - Most commonly used selector.
 
-# ❌ Common Mistakes
+❌ Common Mistakes
 
 - Forgetting the dot before the class name.
 
-# 📝 Summary
+📝 Summary
 
 Class Selectors provide reusable styling for multiple elements.
 
 ---
 
-# 🆔 ID Selector
+🆔 ID Selector
 
 The ID Selector selects a unique HTML element using its ID.
 
-# 🛠 Syntax
+🛠 Syntax
 
 #id-name {
 property: value;
 
 }
 
-# 💻 Example
+💻 Example
 
 #header {
 color: blue;
 
 }
 
-# ⚡ Important Notes
+⚡ Important Notes
 
 - Starts with the "#" symbol.
 - Should only be used once per page.
 - Has higher priority than Class Selectors.
 
-# ❌ Common Mistakes
+❌ Common Mistakes
 
 - Using the same ID multiple times.
 
-# 📝 Summary
+📝 Summary
 
 ID Selectors target a single unique element.
 
 ---
 
-# 🌳 Descendant Selector
+🌳 Descendant Selector
 
 The Descendant Selector selects all matching elements inside a parent element.
 
-# 🛠 Syntax
+🛠 Syntax
 
 parent child {
 property: value;
 
 }
 
-# 💻 Example
+💻 Example
 
 .container p {
 color: blue;
 
 }
 
-# ⚡ Important Notes
+⚡ Important Notes
 
 - Selects children and nested descendants.
 - Frequently used in layouts.
 
-# ❌ Common Mistakes
+❌ Common Mistakes
 
 - Confusing it with Child Selector.
 
-# 📝 Summary
+📝 Summary
 
 Descendant Selectors target all matching elements inside a parent.
 
 ---
 
-# 👨‍👩‍👧 Child Selector
+👨‍👩‍👧 Child Selector
 
 The Child Selector selects only direct child elements.
 
-# 🛠 Syntax
+🛠 Syntax
 
 parent > child {
 property: value;
 
 }
 
-# 💻 Example
+💻 Example
 
 .container > p {
 color: red;
 
 }
 
-# ⚡ Important Notes
+⚡ Important Notes
 
 - Uses the ">" symbol.
 - Only selects direct children.
 
-# ❌ Common Mistakes
+❌ Common Mistakes
 
 - Expecting nested elements to be selected.
 
-# 📝 Summary
+📝 Summary
 
 Child Selectors only target direct child elements.
 
 ---
 
-# ➕ Adjacent Sibling Selector
+➕ Adjacent Sibling Selector
 
 The Adjacent Sibling Selector selects the immediate next sibling.
 
@@ -225,69 +224,69 @@ property: value;
 
 }
 
-# 💻 Example
+💻 Example
 
 h2 + p {
 color: green;
 
 }
 
-# 🌍 Real World Example
+🌍 Real World Example
 
 label + input {
 border: 2px solid green;
 
 }
 
-# ⚡ Important Notes
+⚡ Important Notes
 
 - Selects only one sibling.
 - The sibling must come immediately after the first element.
 
-# ❌ Common Mistakes
+❌ Common Mistakes
 
 - Expecting all siblings to be selected.
 
-# 📝 Summary
+📝 Summary
 
 Adjacent Sibling Selectors target the immediate next sibling.
 
 ---
 
-# 🚀 General Sibling Selector
+🚀 General Sibling Selector
 
 The General Sibling Selector selects all matching siblings that come later.
 
-# 🛠 Syntax
+🛠 Syntax
 
 element1 ~ element2 {
 property: value;
 
 }
 
-# 💻 Example
+💻 Example
 
 h2 ~ p {
 color: purple;
 
 }
 
-# ⚡ Important Notes
+⚡ Important Notes
 
 - Selects all following siblings.
 - Both elements must share the same parent.
 
-# ❌ Common Mistakes
+❌ Common Mistakes
 
 - Confusing it with Adjacent Sibling Selector.
 
-# 📝 Summary
+📝 Summary
 
 General Sibling Selectors target all following matching siblings.
 
 ---
 
-# 🖼 CSS Selector Comparison Diagram
+🖼 CSS Selector Comparison Diagram
 
 ![CSS Selector Comparison](Resources/images/css-selector-table.jpeg)
 
@@ -297,24 +296,17 @@ It helps developers quickly understand the difference between Universal, Class, 
 
 ---
 
-# 🎓 Final Summary
+🎓 Final Summary
 
 In this module, I learned:
 
 ✅ Universal Selector
-
 ✅ Type Selector
-
 ✅ Class Selector
-
 ✅ ID Selector
-
 ✅ Descendant Selector
-
 ✅ Child Selector
-
 ✅ Adjacent Sibling Selector
-
 ✅ General Sibling Selector
 
 CSS Selectors are the foundation of styling in CSS. They help developers target elements accurately and build professional user interfaces.

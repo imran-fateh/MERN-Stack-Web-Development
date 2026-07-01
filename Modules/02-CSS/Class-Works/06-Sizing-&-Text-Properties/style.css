@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+}
+
+/* Parent */
+
+.parent-horizontal,
+.parent-vertical {
+  border: 3px solid black;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/* Horizontal Growth */
+
+.child-horizontal {
+  width: 100%;
+  max-width: 500px;
+  background-color: lightblue;
+  border: 2px solid blue;
+  padding: 20px;
+}
+
+/* Vertical Growth */
+
+.child-vertical {
+  max-height: 150px;
+  overflow: auto;
+  background-color: lightgreen;
+  border: 2px solid green;
+  padding: 20px;
+}
+
+/* Overflow properties:*/
+
+/* overflow: auto;
+   overflow: scroll;
+   overflow: hidden;
+   overflow: visible;
+   overflow: inherit;
+   overflow: initial;
+   overflow: unset;   */
+
+/* Text Properties */
+
+.center {
+  /* text-align: left; */
+  /* text-align: right; */
+  text-align: center;
+  /* text-align: justify; */
+  /* text-align: start; */
+  /* text-align: end; */
+  /* text-align: match-parent; */
+  /* text-align: inherit; */
+  /* text-align: initial; */
+  /* text-align: unset; */
+}
+
+.underline {
+  /* text-decoration: underline; */
+
+  /* text-decoration: overline; */
+  text-decoration: line-through;
+  /* text-decoration: underline overline; */
+  /* text-decoration: underline line-through; */
+  /* text-decoration: underline overline line-through; */
+
+  /* text-decoration: underline red; */
+  /* text-decoration: underline wavy red; */
+  /* text-decoration: underline dotted red; */
+  /* text-decoration: underline dashed red; */
+  /* text-decoration: underline double red; */
+
+  /* text-decoration: none; */
+}
+
+.uppercase {
+  text-transform: uppercase;
+
+  /* text-transform: lowercase; */
+  /* text-transform: capitalize; */
+  /* text-transform: none; */
+  /* text-transform: inherit; */
+  /* text-transform: initial; */
+  /* text-transform: unset; */
+}
+
+.letter-spacing {
+  letter-spacing: 10px;
+
+  /* letter-spacing: normal; */
+  /* letter-spacing: 2px; */
+  /* letter-spacing: 10px; */
+  /* letter-spacing: inherit; */
+  /* letter-spacing: initial; */
+  /* letter-spacing: unset; */
+}
+
+.word-spacing {
+  word-spacing: 18px;
+
+  /* word-spacing: normal; */
+  /* word-spacing: 5px; */
+  /* word-spacing: 20px; */
+  /* word-spacing: inherit; */
+  /* word-spacing: initial; */
+  /* word-spacing: unset; */
+}
+
+.line-height {
+  line-height: 35px;
+
+  /* line-height: normal; */
+  /* line-height: 1.5; */
+  /* line-height: 2; */
+  /* line-height: 50px; */
+  /* line-height: inherit; */
+  /* line-height: initial; */
+  /* line-height: unset; */
+}
+
+.shadow {
+  text-shadow: 3px 3px 5px gray;
+
+  /* text-shadow: 2px 2px red; */
+  /* text-shadow: 4px 4px blue; */
+  /* text-shadow: 5px 5px 10px black; */
+  /* text-shadow: 0px 0px 10px red; */
+  /* text-shadow: 2px 2px 5px green; */
+}

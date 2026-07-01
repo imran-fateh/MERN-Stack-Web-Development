@@ -1,24 +1,21 @@
-## 🖼️ CSS Backgrounds Notes
+🖼️ CSS Backgrounds Notes
 
 ---
 
-# 📖 What are CSS Backgrounds?
+📖 What are CSS Backgrounds?
 
 CSS Backgrounds are used to control the appearance of an element's background.
 
 Backgrounds help:
 
 ✅ Improve design
-
 ✅ Display images
-
 ✅ Make websites attractive
-
 ✅ Improve visual presentation
 
 ---
 
-# 💻 Example
+💻 Example
 
 div {
 background-color: lightblue;
@@ -29,7 +26,7 @@ The background color of the div becomes light blue.
 
 ---
 
-# 🎨 Background Color
+🎨 Background Color
 
 The "background-color" property adds color behind an element.
 
@@ -46,7 +43,7 @@ A light yellow color appears behind the element.
 
 ---
 
-# 🖼️ Background Image
+🖼️ Background Image
 
 The "background-image" property places an image behind an element.
 
@@ -63,7 +60,7 @@ The image appears behind the element.
 
 ---
 
-# 🖼️ Background Properties Diagram
+🖼️ Background Properties Diagram
 
 [CSS Background Properties](Resources/images/css-background-properties.jpeg)
 
@@ -71,7 +68,7 @@ This diagram shows the relationship between Background Color, Image, Repeat, Pos
 
 ---
 
-# 🔁 Background Repeat
+🔁 Background Repeat
 
 The "background-repeat" property controls image repetition.
 
@@ -86,7 +83,7 @@ background-repeat: no-repeat;
 
 ---
 
-# 📏 Background Size
+📏 Background Size
 
 The "background-size" property controls image size.
 
@@ -114,7 +111,7 @@ Part of the image may be cropped.
 
 ---
 
-# 🖼️ Background Size Comparison
+🖼️ Background Size Comparison
 
 [Background Size](Resources/images/background-size-comparison.jpeg)
 
@@ -122,7 +119,7 @@ This comparison demonstrates the difference between Auto, Contain, and Cover.
 
 ---
 
-# 📌 Background Attachment
+📌 Background Attachment
 
 The "background-attachment" property controls scrolling behavior.
 
@@ -146,7 +143,7 @@ Background scrolls with the element content.
 
 ---
 
-# 🎯 Background Position
+🎯 Background Position
 
 The "background-position" property controls image placement.
 
@@ -154,7 +151,7 @@ background-position: top left;
 background-position: center center;
 background-position: bottom right;
 
-# Common positions:
+Common positions:
 
 - top left
 - top center
@@ -169,7 +166,7 @@ background-position: bottom right;
 
 ---
 
-# ⚡ Background Shorthand
+⚡ Background Shorthand
 
 The "background" property combines multiple properties in one declaration.
 
@@ -179,34 +176,25 @@ red
 no-repeat
 fixed;
 
-# This combines:
+This combines:
 
 ✅ Background Image
-
 ✅ Background Color
-
 ✅ Background Repeat
-
 ✅ Background Attachment
 
 ⚠️ Shorthand makes code shorter and cleaner.
 
 ---
 
-# 🎓 Topics Covered
+🎓 Topics Covered
 
 ✅ Background Color
-
 ✅ Background Image
-
 ✅ Background Repeat
-
 ✅ Background Size
-
 ✅ Background Attachment
-
 ✅ Background Position
-
 ✅ Background Shorthand
 
 ---
@@ -220,11 +208,7 @@ Understanding background images, positioning, sizing, and attachment helps devel
 Mastering Backgrounds is essential before learning:
 
 • CSS Box Model
-
 • Flexbox
-
 • Grid
-
 • Responsive Design
-
 • Modern UI Development

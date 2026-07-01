@@ -1,8 +1,8 @@
-## 📘 CSS Fundamentals Notes
+📘 CSS Fundamentals Notes
 
 ---
 
-# 📌 What is CSS?
+📌 What is CSS?
 
 CSS (Cascading Style Sheets) is used to style and design web pages.
 
@@ -10,7 +10,7 @@ It controls the appearance of HTML elements such as colors, fonts, spacing, bord
 
 ---
 
-# ❓ Why Do We Use CSS?
+❓ Why Do We Use CSS?
 
 CSS helps us:
 
@@ -24,76 +24,66 @@ CSS helps us:
 
 ---
 
-# 💻 CSS Syntax
+💻 CSS Syntax
 
 selector {
 property: value;
+
 }
 
 ---
 
-# 🔍 Parts of CSS Syntax
-
-Part| Description
-Selector| Selects the HTML element
-Property| Defines the style
-Value| Assigns the style value
-Declaration Block| Code inside braces
-
----
-
-# 💻 Example
+💻 Example
 
 h1 {
 color: red;
-font-size: 30px;
+
 }
 
 ---
 
-# 🔍 Explanation
+🔍 Explanation
 
 - "h1" → Selector
 - "color" → Property
 - "red" → Value
-- "font-size" → Property
-- "30px" → Value
+- "{}" → Declaration Block
 
 ---
 
-# 📌 Types of CSS
+📌 Types of CSS
 
 CSS can be applied in three different ways.
 
 ---
 
-# 1️⃣ Inline CSS
+1️⃣ Inline CSS
 
 Inline CSS is written directly inside an HTML element.
 
-# 💻 Example
+💻 Example
 
 <h1 style="color: blue;">
     Inline CSS
 </h1>
 
-# ✅ Advantages
+✅ Advantages
 
 - Quick styling
 - Easy testing
 
-# ❌ Disadvantages
+❌ Disadvantages
 
 - Difficult to maintain
 - Not reusable
 
 ---
 
-# 2️⃣ Internal CSS
+2️⃣ Internal CSS
 
 Internal CSS is written inside the "<style>" tag.
 
-# 💻 Example
+💻 Example
 
 <style>
 h1 {
@@ -101,50 +91,54 @@ h1 {
 }
 </style>
 
-# ✅ Advantages
+✅ Advantages
 
 - Easy for single pages
 - Good for small projects
 
-# ❌ Disadvantages
+❌ Disadvantages
 
 - Cannot be reused
 - Difficult for large websites
 
 ---
 
-# 3️⃣ External CSS
+3️⃣ External CSS
 
 External CSS is written inside a separate CSS file.
 
-# 💻 HTML File
+💻 HTML File
 
-<link rel="stylesheet" href="styles.css">
+```html
+<link rel="stylesheet" href="styles.css" />
+```
 
-# 💻 CSS File
+💻 CSS File
 
+```css
 h1 {
-color: red;
+  color: red;
 }
+```
 
-# ✅ Advantages
+✅ Advantages
 
 - Reusable
 - Professional approach
 - Cleaner code
 - Easy maintenance
 
-# ❌ Disadvantages
+❌ Disadvantages
 
 - Requires an additional file
 
 ---
 
-## 🎨 Common CSS Properties
+🎨 Common CSS Properties
 
 ---
 
-# 🎨 Color
+🎨 Color
 
 Changes the text color.
 
@@ -152,7 +146,7 @@ color: red;
 
 ---
 
-# 🔠 Font Size
+🔠 Font Size
 
 Changes the size of text.
 
@@ -160,7 +154,7 @@ font-size: 30px;
 
 ---
 
-# 📄 Text Align
+📄 Text Align
 
 Aligns text.
 
@@ -175,7 +169,7 @@ Possible values:
 
 ---
 
-# 🖌 Background Color
+🖌 Background Color
 
 Changes the background color.
 
@@ -183,7 +177,7 @@ background-color: yellow;
 
 ---
 
-# 🟦 Border
+🟦 Border
 
 Adds a border around an element.
 
@@ -199,7 +193,7 @@ border: 1px solid black;
 
 ---
 
-# 🌈 RGB Colors
+🌈 RGB Colors
 
 CSS supports RGB colors.
 
@@ -215,9 +209,11 @@ Range:
 
 ---
 
-# 🔗 Linking External CSS
+🔗 Linking External CSS
 
+```css
 <link rel="stylesheet" href="styles.css">
+```
 
 rel Attribute
 
@@ -227,7 +223,7 @@ This attribute defines the relationship between the HTML file and CSS file.
 
 ---
 
-# ⚡ CSS Priority
+⚡ CSS Priority
 
 When multiple CSS types are used together:
 
@@ -239,7 +235,7 @@ Higher priority styles override lower priority styles.
 
 ---
 
-# ⚠ Important Notes
+⚠ Important Notes
 
 - CSS stands for Cascading Style Sheets.
 - External CSS is preferred for real projects.
@@ -249,7 +245,7 @@ Higher priority styles override lower priority styles.
 
 ---
 
-# ❌ Common Mistakes
+❌ Common Mistakes
 
 - Forgetting semicolons.
 - Missing curly braces.
@@ -259,7 +255,7 @@ Higher priority styles override lower priority styles.
 
 ---
 
-# 🌍 Real World Usage
+🌍 Real World Usage
 
 CSS is used in:
 
@@ -270,7 +266,7 @@ CSS is used in:
 
 ---
 
-# 🚀 Practice Activities
+🚀 Practice Activities
 
 - Change text colors.
 - Apply font sizes.
@@ -281,45 +277,26 @@ CSS is used in:
 
 ---
 
-# ✅ Topics Covered
+✅ Topics Covered
 
 ✔ CSS Introduction
-
 ✔ CSS Syntax
-
-✔ Selector
-
-✔ Property
-
-✔ Value
-
-✔ Declaration Block
-
+✔ Selectors
 ✔ Inline CSS
-
 ✔ Internal CSS
-
 ✔ External CSS
-
 ✔ Color
-
 ✔ RGB Color
-
 ✔ Font Size
-
 ✔ Text Align
-
 ✔ Background Color
-
 ✔ Border
-
 ✔ Linking CSS File
-
 ✔ CSS Priority
 
 ---
 
-# 🗂 CSS Folder Structure
+🗂 CSS Folder Structure
 
 ![CSS Folder Structure](Resources/images/css-folder-str.jpeg)
 

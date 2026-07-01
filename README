@@ -1,8 +1,6 @@
-🚀 Modern Web Development Journey
+🚀 MERN Stack Web Development Journey
 
-Welcome to my complete Web Development learning journey.
-
-This repository contains my class work, practice exercises, assignments, notes, mini projects, portfolio projects, and real-world applications developed while learning the MERN Stack.
+A structured learning repository documenting my journey in Modern Web Development through practical work, notes, assignments, and projects.
 
 ---
 
@@ -10,280 +8,27 @@ This repository contains my class work, practice exercises, assignments, notes, 
 
 Name: Imran Fateh
 
-Program: MERN Stack Web Development
+Program: MERN Stack Development
 
-Institute: Saylani Mass IT Training (SMIT)
+Institute: SMIT (Saylani Mass IT Training)
 
-Goal: Become a Professional Full Stack MERN Developer
+LinkedIn: [Imran Fateh](https://www.linkedin.com/in/imranfateh-dev)
 
----
-
-📚 Learning Roadmap
-
-Module 01 — HTML5
-
-Topics Covered
-
-- Introduction to HTML
-- Headings
-- Paragraphs
-- Horizontal Rules
-- Text Formatting
-- Semantic Text Tags
-- Lists
-- Hyperlinks
-- Tables
-- Basic Forms
-- Advanced Form Elements
-- Semantic Layout
-- iframe
-- Multimedia (Audio & Video)
-- Meta Tags
-- SEO Basics
-- Accessibility
-- HTML Entities
-- Favicon
-- File Paths
-- Best Practices
-
-Projects Completed
-
-- Personal Portfolio Website
-- Student Registration Form
-- Blog Website Structure
-
-Status: ✅ Completed
+Goal: Become a Full Stack MERN Developer
 
 ---
 
-Module 02 — CSS3
+📚 Technologies Covered & Upcoming
 
-Topics to Learn
+✅ HTML5
 
-- CSS Introduction
-- Selectors
-- Colors
-- Units
-- Typography
-- Box Model
-- Display Properties
-- Positioning
-- Flexbox
-- CSS Grid
-- Responsive Design
-- Media Queries
-- Animations
-- Transitions
-- CSS Variables
-- Advanced Layout Techniques
+🔄 CSS3
 
-Projects Planned
+⏳ Tailwind CSS
 
-- Restaurant Website
-- Landing Page
-- Responsive Portfolio
-- Dashboard UI
+⏳ JavaScript (ES6+)
 
-Status: 🔄 In Progress
-
----
-
-Module 03 — JavaScript (ES6+)
-
-Topics to Learn
-
-- Variables
-- Data Types
-- Operators
-- Conditions
-- Loops
-- Functions
-- Arrays
-- Objects
-- DOM Manipulation
-- Events
-- Local Storage
-- JSON
-- Fetch API
-- Async JavaScript
-- Promises
-- Async/Await
-
-Projects Planned
-
-- Calculator
-- To-Do App
-- Weather App
-- Quiz App
-
-Status: ⏳ Upcoming
-
----
-
-Module 04 — React.js
-
-Topics to Learn
-
-- JSX
-- Components
-- Props
-- State
-- Hooks
-- Forms
-- Routing
-- API Integration
-- Context API
-- Custom Hooks
-
-Projects Planned
-
-- Movie App
-- E-Commerce Frontend
-- Admin Dashboard
-
-Status: ⏳ Upcoming
-
----
-
-Module 05 — Next.js
-
-Topics to Learn
-
-- App Router
-- Server Components
-- Client Components
-- Dynamic Routes
-- API Routes
-- SEO Optimization
-- Authentication
-- Deployment
-
-Projects Planned
-
-- Professional Portfolio
-- Blog Platform
-- SaaS Landing Page
-
-Status: ⏳ Upcoming
-
----
-
-Module 06 — Node.js
-
-Topics to Learn
-
-- Node.js Fundamentals
-- File System
-- Modules
-- NPM
-- Express.js
-- REST APIs
-- Middleware
-- Authentication
-- Error Handling
-
-Projects Planned
-
-- REST API Server
-- Authentication System
-
-Status: ⏳ Upcoming
-
----
-
-Module 07 — MongoDB
-
-Topics to Learn
-
-- Database Fundamentals
-- Collections
-- Documents
-- CRUD Operations
-- Relationships
-- Aggregation
-- Indexing
-
-Projects Planned
-
-- Student Management System
-- Blog Database
-
-Status: ⏳ Upcoming
-
----
-
-🛠 Tech Stack
-
-Frontend
-
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- React.js
-- Next.js
-
-Backend
-
-- Node.js
-- Express.js
-
-Database
-
-- MongoDB
-
-Tools
-
-- VS Code
-- Git
-- GitHub
-- Chrome DevTools
-- Postman
-
----
-
-📂 Repository Structure
-
-Modern-Web-Development
-│
-├── Assignments
-├── Modules
-│ ├── 01-HTML
-│ ├── 02-CSS
-│ ├── 03-JavaScript
-│ ├── 04-React
-│ ├── 05-NextJS
-│ ├── 06-NodeJS
-│ └── 07-MongoDB
-│
-├── Projects
-├── Portfolio-Projects
-└── README.md
-
----
-
-🎯 Career Goal
-
-To become a highly skilled Full Stack MERN Developer capable of building modern, responsive, scalable, and production-ready web applications.
-
----
-
-🌟 Learning Philosophy
-
-«Learn Today, Lead Tomorrow.
-
-Consistency beats intensity.
-
-Code every day, improve every day.»
-
----
-
-📌 Current Progress
-
-✅ HTML5 Completed
-
-🔄 CSS3 In Progress
-
-⏳ JavaScript
+⏳ TypeScript
 
 ⏳ React.js
 
@@ -291,14 +36,57 @@ Code every day, improve every day.»
 
 ⏳ Node.js
 
+⏳ Express.js
+
 ⏳ MongoDB
 
 ---
 
-🔗 Connect With Me
+📖 HTML5 Topics Covered
 
-GitHub: (https://github.com/imran-fateh)
+✅ Introduction to HTML5
+✅ Headings & Paragraphs
+✅ Text Formatting
+✅ Lists
+✅ Hyperlinks
+✅ Images
+✅ Tables
+✅ Forms
+✅ Semantic HTML
+✅ Audio & Video
+✅ Iframe
+✅ Meta Tags
+✅ SEO Basics
+✅ HTML Entities
+✅ Accessibility
+✅ File Paths
+✅ Best Practices
 
-LinkedIn: (" Coming Soon")
+---
 
-Portfolio: (Coming Soon)
+## 🎨 CSS3 Progress
+
+✅ CSS Introduction
+✅ Selectors
+✅ Colors
+✅ Backgrounds
+✅ Box Model
+✅ Sizing Properties
+✅ Text Properties
+
+⏳ Fonts
+⏳ Icons
+⏳ Links
+⏳ Lists
+⏳ Tables
+⏳ Display
+⏳ Position
+⏳ Flexbox
+⏳ Grid
+⏳ Responsive Design
+
+---
+
+## 📁 Repository Structure
+
+![Repository Structure](./Assets/repository-structure.jpeg)

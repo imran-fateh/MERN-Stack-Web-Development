@@ -1,24 +1,21 @@
-## 🎨 CSS Colors Notes
+🎨 CSS Colors Notes
 
 ---
 
-# 📖 What are CSS Colors?
+📖 What are CSS Colors?
 
 CSS Colors are used to change the appearance of text, backgrounds, borders, and other elements on a webpage.
 
 Colors help make websites:
 
 ✅ Attractive
-
 ✅ Readable
-
 ✅ User Friendly
-
 ✅ Visually Appealing
 
 ---
 
-# 💻 Example
+💻 Example
 
 h1 {
 color: blue;
@@ -29,7 +26,7 @@ The "color" property changes the text color of an element.
 
 ---
 
-# 🎨 Foreground Color
+🎨 Foreground Color
 
 Foreground Color refers to the color of text.
 
@@ -44,7 +41,7 @@ The text inside the paragraph will appear red.
 
 ---
 
-# 🖼️ Background Color
+🖼️ Background Color
 
 Background Color changes the background of an element.
 
@@ -59,7 +56,7 @@ The background of the div becomes light yellow.
 
 ---
 
-# #️⃣ HEX Colors
+#️⃣ HEX Colors
 
 HEX Colors use hexadecimal values to represent colors.
 
@@ -74,7 +71,7 @@ color: #ee3e80;
 
 ---
 
-# 🔴🟢🔵 RGB Colors
+🔴🟢🔵 RGB Colors
 
 RGB stands for:
 
@@ -93,7 +90,7 @@ This creates a red color.
 
 ---
 
-# 🎨 RGB Color Examples
+🎨 RGB Color Examples
 
 🔴 rgb(255, 0, 0) = Red
 
@@ -103,7 +100,7 @@ This creates a red color.
 
 ---
 
-# 🌈 RGBA Colors
+🌈 RGBA Colors
 
 RGBA stands for:
 
@@ -128,7 +125,7 @@ The text becomes red with 50% transparency.
 
 ---
 
-# 🖼️ CSS Color Systems
+🖼️ CSS Color Systems
 
 "CSS Colors" (Resources/images/css-colors.jpeg)
 
@@ -136,7 +133,7 @@ This diagram shows HEX, RGB, and RGBA color systems.
 
 ---
 
-# 👻 Opacity
+👻 Opacity
 
 Opacity controls the transparency of the entire element.
 
@@ -158,7 +155,7 @@ Everything inside the element.
 
 ---
 
-# 🎯 Alpha Channel
+🎯 Alpha Channel
 
 Alpha Channel controls transparency of a specific color.
 
@@ -170,7 +167,7 @@ Only the background color becomes transparent.
 
 ---
 
-# ⚔️ Alpha vs Opacity
+⚔️ Alpha vs Opacity
 
 ![Alpha vs Opacity](Resources/images/alpha-channel-vs-opacity.jpeg)
 
@@ -178,7 +175,7 @@ This comparison shows the difference between Alpha Channel and Opacity.
 
 ---
 
-# 🔗 Inherit Property
+🔗 Inherit Property
 
 The "inherit" value allows a child element to inherit a property from its parent.
 
@@ -198,29 +195,21 @@ The child element receives the same border as its parent.
 
 ---
 
-# 🎓 Topics Covered
+🎓 Topics Covered
 
 ✅ Foreground Color
-
 ✅ Background Color
-
 ✅ HEX Colors
-
 ✅ RGB Colors
-
 ✅ RGBA Colors
-
 ✅ Opacity
-
 ✅ Alpha Channel
-
 ✅ Alpha vs Opacity
-
 ✅ Inherit Property
 
 ---
 
-# 🚀 Final Summary
+🚀 Final Summary
 
 CSS Colors play an important role in modern web design.
 

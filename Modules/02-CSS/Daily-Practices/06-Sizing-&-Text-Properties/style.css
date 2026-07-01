@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+}
+
+/* Parent */
+
+.parent {
+  width: 800px;
+  border: 3px dotted rgb(198, 48, 193);
+  padding: 20px;
+}
+
+/* Width */
+
+.child-width {
+  width: 100%;
+  max-width: 400px;
+  background-color: lightblue;
+  border: 2px double blue;
+  padding: 20px;
+}
+
+/* Height */
+
+.height-box {
+  width: 400px;
+  /* min-height: 150px; */
+  max-height: 150px;
+  overflow: auto;
+  background-color: lightgreen;
+  border: 2px solid green;
+  padding: 20px;
+}
+
+/* Text Align */
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* Decoration */
+
+.underline {
+  text-decoration: underline;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+/* Transform */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Letter Spacing */
+
+.letter {
+  letter-spacing: 8px;
+}
+
+/* Word Spacing */
+
+.word {
+  word-spacing: 20px;
+}
+
+/* Line Height */
+
+.line-height {
+  line-height: 40px;
+}
+
+/* Shadow */
+
+.shadow {
+  text-shadow: 3px 3px 5px gray;
+}

@@ -1,8 +1,8 @@
-## 📘 CSS Box Model Notes
+📘 CSS Box Model Notes
 
 ---
 
-# 📌 What is CSS Box Model?
+📌 What is CSS Box Model?
 
 The CSS Box Model describes how every HTML element is treated as a rectangular box.
 
@@ -15,7 +15,7 @@ It consists of:
 
 ---
 
-# ❓ Why Do We Use Box Model?
+❓ Why Do We Use Box Model?
 
 - Control spacing
 - Create layouts
@@ -25,7 +25,7 @@ It consists of:
 
 ---
 
-# 🖼️ CSS Box Model Diagram
+🖼️ CSS Box Model Diagram
 
 ![CSS Box Model](Resources/images/box-model.jpeg)
 
@@ -33,7 +33,7 @@ This diagram shows the relationship between Content, Padding, Border, and Margin
 
 ---
 
-# 📌 Parts of Box Model
+📌 Parts of Box Model
 
 Content
 
@@ -53,18 +53,19 @@ Space outside the border.
 
 ---
 
-# 💻 Example
+💻 Example
 
 div {
 width: 200px;
 padding: 20px;
 border: 2px solid blue;
 margin: 30px;
+
 }
 
 ---
 
-# 🔍 Explanation
+🔍 Explanation
 
 - width = content width
 - padding = inside spacing
@@ -73,7 +74,7 @@ margin: 30px;
 
 ---
 
-# 📝 Width and Height
+📝 Width and Height
 
 div {
 width: 250px;
@@ -86,7 +87,7 @@ Height controls vertical size.
 
 ---
 
-# 📝 Border Properties
+📝 Border Properties
 
 border: 2px solid blue;
 
@@ -98,7 +99,7 @@ Components:
 
 ---
 
-# 📝 Padding Properties
+📝 Padding Properties
 
 padding: 20px;
 
@@ -124,7 +125,7 @@ margin-left
 
 ---
 
-# 📝 Border Radius
+📝 Border Radius
 
 border-radius: 20px;
 
@@ -132,7 +133,7 @@ Used to create rounded corners.
 
 ---
 
-# 📝 box-sizing Property
+📝 box-sizing Property
 
 box-sizing: border-box;
 
@@ -140,7 +141,7 @@ This includes padding and border inside the width and height.
 
 ---
 
-# ⚠️ Important Notes
+⚠️ Important Notes
 
 - Every HTML element follows the Box Model.
 - Padding creates inner spacing.
@@ -150,7 +151,7 @@ This includes padding and border inside the width and height.
 
 ---
 
-# 🌍 Real World Usage
+🌍 Real World Usage
 
 Box Model is used in:
 
@@ -163,7 +164,7 @@ Box Model is used in:
 
 ---
 
-# 🚀 Practice Project
+🚀 Practice Project
 
 SMIT Student ID Card
 
@@ -179,7 +180,7 @@ Applied concepts:
 
 ---
 
-# ✅ Topics Covered
+✅ Topics Covered
 
 - Content Area
 - Width & Height

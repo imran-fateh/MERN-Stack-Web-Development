@@ -1,28 +1,30 @@
-# 🚀 MERN Stack Web Development Journey
+## 🚀 MERN Stack Web Development Journey
 
 Welcome to my learning repository where I document my journey toward becoming a Full Stack MERN Developer.
 
 ---
 
-# 👨‍💻 Developer
+## 👨‍💻 Developer
 
-**Name:** Imran Fateh
+Name: Imran Fateh
 
-**Program:** MERN Stack Web Development
+Program: MERN Stack Web Development
 
-**Institute:** SMIT (Saylani Mass IT Training)
+Institute: SMIT (Saylani Mass IT Training)
 
-**Goal:** Become a Full Stack MERN Developer
+Goal: Become a Full Stack MERN Developer
 
-🔗 **LinkedIn:**  
+🔗LinkedIn:
+
 [Imran Fateh](https://www.linkedin.com/in/imranfateh-dev)
 
-🔗 **X (Twitter):**  
+🔗X (Twitter):
+
 [Imran Fateh](https://x.com/ImranFatehIF)
 
 ---
 
-# 📚 Technologies Covered & Upcoming
+## 📚 Technologies Covered & Upcoming
 
 ✅ HTML5
 🔄 CSS3
@@ -37,7 +39,7 @@ Welcome to my learning repository where I document my journey toward becoming a 
 
 ---
 
-# 📖 HTML5 Topics Covered
+## 📖 HTML5 Topics Covered
 
 ✅ Introduction to HTML5
 ✅ Headings & Paragraphs
@@ -59,7 +61,7 @@ Welcome to my learning repository where I document my journey toward becoming a 
 
 ---
 
-# 🎨 CSS3 Progress
+## 🎨 CSS3 Progress
 
 ✅ CSS Introduction
 ✅ Selectors
@@ -82,6 +84,6 @@ Welcome to my learning repository where I document my journey toward becoming a 
 
 ---
 
-# 📁 Repository Structure
+## 📁 Repository Structure
 
-![Repository Structure](Assets/repository-structure.jpeg)
+![Repository Structure](./assets/repository-structure.jpeg)

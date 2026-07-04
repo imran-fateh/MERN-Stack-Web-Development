@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Links & Units | Day 07</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>CSS Links & Units</h1>
+
+        <p>
+            Day 07 class work covered CSS link states and commonly used CSS units,
+            including :link, :visited, :hover, :active, px, %, em, rem, vw, and vh,
+            with class-based examples to understand their behavior and usage.
+        </p>
+    </header>
+
+    <main>
+
+        <!-- CSS Links Section -->
+        <section class="section">
+            <h2>CSS Link States</h2>
+
+            <p>
+                CSS pseudo-classes allow us to style links in different states.
+            </p>
+
+            <nav class="navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="info-box">
+                <p><strong>:link</strong> — Unvisited link</p>
+                <p><strong>:visited</strong> — Visited link</p>
+                <p><strong>:hover</strong> — Mouse pointer over the link</p>
+                <p><strong>:active</strong> — Link while being clicked</p>
+            </div>
+        </section>
+
+
+        <!-- Pixel Unit -->
+        <section class="section">
+            <h2>1. px — Pixel Unit</h2>
+
+            <p>
+                Pixel is used for controlled and precise sizing.
+            </p>
+
+            <div class="px-box">
+                Width: 300px
+            </div>
+        </section>
+
+
+        <!-- Percentage Unit -->
+        <section class="section">
+            <h2>2. % — Percentage Unit</h2>
+
+            <p>
+                Percentage sizing depends on the size of the containing element.
+            </p>
+
+            <div class="percentage-parent">
+                Parent Container
+
+                <div class="percentage-child">
+                    Child Width: 50%
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EM Unit -->
+        <section class="section">
+            <h2>3. em Unit</h2>
+
+            <p>
+                The em unit scales according to the font-size context.
+            </p>
+
+            <div class="em-parent">
+                Parent Font Size: 20px
+
+                <p class="em-child">
+                    Child Font Size: 2em
+                </p>
+            </div>
+        </section>
+
+
+        <!-- REM Unit -->
+        <section class="section">
+            <h2>4. rem Unit</h2>
+
+            <p>
+                The rem unit depends on the root HTML font size.
+            </p>
+
+            <div class="rem-example">
+                This text uses 2rem.
+            </div>
+        </section>
+
+
+        <!-- Viewport Units -->
+        <section class="section">
+            <h2>5. Viewport Units</h2>
+
+            <p>
+                vw depends on viewport width and vh depends on viewport height.
+            </p>
+
+            <div class="vw-box">
+                Width: 50vw
+            </div>
+
+            <div class="vh-box">
+                Height: 20vh
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+</body>
+
+</html>

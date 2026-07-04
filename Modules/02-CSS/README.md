@@ -1,10 +1,6 @@
 ## 🎨 CSS Learning Journey
 
-This repository represents my CSS learning journey, documenting concepts, practical exercises, class activities, and project-based implementations.
-
-Each topic is organized through structured notes and hands-on practice to strengthen both theoretical understanding and real-world development skills.
-
-The goal is to build a solid CSS foundation while maintaining clean documentation, continuous improvement, and professional learning standards throughout the web development journey.
+This repository represents my CSS learning journey, documenting concepts, practical exercises, class activities, and project-based implementations.Each topic is organized through structured notes and hands-on practice to strengthen both theoretical understanding and real-world development skills.The goal is to build a solid CSS foundation while maintaining clean documentation, continuous improvement, and professional learning standards throughout the web development journey.
 
 ---
 
@@ -14,7 +10,7 @@ The goal is to build a solid CSS foundation while maintaining clean documentatio
 
 ## 01 - CSS Fundamentals
 
-Topics
+## Topics
 
 - CSS Introduction
 - CSS Syntax
@@ -38,7 +34,7 @@ Topics
 
 ## 02 - CSS Selectors
 
-Topics
+## Topics
 
 - Universal Selector
 - Type Selector
@@ -53,7 +49,7 @@ Topics
 
 ## 03 - CSS Rules & Colors
 
-Topics
+## Topics
 
 - Last Rule Wins
 - Specificity
@@ -74,7 +70,7 @@ Topics
 
 ## 04 - CSS Backgrounds
 
-Topics
+## Topics
 
 - Background Color
 - Background Image
@@ -111,7 +107,7 @@ Topics
 
 ## 05 - CSS Box Model
 
-Topics
+## Topics
 
 - Content Area
 - Width & Height
@@ -126,7 +122,7 @@ Topics
 
 ## 06 - CSS Sizing & Text Properties
 
-Topics
+## Topics
 
 - Width & Height
 - Box Sizing
@@ -145,6 +141,48 @@ Topics
 - White Space
 - Text Overflow
 - Text Direction
+
+---
+
+## 07 - CSS Links & Units
+
+## Topics
+
+- CSS Link States
+  - `:link`
+  - `:visited`
+  - `:hover`
+  - `:active`
+
+- Default Link Colors
+- Styling Link States
+- Correct Link State Order
+- Link State Definitions
+- Link Styling for Navigation Menus and Website Links
+
+## CSS Units
+
+- Absolute Units
+  - `px`
+  - `cm`
+  - `in`
+  - `mm`
+  - `pt`
+  - `pc`
+
+- Relative Units
+  - `%`
+  - `em`
+  - `rem`
+  - `vw`
+  - `vh`
+
+- Absolute vs Relative Units
+- Real Use Cases
+- Effects of Different Units
+- Visual Understanding
+- Common Mistakes
+- Quick Tips
 
 ---
 

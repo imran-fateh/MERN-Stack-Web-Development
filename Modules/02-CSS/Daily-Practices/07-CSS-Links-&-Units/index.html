@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Learning Hub | Day 07 Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                CSS Learning Hub
+            </div>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#progress">Progress</a>
+                <a href="#units">Units</a>
+                <a href="#resources">Resources</a>
+            </div>
+
+        </nav>
+
+
+        <!-- Hero Section -->
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="hero-label">Day 07 Practice Work</p>
+
+                <h1>Learning CSS Step by Step</h1>
+
+                <p class="hero-description">
+                    A practical CSS learning page created to revise previous
+                    concepts while focusing on CSS Links and CSS Units.
+                </p>
+
+                <a href="#units" class="hero-button">
+                    Explore CSS Units
+                </a>
+            </div>
+        </section>
+    </header>
+
+
+    <main>
+
+        <!-- Learning Progress -->
+
+        <section class="section" id="progress">
+
+            <div class="section-heading">
+                <p>Learning Journey</p>
+                <h2>CSS Progress</h2>
+            </div>
+
+
+            <div class="progress-container">
+
+                <article class="progress-card">
+                    <h3>CSS Fundamentals</h2>
+                        <p>
+                            Understanding CSS syntax, rules, declarations, properties, values,comments, and basic
+                            styling concepts.
+                        </p>
+                        <div class="progress-bar">
+                            <div class="progress-value progress-100"></div>
+                        </div>
+                        <span>Completed</span>
+                </article>
+
+
+
+                <article class="progress-card">
+                    <h3>Selectors</h3>
+                    <p>
+                        Selecting HTML elements using element, class, ID, and other CSS selectors.
+                    </p>
+                    <div class="progress-bar">
+                        <div class="progress-value progress-100"></div>
+                    </div>
+                    <span>Completed</span>
+                </article>
+
+
+                <article class="progress-card">
+                    <h3>CSS Roles / Ways to Apply CSS</h3>
+                    <p>
+                        Understanding inline, internal, and external CSS and how each method is
+                        used to style web pages.
+                    </p>
+                    <div class="progress-bar">
+                        <div class="progress-value progress-100"></div>
+                    </div>
+                    <span>Completed</span>
+                </article>
+
+
+                <article class="progress-card">
+                    <h3>Colors & Backgrounds</h3>
+                    <p>
+                        Working with CSS colors, backgrounds, images, positioning,
+                        sizing, and visual styling.
+                    </p>
+                    <div class="progress-bar">
+                        <div class="progress-value progress-100"></div>
+                    </div>
+                    <span>Completed</span>
+                </article>
+
+
+                <article class="progress-card">
+                    <h3>CSS Box Model</h3>
+                    <p>
+                        Understanding content, padding,
+                        borders, and margins.
+                    </p>
+                    <div class="progress-bar">
+                        <div class="progress-value progress-100"></div>
+                    </div>
+                    <span>Completed</span>
+                </article>
+
+
+                <article class="progress-card">
+                    <h3>Sizing & Text Properties</h3>
+                    <p>
+                        Controlling alignment, spacing,
+                        decoration, and text appearance.
+                    </p>
+                    <div class="progress-bar">
+                        <div class="progress-value progress-100"></div>
+                    </div>
+                    <span>Completed</span>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- CSS Units Lab -->
+        <section class="section units-section" id="units">
+
+            <div class="section-heading">
+                <p>Day 07 Main Focus</p>
+                <h2>CSS Units Lab</h2>
+                <div class="section-description">
+                    Explore how different CSS units behave in practical
+                    interface elements.
+                </div>
+            </div>
+
+
+            <div class="units-container">
+
+
+                <!-- PX -->
+                <article class="unit-card">
+                    <div class="unit-name">
+                        px
+                    </div>
+                    <h3>Pixel</h3>
+                    <p>
+                        A controlled CSS unit useful for precise
+                        interface details.
+                    </p>
+                    <div class="px-demo">
+                        200px Width
+                    </div>
+                    <span class="use-case">
+                        Borders • Icons • Small UI Details
+                    </span>
+
+                </article>
+
+
+                <!-- Percentage -->
+                <article class="unit-card">
+                    <div class="unit-name">
+                        %
+                    </div>
+                    <h3>Percentage</h3>
+                    <p>
+                        A relative unit that can scale according
+                        to its containing element.
+                    </p>
+                    <div class="percentage-parent">
+
+                        Parent
+                        <div class="percentage-child">
+                            60%
+                        </div>
+                    </div>
+                    <span class="use-case">
+                        Containers • Cards • Flexible Widths
+                    </span>
+
+                </article>
+
+
+                <!-- EM -->
+                <article class="unit-card em-card">
+                    <div class="unit-name">
+                        em
+                    </div>
+                    <h3>EM Unit</h3>
+                    <p>
+                        Useful for sizing that follows the
+                        element's font-size context.
+                    </p>
+                    <div class="em-demo">
+                        This text is 1.5em
+                    </div>
+                    <span class="use-case">
+                        Components • Buttons • Local Spacing
+                    </span>
+
+                </article>
+
+
+                <!-- REM -->
+                <article class="unit-card">
+                    <div class="unit-name">
+                        rem
+                    </div>
+                    <h3>REM Unit</h3>
+                    <p>
+                        A relative unit based on the root
+                        HTML font size.
+                    </p>
+                    <div class="rem-demo">
+                        1.5rem Text
+                    </div>
+                    <span class="use-case">
+                        Typography • Consistent Spacing
+                    </span>
+
+                </article>
+
+
+                <!-- VW -->
+                <article class="unit-card">
+                    <div class="unit-name">
+                        vw
+                    </div>
+                    <h3>Viewport Width</h3>
+                    <p>
+                        The vw unit calculates size according
+                        to the viewport width.
+                    </p>
+                    <div class="vw-demo">
+                        25vw
+                    </div>
+                    <span class="use-case">
+                        Wide Sections • Viewport Sizing
+                    </span>
+
+                </article>
+
+
+                <!-- VH -->
+                <article class="unit-card">
+                    <div class="unit-name">
+                        vh
+                    </div>
+
+                    <h3>Viewport Height</h3>
+                    <p>
+                        The vh unit calculates size according
+                        to the viewport height.
+                    </p>
+                    <div class="vh-demo">
+                        12vh Height
+                    </div>
+                    <span class="use-case">
+                        Hero Sections • Screen-Based Heights
+                    </span>
+                </article>
+            </div>
+
+        </section>
+
+
+        <!-- Links Practice -->
+        <section class="section" id="resources">
+
+            <div class="section-heading">
+                <p>Link States Practice</p>
+                <h2>Developer Resources</h2>
+                <div class="section-description">
+                    This section demonstrates CSS link states in a
+                    practical resource navigation area.
+                </div>
+
+            </div>
+
+
+            <div class="resource-container">
+
+                <a href="#html-resource" class="resource-link">
+                    <h3>HTML Reference</h3>
+                    <p>
+                        Review HTML structure and semantic elements.
+                    </p>
+                    <span>Open Resource →</span>
+
+                </a>
+
+
+                <a href="#css-resource" class="resource-link">
+                    <h3>CSS Reference</h3>
+                    <p>
+                        Review CSS properties, selectors, and values.
+                    </p>
+                    <span>Open Resource →</span>
+                </a>
+
+
+                <a href="#practice-resource" class="resource-link">
+                    <h3>Practice Projects</h3>
+                    <p>
+                        Apply CSS concepts through practical projects.
+                    </p>
+                    <span>Open Resource →</span>
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <h2>CSS Learning Journey</h2>
+        <p class="developer-name">
+            Built for learning and practice by Imran Fateh
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

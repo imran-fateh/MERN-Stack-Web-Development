@@ -52,11 +52,9 @@ nav ul {
 li {
   list-style: none;
   display: inline-block;
-  padding: 1rem;
-
+  padding: 0.9rem;
   font-size: 1.5rem;
   font-weight: 600;
-  font-family: "Playwrite GB J", cursive;
 }
 
 li a {
@@ -69,15 +67,14 @@ li a:hover {
   color: blue;
 }
 
-li i {
-  margin-right: 0.6rem;
+li a i {
+  margin-right: 0.1rem;
 }
 
 /* Main Content */
 
 main {
   margin: 2rem;
-
   display: flex;
   flex-direction: column;
   gap: 2rem;

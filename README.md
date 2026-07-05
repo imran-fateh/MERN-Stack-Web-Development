@@ -104,6 +104,8 @@ Goal: Become a Full Stack MERN Developer
 
 ✅ Css Links & Units
 
+✅ Fonts,Icons & Display
+
 ---
 
 ## 📁 Repository Structure

@@ -1,14 +1,10 @@
-## 🎨 CSS Learning Journey
+# 🎨 CSS Learning Journey
 
 This repository represents my CSS learning journey, documenting concepts, practical exercises, class activities, and project-based implementations.Each topic is organized through structured notes and hands-on practice to strengthen both theoretical understanding and real-world development skills.The goal is to build a solid CSS foundation while maintaining clean documentation, continuous improvement, and professional learning standards throughout the web development journey.
 
 ---
 
-## 📖 Topics Covered
-
----
-
-## 01 - CSS Fundamentals
+# 01 - CSS Fundamentals
 
 ## Topics
 
@@ -32,7 +28,7 @@ This repository represents my CSS learning journey, documenting concepts, practi
 
 ---
 
-## 02 - CSS Selectors
+# 02 - CSS Selectors
 
 ## Topics
 
@@ -47,7 +43,7 @@ This repository represents my CSS learning journey, documenting concepts, practi
 
 ---
 
-## 03 - CSS Rules & Colors
+# 03 - CSS Rules & Colors
 
 ## Topics
 
@@ -68,7 +64,7 @@ This repository represents my CSS learning journey, documenting concepts, practi
 
 ---
 
-## 04 - CSS Backgrounds
+# 04 - CSS Backgrounds
 
 ## Topics
 
@@ -105,7 +101,7 @@ This repository represents my CSS learning journey, documenting concepts, practi
 
 ---
 
-## 05 - CSS Box Model
+# 05 - CSS Box Model
 
 ## Topics
 
@@ -120,7 +116,7 @@ This repository represents my CSS learning journey, documenting concepts, practi
 
 ---
 
-## 06 - CSS Sizing & Text Properties
+# 06 - CSS Sizing & Text Properties
 
 ## Topics
 
@@ -144,7 +140,7 @@ This repository represents my CSS learning journey, documenting concepts, practi
 
 ---
 
-## 07 - CSS Links & Units
+# 07 - CSS Links & Units
 
 ## Topics
 
@@ -186,16 +182,42 @@ This repository represents my CSS learning journey, documenting concepts, practi
 
 ---
 
-## 🚀 Future Learning Path
+# 08 - CSS Fonts, Icons & Display Property
 
-- Display Properties
-- Flexbox
-- CSS Grid
-- Position Properties
-- Animations & Transitions
-- Media Queries
-- Responsive Web Design
-- Tailwind CSS
+## Topics
+
+- CSS Fonts
+  - `font-family`
+  - `font-size`
+  - `font-weight`
+  - Font Fallbacks
+
+- Google Fonts
+  - Importing Fonts with `@import`
+  - Applying Custom Font Families
+
+- CSS Icons
+  - Using Icons in Navigation Links
+  - Styling Icons with CSS
+
+- Font Awesome Icons
+  - Connecting Font Awesome CDN
+  - Solid Icons
+  - Regular Icons
+  - Brand Icons
+
+- CSS Display Property
+  - `display: none`
+  - `display: inline`
+  - `display: block`
+  - `display: inline-block`
+  - `display: flex`
+  - `display: grid`
+
+- Inline vs Block Elements
+- Inline vs Inline-Block
+- Element Layout Behavior
+- Practical Use of Display Values
 
 ---
 

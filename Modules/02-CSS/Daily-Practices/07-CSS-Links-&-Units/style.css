@@ -380,16 +380,12 @@ body {
   text-align: center;
 }
 
-.footer h2 {
-  margin-bottom: 0.1rem;
-}
-
 .footer p {
   color: #cbd5e1;
 }
 
 .footer .developer-name {
-  margin-top: 0.1rem;
+  padding: 12px;
   font-size: 0.9rem;
   letter-spacing: 0.1px;
 }

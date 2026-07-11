@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form In CSS</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: #1f2937;
+        }
+
+        p {
+            max-width: 650px;
+            line-height: 1.5;
+            margin: 15px auto 30px;
+            text-align: center;
+            color: #555;
+        }
+
+        form {
+            width: 30%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+
+        }
+
+        h2 {
+            text-align: center;
+            color: #1f2937;
+            margin-top: 1px;
+        }
+
+
+        label {
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .input:focus {
+            background-color: rgb(248, 247, 247);
+            outline: none;
+
+        }
+
+        #login {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+            background-color: rgb(120, 203, 84);
+            color: rgb(32, 133, 17);
+            font-size: 17px;
+            font-weight: bold;
+
+
+        }
+
+        #login:hover {
+            background-color: rgb(77, 155, 44);
+            outline: none;
+            color: white;
+            box-shadow: 0 0 10px #dcdddc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Day 09 - Forms</h1>
+
+    <p>
+        Today we are learning how to style HTML forms using CSS. This class covers labels, input fields, focus effects,
+        buttons, hover effects, borders, border-radius, and box-shadow to create clean and user-friendly forms.
+    </p>
+
+    <form>
+        <h2>Login Form</h2>
+        <label for="name">Name:</label>
+        <input class="input" type="text" name="name" id="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input class="input" type="email" name="email" id="email" placeholder="xyz@example.com">
+
+        <label for="password">Password:</label>
+        <input class="input" type="password" name="password" id="password" placeholder="Enter correct password">
+
+
+        <input type="submit" id="login" value="Login">
+    </form>
+</body>
+
+</html>

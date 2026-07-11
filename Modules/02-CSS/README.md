@@ -1,6 +1,6 @@
-# 🎨 CSS Learning Journey
+# 🚀 CSS Learning Journey
 
-This repository represents my CSS learning journey, documenting concepts, practical exercises, class activities, and project-based implementations.Each topic is organized through structured notes and hands-on practice to strengthen both theoretical understanding and real-world development skills.The goal is to build a solid CSS foundation while maintaining clean documentation, continuous improvement, and professional learning standards throughout the web development journey.
+Documenting my journey of mastering CSS through structured notes, hands-on practice, real-world projects, and consistent daily learning.
 
 ---
 
@@ -75,29 +75,6 @@ This repository represents my CSS learning journey, documenting concepts, practi
 - Background Attachment
 - Background Position
 - Background Shorthand
-
-# Background Size Values
-
-- auto
-- contain
-- cover
-
-# Background Attachment Values
-
-- scroll
-- fixed
-- local
-
-# Background Position Values
-
-- top left
-- top center
-- top right
-- center center
-- bottom left
-- bottom center
-- bottom right
-- 50% 50%
 
 ---
 
@@ -174,11 +151,6 @@ This repository represents my CSS learning journey, documenting concepts, practi
   - `vh`
 
 - Absolute vs Relative Units
-- Real Use Cases
-- Effects of Different Units
-- Visual Understanding
-- Common Mistakes
-- Quick Tips
 
 ---
 
@@ -221,10 +193,39 @@ This repository represents my CSS learning journey, documenting concepts, practi
 
 ---
 
-# 👨‍💻 Author
+# 09 - CSS Lists, Tables & Forms
 
-## Imran Fateh
+## Topics
 
-Aspiring MERN Stack Developer
-SMIT Modern Web Development Student
-Documenting My Web Development Journey
+- CSS Lists
+  - `list-style-type`
+  - `list-style-position`
+  - `list-style-image`
+  - `list-style`
+  - Ordered Lists (`<ol>`)
+  - Unordered Lists (`<ul>`)
+
+- CSS Tables
+  - `border`
+  - `border-collapse`
+  - `border-spacing`
+  - `padding`
+  - `text-align`
+  - `width`
+  - Zebra Striping (`:nth-child()`)
+  - Hover Effects
+
+- CSS Forms
+  - Styling Labels
+  - Styling Input Fields
+  - `padding`
+  - `margin`
+  - `border`
+  - `border-radius`
+  - `outline`
+  - `box-sizing`
+  - `:focus`
+  - Submit Button Styling
+  - `:hover`
+
+---

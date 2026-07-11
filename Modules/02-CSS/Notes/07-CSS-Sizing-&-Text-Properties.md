@@ -291,18 +291,31 @@ text-shadow: 2px 2px 5px gray;
 📋 Summary
 
 ✅ Width controls horizontal size.
+
 ✅ Height controls vertical size.
+
 ✅ Min-width prevents shrinking.
+
 ✅ Max-width prevents excessive growth.
+
 ✅ Min-height ensures minimum height.
+
 ✅ Max-height limits height.
+
 ✅ Overflow controls extra content.
+
 ✅ Text-align aligns text.
+
 ✅ Text-decoration adds effects.
+
 ✅ Text-transform changes case.
+
 ✅ Letter-spacing adds character spacing.
+
 ✅ Spacing adds spacing between words.
+
 ✅ Line-height controls line spacing.
+
 ✅ Text-shadow creates visual effects.
 
 ---
@@ -310,7 +323,11 @@ text-shadow: 2px 2px 5px gray;
 ❌ Common Mistakes
 
 ❇️ Using fixed widths everywhere.
+
 ❇️ Using height without overflow.
+
 ❇️ Confusing width and max-width.
+
 ❇️ Applying large text shadows.
+
 ❇️ Using excessive letter spacing.

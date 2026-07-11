@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table In Css</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            color: #1f2937;
+        }
+
+        p {
+            max-width: 650px;
+            line-height: 1.5;
+            margin: 15px auto 30px;
+            text-align: center;
+            color: #555;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 60%;
+            margin: 0 auto;
+
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #dbdada;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd):hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Day 09 - Tables</h1>
+
+    <p>
+        Today we are learning how to style HTML tables using CSS,
+        including borders, padding, hover effects, and zebra striping.
+    </p>
+
+    <h2 style="text-align: center;">Students Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Imran Fateh</td>
+                <td>MERN Stack</td>
+                <td>9:00 To 11:00</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Rauf Khan</td>
+                <td>Web Designer</td>
+                <td>8:00 To 9:00</td>
+            </tr>
+
+
+            <tr>
+                <td>3</td>
+                <td>Kamal Khan</td>
+                <td>App Developer</td>
+                <td>10:00 To 12:00</td>
+            </tr>
+
+
+            <tr>
+                <td>4</td>
+                <td>Afghan</td>
+                <td>Software Eng</td>
+                <td>3:00 To 5:00</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</body>
+
+</html>

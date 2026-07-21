@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartAuth Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="website-header">
+
+        <div class="website-logo">
+            SmartAuth
+        </div>
+
+        <nav class="website-navigation">
+            <a href="#">Home</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Security</a>
+            <a href="#">Support</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <button class="profile-button">
+            My Profile
+        </button>
+
+    </header>
+
+    <main class="dashboard-container">
+
+        <section class="hero-section">
+
+            <article class="authentication-card">
+
+                <span class="status-badge">
+                    NEW
+                </span>
+
+                <header class="card-header">
+
+                    <h1>
+                        Welcome Back 👋
+                    </h1>
+
+                    <p>
+                        Sign in to continue your learning journey.
+                    </p>
+
+                </header>
+
+                <form class="login-form">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input type="text" id="name" placeholder="enter your name" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input type="email" id="email" placeholder="example123@gmail.com" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input type="password" id="password" placeholder="••••••••" required>
+
+                    </div>
+
+                    <div class="form-options">
+
+                        <label class="remember-option">
+
+                            <input type="checkbox">
+
+                            Remember Me
+
+                        </label>
+
+                        <a href="#">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+                    <button class="login-button">
+                        Login Securely
+                    </button>
+
+                </form>
+
+            </article>
+
+            <aside class="profile-card">
+
+                <img src="images/imran-fateh-image.png" alt="imran-fateh-image">
+
+                <h2>
+                    Imran Fateh
+                </h2>
+
+                <p>
+                    Frontend Developer • MERN Stack Learner
+                </p>
+
+                <div class="online-status">
+                    🟢 Online
+                </div>
+
+                <hr>
+
+                <div class="profile-information">
+
+                    <div class="information-item">
+                        <span>
+                            Learning
+                        </span>
+                        <strong>
+                            CSS Day 10
+                        </strong>
+                    </div>
+
+                    <div class="information-item">
+                        <span>
+                            Status
+                        </span>
+                        <strong>
+                            In Progress
+                        </strong>
+                    </div>
+
+                    <div class="information-item">
+                        <span>
+                            Institute
+                        </span>
+                        <strong>
+                            SMIT
+                        </strong>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+        <section class="progress-section">
+
+            <header class="section-header">
+                <h2>Learning Progress</h2>
+                <p>Track your progress and see how far you've come in your learning journey.</p>
+            </header>
+
+            <div class="progress-card-wrapper">
+
+                <article class="progress-card">
+
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill html-progress">
+                            100%
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="progress-card">
+
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill css-progress">
+                            45%
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="progress-card">
+
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill javascript-progress">
+                            10%
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="activity-section">
+
+            <header class="section-header">
+                <h2>Recent Login Activity</h2>
+                <p>Review your recent login activity to keep your account secure.</p>
+            </header>
+
+            <table class="activity-table">
+
+                <thead>
+
+                    <tr>
+                        <th>Device</th>
+                        <th>Browser</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Laptop</td>
+                        <td>Chrome</td>
+                        <td>Today</td>
+                        <td>Success</td>
+                    </tr>
+
+                    <tr>
+                        <td>Desktop</td>
+                        <td>Edge</td>
+                        <td>Yesterday</td>
+                        <td>Success</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mobile</td>
+                        <td>Chrome</td>
+                        <td>3 Days Ago</td>
+                        <td>Success</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+
+        <section class="security-section">
+
+            <header class="section-header">
+                <h2>Security Tips</h2>
+                <p>Follow these simple security practices to protect your account and personal information.</p>
+            </header>
+
+            <ul class="security-list">
+                <li>Use a strong password with letters, numbers and symbols.</li>
+                <li>Enable Two-Factor Authentication (2FA).</li>
+                <li>Never share your OTP with anyone.</li>
+                <li>Sign out from public computers.</li>
+                <li>Update your password regularly.</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer class="website-footer">
+        <p>
+            © 2026 SmartAuth Dashboard. Built with HTML & CSS by Imran Fateh.
+        </p>
+    </footer>
+
+    <button class="floating-help-button">
+        ?
+    </button>
+
+</body>
+
+</html>

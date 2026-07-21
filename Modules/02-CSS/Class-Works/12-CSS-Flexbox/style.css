@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef2ff;
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+.flexbox-section {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+.flexbox-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.flexbox-subtitle {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: #dbeafe;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.flexbox-title {
+  font-size: 48px;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.flexbox-description {
+  width: min(100%, 650px);
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 30px;
+  color: #6b7280;
+}
+
+.flex-item {
+  width: 180px;
+  height: 180px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 12px;
+
+  /*=== FLEX ITEM PROPERTIES ===*/
+  /* flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 180px; */
+}
+
+.flex-item:first-child {
+  order: 2;
+}
+
+.flex-item:nth-child(3) {
+  order: 1;
+}
+
+.flex-item:last-child {
+  align-self: flex-end;
+}
+
+.flexbox-container {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 20px;
+  /* min-height: 450px; */
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+  /* Horizontal (Default) */
+  flex-direction: row;
+
+  /* Horizontal (Reverse) */
+  /* flex-direction:row-reverse; */
+
+  /* Vertical */
+  /* flex-direction:column; */
+
+  /* Vertical (Reverse) */
+  /* flex-direction:column-reverse; */
+
+  /*=== FLEX WRAP ===*/
+
+  /* flex-wrap: nowrap; */
+  /* flex-wrap:wrap; */
+  /* flex-wrap:wrap-reverse; */
+
+  /*=== JUSTIFY CONTENT ===*/
+
+  /* justify-content:flex-start; */
+  /* justify-content:center; */
+  /* justify-content:flex-end; */
+  /* justify-content:space-between; */
+  /* justify-content:space-around; */
+  /* justify-content: space-evenly; */
+
+  /*=== ALIGN ITEMS ===*/
+
+  /* align-items:stretch; */
+  /* align-items:flex-start; */
+  /* align-items:center; */
+  /* align-items:flex-end; */
+  /* align-items: baseline; */
+
+  /*=== ALIGN CONTENT ===*/
+
+  flex-wrap: wrap;
+  min-height: 700px;
+
+  /* align-content:flex-start; */
+  /* align-content:center; */
+  /* align-content:flex-end; */
+  /* align-content:space-between; */
+  /* align-content:space-around; */
+  align-content: space-evenly;
+}

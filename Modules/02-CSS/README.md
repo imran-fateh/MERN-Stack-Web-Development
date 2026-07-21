@@ -229,3 +229,83 @@ Documenting my journey of mastering CSS through structured notes, hands-on pract
   - `:hover`
 
 ---
+
+# 10 - CSS Attribute Selectors & Position Property
+
+## Topics
+
+- CSS Attribute Selectors
+
+```
+  - [attribute]
+  - [attribute="value"]
+  - [attribute~="value"]
+  - [attribute|="value"]
+  - [attribute^="value"]
+  - [attribute$="value"]
+  - [attribute*="value"]
+```
+
+- CSS Position Property
+
+```
+  - static
+  - relative
+  - absolute
+  - fixed
+  - sticky
+```
+
+# 11 - CSS Z-Index
+
+## Topics
+
+- CSS Z-Index
+
+```
+- What is Z-Index?
+- Stacking Order
+- z-index Property
+- Default Stack Level
+- Positive z-index
+- Negative z-index
+- Auto Value
+- z-index with Position
+- Position: Relative + z-index
+- Position: Absolute + z-index
+- Position: Fixed + z-index
+- Position: Sticky + z-index
+- Layering Elements
+- Overlapping Elements
+```
+
+---
+
+# 12 - CSS Flexbox
+
+## Topics
+
+- CSS Flexbox
+
+```
+- What is Flexbox?
+- display: flex
+- Flex Container
+- Flex Items
+- Main Axis
+- Cross Axis
+- flex-direction
+- justify-content
+- align-items
+- flex-wrap
+- gap
+- align-content
+- flex-grow
+- flex-shrink
+- flex-basis
+- flex
+- order
+- align-self
+- Nested Flexbox
+- Responsive Flexbox
+```

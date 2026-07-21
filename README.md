@@ -7,8 +7,11 @@ Welcome to my learning repository where I document my journey toward becoming a 
 ## 👨‍💻 Developer
 
 Name: Imran Fateh
+
 Program: MERN Stack Web Development
+
 Institute: SMIT (Saylani Mass IT Training)
+
 Goal: Become a Full Stack MERN Developer
 
 🔗LinkedIn:
@@ -22,14 +25,23 @@ Goal: Become a Full Stack MERN Developer
 ## 📚 Technologies Covered & Upcoming
 
 ✅ HTML5
+
 🔄 CSS3
+
 ⏳ Tailwind CSS
+
 ⏳ JavaScript (ES6+)
+
 ⏳ TypeScript
+
 ⏳ React.js
+
 ⏳ Next.js
+
 ⏳ Node.js
+
 ⏳ Express.js
+
 ⏳ MongoDB
 
 ---
@@ -37,21 +49,37 @@ Goal: Become a Full Stack MERN Developer
 ## 📖 HTML5 Topics Covered
 
 ✅ Introduction to HTML5
+
 ✅ Headings & Paragraphs
+
 ✅ Text Formatting
+
 ✅ Lists
+
 ✅ Hyperlinks
+
 ✅ Images
+
 ✅ Tables
+
 ✅ Forms
+
 ✅ Semantic HTML
+
 ✅ Audio & Video
+
 ✅ Iframe
+
 ✅ Meta Tags
+
 ✅ SEO Basics
+
 ✅ HTML Entities
+
 ✅ Accessibility
+
 ✅ File Paths
+
 ✅ Best Practices
 
 ---
@@ -59,14 +87,28 @@ Goal: Become a Full Stack MERN Developer
 ## 🎨 CSS3 Progress
 
 ✅ CSS Introduction
+
 ✅ CSS Selectors
+
 ✅ Css-Roles-&-Colors
+
 ✅ CSS Backgrounds
+
 ✅ CSS Box Model
+
 ✅ Sizing & Text Properties
+
 ✅ Css Links & Units
+
 ✅ CSS Fonts,Icons & Display
+
 ✅ Css List Table & Form
+
+✅ CSS Attribute Selectors & Positioning
+
+✅ CSS Z-index property
+
+✅ CSS Flexbox
 
 ---
 

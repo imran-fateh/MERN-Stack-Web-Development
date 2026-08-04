@@ -309,3 +309,163 @@ Documenting my journey of mastering CSS through structured notes, hands-on pract
 - Nested Flexbox
 - Responsive Flexbox
 ```
+
+---
+
+# 13 - CSS Transition & Transform
+
+## Topics
+
+- CSS Transition
+- What is CSS Transition?
+- Transition Syntax
+- transition-property
+- transition-duration
+- transition-timing-function
+- transition-delay
+- transition (Shorthand)
+- CSS Transform
+- What is CSS Transform?
+- Transform Syntax
+- translate()
+- translateX()
+- translateY()
+- rotate()
+- scale()
+- scaleX()
+- scaleY()
+- skew()
+- skewX()
+- skewY()
+- Multiple Transforms
+- Hover Effects
+- Transition + Transform
+- Advantages of Transition & Transform
+- Real World Uses
+
+---
+
+# 14 - CSS Animation
+
+## Topics
+
+- CSS Animation
+- What is CSS Animation?
+- @keyframes
+- Animation Syntax
+- animation-name
+- animation-duration
+- animation-delay
+- animation-iteration-count
+- animation-direction
+- animation-timing-function
+- animation-fill-mode
+- animation-play-state
+- animation (Shorthand)
+- Fade In Animation
+- Floating Animation
+- Rotation Animation
+- Pulse Animation
+- Multiple Animations
+- Hover Animation
+- Advantages of CSS Animation
+- Real World Uses
+
+---
+
+# 15 - CSS Variables & Grid Properties
+
+## CSS Variables
+
+- Custom Property `--variable-name`
+- `:root`
+- `var()`
+- `var(--variable-name, fallback)`
+
+## CSS Grid Parent Properties
+
+- `display: grid`
+- `display: inline-grid`
+- `grid-template-columns`
+- `grid-template-rows`
+- `grid-template-areas`
+- `grid-template`
+- `column-gap`
+- `row-gap`
+- `gap`
+- `justify-items`
+- `align-items`
+- `place-items`
+- `justify-content`
+- `align-content`
+- `place-content`
+- `grid-auto-columns`
+- `grid-auto-rows`
+- `grid-auto-flow`
+- `grid`
+
+## CSS Grid Child Properties
+
+- `grid-column-start`
+- `grid-column-end`
+- `grid-column`
+- `grid-row-start`
+- `grid-row-end`
+- `grid-row`
+- `grid-area`
+- `justify-self`
+- `align-self`
+- `place-self`
+- `order`
+
+## CSS Grid Functions & Values
+
+- `fr`
+- `repeat()`
+- `minmax()`
+- `min-content`
+- `max-content`
+- `auto`
+- `auto-fit`
+- `auto-fill`
+- `span`
+- `dense`
+
+---
+
+# 16 - CSS Grid Dashboard
+
+## Topics
+
+- Dashboard Layout
+- Dashboard Structure
+- Sidebar Layout
+- Header / Topbar Layout
+- Main Content Layout
+- CSS Grid in Dashboard
+- Dashboard Grid Architecture
+- Sidebar & Main Content Columns
+- Dashboard Rows
+- `grid-template-columns`
+- `grid-template-rows`
+- `grid-template-areas`
+- `grid-area`
+- `gap`
+- `repeat()`
+- `fr` Unit
+- `minmax()`
+- `auto-fit`
+- `auto-fill`
+- Statistics Cards Grid
+- Main Dashboard Content Grid
+- Nested CSS Grid
+- `grid-column`
+- `grid-row`
+- Grid Item Spanning
+- Dashboard Alignment
+- Responsive Dashboard Grid
+- Desktop Dashboard Layout
+- Tablet Dashboard Layout
+- Mobile Dashboard Layout
+- Real World Dashboard Structure
+- Advantages of CSS Grid for Dashboards

@@ -1,157 +1,190 @@
-🖼️ CSS Backgrounds Notes
+# 🖼️Day 04 - CSS Backgrounds 
 
 ---
 
-📖 What are CSS Backgrounds?
+## 📖 What are CSS Backgrounds?
 
 CSS Backgrounds are used to control the appearance of an element's background.
 
 Backgrounds help:
 
-✅ Improve design
-✅ Display images
-✅ Make websites attractive
-✅ Improve visual presentation
+- ✅ Improve design
+
+- ✅ Display images
+
+- ✅ Make websites attractive
+
+- ✅ Improve visual presentation
 
 ---
 
-💻 Example
+## 💻 Example
 
+```css
 div {
-background-color: lightblue;
-
+  background-color: lightblue;
 }
+```
 
-The background color of the div becomes light blue.
+The background color of the `div` becomes light blue.
 
 ---
 
-🎨 Background Color
+## 🎨 Background Color
 
-The "background-color" property adds color behind an element.
+The `background-color` property adds color behind an element.
 
+## Syntax
+
+```css
 background-color: lightyellow;
+```
 
+## Example
+
+```css
 div {
-background-color: lightyellow;
-
+  background-color: lightyellow;
 }
+```
 
 A light yellow color appears behind the element.
 
-⚠️ Background color affects only the background area.
+> ⚠️ Background color affects only the background area.
 
 ---
 
-🖼️ Background Image
+## 🖼️ Background Image
 
-The "background-image" property places an image behind an element.
+The `background-image` property places an image behind an element.
 
+## Syntax
+
+```css
 background-image: url("image.jpg");
+```
 
+## Example
+
+```css
 div {
-background-image: url("html-image.jpg");
-
+  background-image: url("html-image.jpg");
 }
+```
 
 The image appears behind the element.
 
-⚠️ Always provide the correct image path.
+> ⚠️ Always provide the correct image path.
 
 ---
 
-🖼️ Background Properties Diagram
+## 🖼️ Background Properties Diagram
 
-[CSS Background Properties](Resources/images/css-background-properties.jpeg)
+![CSS Background Properties](Resources/images/css-background-properties.jpeg)
 
 This diagram shows the relationship between Background Color, Image, Repeat, Position, Size, and Attachment.
 
 ---
 
-🔁 Background Repeat
+## 🔁 Background Repeat
 
-The "background-repeat" property controls image repetition.
+The `background-repeat` property controls image repetition.
 
+## Syntax
+
+```css
 background-repeat: repeat;
 background-repeat: no-repeat;
+```
 
-✅ repeat → Repeats the image
+- ✅ `repeat` → Repeats the image
+- ✅ `no-repeat` → Displays the image once
 
-✅ no-repeat → Displays the image once
-
-⚠️ Large images usually use "no-repeat".
+> ⚠️ Large images usually use `no-repeat`.
 
 ---
 
-📏 Background Size
+## 📏 Background Size
 
-The "background-size" property controls image size.
+The `background-size` property controls image size.
 
+## Syntax
+
+```css
 background-size: auto;
 background-size: contain;
 background-size: cover;
+```
 
-auto
+### auto
 
 Uses the original image size.
 
-contain
+### contain
 
 Shows the complete image.
 
 Empty space may remain.
 
-cover
+### cover
 
 Covers the entire container.
 
 Part of the image may be cropped.
 
-⚠️ "cover" is widely used in modern websites.
+> ⚠️ `cover` is widely used in modern websites.
 
 ---
 
-🖼️ Background Size Comparison
+## 🖼️ Background Size Comparison
 
-[Background Size](Resources/images/background-size-comparison.jpeg)
+![Background Size](Resources/images/background-size-comparison.jpeg)
 
 This comparison demonstrates the difference between Auto, Contain, and Cover.
 
 ---
 
-📌 Background Attachment
+## 📌 Background Attachment
 
-The "background-attachment" property controls scrolling behavior.
+The `background-attachment` property controls scrolling behavior.
 
+## Syntax
+
+```css
 background-attachment: scroll;
 background-attachment: fixed;
 background-attachment: local;
+```
 
-scroll
+### scroll
 
 Default behavior.
 
-fixed
+### fixed
 
 Background remains fixed during scrolling.
 
-local
+### local
 
 Background scrolls with the element content.
 
-⚠️ "fixed" is commonly used for parallax effects.
+> ⚠️ `fixed` is commonly used for parallax effects.
 
 ---
 
-🎯 Background Position
+## 🎯 Background Position
 
-The "background-position" property controls image placement.
+The `background-position` property controls image placement.
 
+## Syntax
+
+```css
 background-position: top left;
 background-position: center center;
 background-position: bottom right;
+```
 
-Common positions:
+## Common Positions
 
 - top left
 - top center
@@ -166,40 +199,43 @@ Common positions:
 
 ---
 
-⚡ Background Shorthand
+## ⚡ Background Shorthand
 
-The "background" property combines multiple properties in one declaration.
+The `background` property combines multiple properties in one declaration.
 
-background:
-url("html-image.jpg")
-red
-no-repeat
-fixed;
+## Example
+
+```css
+background: url("html-image.jpg") red no-repeat fixed;
+```
 
 This combines:
 
-✅ Background Image
-✅ Background Color
-✅ Background Repeat
-✅ Background Attachment
+- ✅ Background Image
 
-⚠️ Shorthand makes code shorter and cleaner.
+- ✅ Background Color
 
----
+- ✅ Background Repeat
 
-🎓 Topics Covered
+- ✅ Background Attachment
 
-✅ Background Color
-✅ Background Image
-✅ Background Repeat
-✅ Background Size
-✅ Background Attachment
-✅ Background Position
-✅ Background Shorthand
+> ⚠️ Shorthand makes code shorter and cleaner.
 
 ---
 
-# 🚀 Final Summary
+## 🎓 Topics Covered
+
+- ✅ Background Color
+- ✅ Background Image
+- ✅ Background Repeat
+- ✅ Background Size
+- ✅ Background Attachment
+- ✅ Background Position
+- ✅ Background Shorthand
+
+---
+
+## 🚀 Final Summary
 
 CSS Backgrounds play an important role in modern web design.
 
@@ -207,8 +243,8 @@ Understanding background images, positioning, sizing, and attachment helps devel
 
 Mastering Backgrounds is essential before learning:
 
-• CSS Box Model
-• Flexbox
-• Grid
-• Responsive Design
-• Modern UI Development
+- CSS Box Model
+- Flexbox
+- Grid
+- Responsive Design
+- Modern UI Development

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Day 16 | Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  </head>
+
+  <body>
+
+    <!-- Dashboard Layout -->
+
+    <div class="dashboard-layout">
+      
+      <aside class="sidebar">
+        <div class="sidebar-brand">
+          <div class="brand-icon">
+            <i class="fa-solid fa-chart-pie"></i>
+          </div>
+          <h2>DashBoard</h2>
+        </div>
+
+        <!-- Navigation -->
+         
+        <nav class="sidebar-navigation">
+          <ul>
+            <li>
+              <a href="#" class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>Overview</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-chart-column"></i>
+                <span>Analytics</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-users"></i>
+                <span>Customers</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-box"></i>
+                <span>Products</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Orders</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Sidebar Help -->
+        <div class="sidebar-help">
+          <i class="fa-regular fa-circle-question"></i>
+          <div>
+            <strong>Need Help?</strong>
+            <p>Visit support center</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Dashboard -->
+
+      <main class="dashboard-main">
+
+        <header class="dashboard-header">
+          <div class="header-title">
+            <h1>Dashboard</h1>
+            <p>Welcome back! Here's what's happening today.</p>
+          </div>
+
+          <div class="header-actions">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" placeholder="Search dashboard..." />
+            </div>
+
+            <button class="notification-button" aria-label="Notifications">
+              <i class="fa-regular fa-bell"></i>
+              <span></span>
+            </button>
+
+            <div class="user-profile">
+              <div class="user-avatar">
+                <i class="fa-solid fa-user"></i>
+              </div>
+
+              <div class="user-information">
+                <strong>Admin User</strong>
+                <small>Administrator</small>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Dashboard Content -->
+
+        <section class="dashboard-content">
+        
+          <section class="statistics-grid">
+            <article class="stat-card">
+              <div class="stat-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+
+              <div class="stat-information">
+                <p>Total Customers</p>
+                <h2>2,480</h2>
+                <span class="positive">+12.5%</span>
+              </div>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+
+              <div class="stat-information">
+                <p>Total Orders</p>
+                <h2>1,245</h2>
+                <span class="positive">+8.2%</span>
+              </div>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-icon">
+                <i class="fa-solid fa-dollar-sign"></i>
+              </div>
+
+              <div class="stat-information">
+                <p>Total Revenue</p>
+                <h2>$24.8K</h2>
+                <span class="positive">+15.4%</span>
+              </div>
+            </article>
+
+            <article class="stat-card">
+              <div class="stat-icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+
+              <div class="stat-information">
+                <p>Conversion Rate</p>
+                <h2>4.8%</h2>
+                <span class="negative">-1.2%</span>
+              </div>
+            </article>
+          </section>
+
+          <!-- Analytics Grid -->
+           
+          <section class="analytics-grid">
+            
+            <article class="dashboard-card revenue-card">
+              <div class="card-header">
+                <div>
+                  <span class="card-label">ANALYTICS</span>
+                  <h2>Revenue Overview</h2>
+                </div>
+
+                <select aria-label="Revenue period">
+                  <option>This Week</option>
+                  <option>This Month</option>
+                  <option>This Year</option>
+                </select>
+              </div>
+
+              <div class="chart-area">
+                <div class="chart-values">
+                  <span>$30K</span>
+                  <span>$20K</span>
+                  <span>$10K</span>
+                  <span>$0</span>
+                </div>
+
+                <div class="bar-chart">
+                  <div class="chart-column">
+                    <div class="chart-bar bar-60"></div>
+                    <span>Mon</span>
+                  </div>
+
+                  <div class="chart-column">
+                    <div class="chart-bar bar-80"></div>
+                    <span>Tue</span>
+                  </div>
+
+                  <div class="chart-column">
+                    <div class="chart-bar bar-45"></div>
+                    <span>Wed</span>
+                  </div>
+
+                  <div class="chart-column">
+                    <div class="chart-bar bar-90"></div>
+                    <span>Thu</span>
+                  </div>
+
+                  <div class="chart-column">
+                    <div class="chart-bar bar-70"></div>
+                    <span>Fri</span>
+                  </div>
+
+                  <div class="chart-column">
+                    <div class="chart-bar bar-95"></div>
+                    <span>Sat</span>
+                  </div>
+
+                  <div class="chart-column">
+                    <div class="chart-bar bar-75"></div>
+                    <span>Sun</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Sales Summary -->
+            <article class="dashboard-card sales-card">
+              <div class="card-header">
+                <div>
+                  <span class="card-label">SUMMARY</span>
+                  <h2>Sales Overview</h2>
+                </div>
+              </div>
+
+              <div class="sales-circle">
+                <div>
+                  <strong>72%</strong>
+                  <span>Completed</span>
+                </div>
+              </div>
+
+              <div class="sales-details">
+                <div>
+                  <span class="legend-dot"></span>
+                  <p>Completed Orders</p>
+                  <strong>72%</strong>
+                </div>
+
+                <div>
+                  <span class="legend-dot secondary-dot"></span>
+                  <p>Pending Orders</p>
+                  <strong>28%</strong>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <!-- Bottom Grid -->
+          <section class="bottom-grid">
+            <!-- Recent Orders -->
+            <article class="dashboard-card orders-card">
+              <div class="card-header">
+                <div>
+                  <span class="card-label">ORDERS</span>
+                  <h2>Recent Orders</h2>
+                </div>
+
+                <a href="#">View All</a>
+              </div>
+
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Order ID</th>
+                      <th>Customer</th>
+                      <th>Product</th>
+                      <th>Amount</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>#ORD-1048</td>
+                      <td>Customer A</td>
+                      <td>Wireless Keyboard</td>
+                      <td>$85.00</td>
+                      <td><span class="status completed">Completed</span></td>
+                    </tr>
+
+                    <tr>
+                      <td>#ORD-1047</td>
+                      <td>Customer B</td>
+                      <td>USB-C Hub</td>
+                      <td>$42.00</td>
+                      <td><span class="status pending">Pending</span></td>
+                    </tr>
+
+                    <tr>
+                      <td>#ORD-1046</td>
+                      <td>Customer C</td>
+                      <td>Desk Lamp</td>
+                      <td>$68.00</td>
+                      <td><span class="status completed">Completed</span></td>
+                    </tr>
+
+                    <tr>
+                      <td>#ORD-1045</td>
+                      <td>Customer D</td>
+                      <td>Laptop Stand</td>
+                      <td>$54.00</td>
+                      <td><span class="status processing">Processing</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <!-- Activity -->
+            <article class="dashboard-card activity-card">
+              <div class="card-header">
+                <div>
+                  <span class="card-label">ACTIVITY</span>
+                  <h2>Recent Activity</h2>
+                </div>
+              </div>
+
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fa-solid fa-user-plus"></i>
+                  </div>
+
+                  <div>
+                    <strong>New customer registered</strong>
+                    <p>10 minutes ago</p>
+                  </div>
+                </div>
+
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </div>
+
+                  <div>
+                    <strong>New order received</strong>
+                    <p>35 minutes ago</p>
+                  </div>
+                </div>
+
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fa-solid fa-box-open"></i>
+                  </div>
+
+                  <div>
+                    <strong>Product stock updated</strong>
+                    <p>1 hour ago</p>
+                  </div>
+
+                </div>
+
+                <div class="activity-item">
+
+                  <div class="activity-icon">
+                    <i class="fa-solid fa-file-lines"></i>
+                  </div>
+
+                  <div>
+                    <strong>Monthly report generated</strong>
+                    <p>2 hours ago</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </section>
+
+        </section>
+
+      </main>
+
+    </div>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-# 🔗 CSS Links & Units
+# 📘 Day 07 - CSS Links & Units
 
 This module covers **CSS Links and CSS Units**, two important concepts for creating interactive links, scalable components, and responsive web layouts.
 
@@ -954,24 +954,4 @@ Through this module, I learned how to:
 - Select CSS units according to layout requirements
 - Avoid common mistakes when working with links and units
 
----
 
-# 🧑‍💻 Practice Focus
-
-The concepts in this module were practiced through:
-
-- Styling different link states
-- Creating hover interactions
-- Testing active link behavior
-- Working with fixed pixel dimensions
-- Creating percentage-based layouts
-- Testing parent and component-relative sizing
-- Using root-relative typography
-- Working with viewport-based dimensions
-- Comparing fixed and responsive sizing approaches
-
----
-
-## ✅ Day 07 Completed
-
-**CSS Links & Units** concepts have been studied, documented, and practiced as part of my MERN Stack Web Development journey.

@@ -1,10 +1,6 @@
-# 📘 CSS Attribute Selectors & Position Property
+# 📘Day 10 - CSS Attribute Selectors & Positioning 
 
----
-
-## 📘 Day Goal
-
-Learn how to use **CSS Attribute Selectors** to target HTML elements based on their attributes and understand how the **CSS Position Property** controls the placement of elements on a webpage.
+This module shows how to use **CSS Attribute Selectors** to target HTML elements based on their attributes and understand how the **CSS Position Property** controls the placement of elements on a webpage.
 
 ---
 
@@ -175,19 +171,29 @@ input[type="password"] {
 ### Attribute Selectors
 
 - `[attribute]`
+
 - `[attribute="value"]`
+
 - `[attribute~="value"]`
+
 - `[attribute|="value"]`
+
 - `[attribute^="value"]`
+
 - `[attribute$="value"]`
+
 - `[attribute*="value"]`
 
 ### Position Property
 
 - `static`
+
 - `relative`
+
 - `absolute`
+
 - `fixed`
+
 - `sticky`
 
 ---
@@ -197,19 +203,14 @@ input[type="password"] {
 After completing this chapter, you should be able to:
 
 - ✅ Use CSS Attribute Selectors effectively.
+
 - ✅ Target HTML elements based on attributes.
+
 - ✅ Understand all Position property values.
+
 - ✅ Build professional layouts using CSS Position.
+
 - ✅ Apply these concepts in real-world projects.
 
----
 
-## 💡 Learning Note
 
-Writing code is important, but understanding **why** it works is even more valuable. Mastering CSS concepts through practice builds a stronger foundation for creating professional and maintainable web applications.
-
----
-
-## © Copyright
-
-**© 2026 Imran Fateh. All Rights Reserved.**

@@ -1,4 +1,4 @@
-# 🎨 CSS Rules, Specificity & Colors
+# 🎨Day 03 - CSS Rules, Specificity & Colors
 
 Master the core concepts of CSS styling by learning how rules are applied, how specificity resolves conflicts, and how different color systems are used in modern web development.
 

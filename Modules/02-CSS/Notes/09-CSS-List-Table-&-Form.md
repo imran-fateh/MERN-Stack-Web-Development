@@ -1,13 +1,6 @@
-> 📅 **Day:** 09  
-> 🎓 **Topic:** CSS Lists, Tables & Forms  
-> 💻 **Module:** CSS Fundamentals  
-> 🚀 **Status:** Completed ✅
+# Day 09 - CSS Lists, Tables & Forms 
 
----
-
-## 🎯 Day Goal
-
-Learn how to style **HTML Lists, Tables, and Forms** using CSS to build clean, responsive, and user-friendly web interfaces.
+This module shows how to style **HTML Lists, Tables, and Forms** using CSS to build clean, responsive, and user-friendly web interfaces.
 
 ---
 
@@ -283,47 +276,20 @@ border-radius;
 
 ---
 
-# 📚 Day Summary
+# 📚 Summary
 
 After completing this chapter, you should be able to:
 
 - ✅ Style HTML Lists professionally.
+
 - ✅ Design clean CSS Tables.
+
 - ✅ Create attractive Forms.
+
 - ✅ Understand the most important CSS properties.
+
 - ✅ Apply these concepts in real-world websites.
 
----
 
-# 📂 Files Included
 
-```text
-📦 Day-09
 
-├── 📁 Class-Works
-├── 📁 Daily-Practices
-├── 📁 Notes
-└── 📄 README.md
-```
-
----
-
-# 💡 Learning Note
-
-> Every CSS property you learn today becomes a building block for tomorrow's professional web projects.
-
-**Keep Learning. Keep Building. 🚀**
-
----
-
-# © Copyright
-
-```text
-© 2026 Imran Fateh. All Rights Reserved.
-
-This repository is created for educational and learning purposes.
-
-Please do not copy or redistribute the content without proper credit.
-
-"No Zero Day" 🚀
-```

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15 | CSS Variables & Grid System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="page-header">
+        <span class="page-badge">DAY 15 — Daily Practice</span>
+        <h1>CSS Variables & <span>Grid System</span></h1>
+        <p>
+            A visual CSS playground covering reusable variables,
+            Grid parent properties, Grid child properties and responsive Grid functions.
+        </p>
+    </header>
+
+    <main class="class-work">
+
+        <section class="lesson-section">
+            <div class="lesson-heading">
+                <span>01</span>
+                <div>
+                    <h2>CSS Variables</h2>
+                    <p>Reusable design values controlled from one place.</p>
+                </div>
+            </div>
+            <div class="variables-demo">
+
+                <article class="variable-card">
+                    <span>Primary</span>
+                    <strong>--primary-color</strong>
+                </article>
+
+                <article class="variable-card">
+                    <span>Spacing</span>
+                    <strong>--space-lg</strong>
+                </article>
+
+                <article class="variable-card">
+                    <span>Radius</span>
+                    <strong>--radius-lg</strong>
+                </article>
+
+                <article class="variable-card">
+                    <span>Shadow</span>
+                    <strong>--shadow</strong>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="lesson-section">
+            <div class="lesson-heading">
+                <span>02</span>
+                <div>
+                    <h2>Grid Columns & Rows</h2>
+                    <p>Creating explicit rows and columns with Grid tracks.</p>
+                </div>
+            </div>
+            <div class="basic-grid grid-demo">
+                <div>01</div>
+                <div>02</div>
+                <div>03</div>
+                <div>04</div>
+                <div>05</div>
+                <div>06</div>
+            </div>
+
+        </section>
+
+        <section class="lesson-section">
+            <div class="lesson-heading">
+                <span>03</span>
+                <div>
+                    <h2>Row & Column Gap</h2>
+                    <p>Controlling horizontal and vertical spacing independently.</p>
+                </div>
+            </div>
+
+            <div class="gap-grid grid-demo">
+                <div>01</div>
+                <div>02</div>
+                <div>03</div>
+                <div>04</div>
+                <div>05</div>
+                <div>06</div>
+            </div>
+
+        </section>
+
+        <section class="lesson-section">
+            <div class="lesson-heading">
+                <span>04</span>
+                <div>
+                    <h2>Grid Item Alignment</h2>
+                    <p>Aligning Grid children inside their individual cells.</p>
+                </div>
+            </div>
+            <div class="items-grid">
+                <div>01</div>
+                <div>02</div>
+                <div>03</div>
+                <div>04</div>
+            </div>
+        </section>
+
+        <section class="lesson-section">
+            <div class="lesson-heading">
+                <span>05</span>
+                <div>
+                    <h2>Grid Content Alignment</h2>
+                    <p>Positioning the complete Grid inside its container.</p>
+                </div>
+            </div>
+            <div class="content-grid">
+                <div>01</div>
+                <div>02</div>
+                <div>03</div>
+                <div>04</div>
+            </div>
+        </section>
+
+        <section class="lesson-section">
+            <div class="lesson-heading">
+                <span>06</span>
+                <div>
+                    <h2>Implicit & Auto Grid</h2>
+                    <p>Grid automatically creates tracks when extra items are added.</p>
+                </div>
+            </div>
+            <div class="auto-grid grid-demo">
+                <div>01</div>
+                <div>02</div>
+                <div>03</div>
+                <div>04</div>
+                <div>05</div>
+                <div>06</div>
+                <div>07</div>
+                <div>08</div>
+            </div>
+
+        </section>
+
+        <section class="lesson-section">
+            <div class="lesson-heading">
+                <span>07</span>
+                <div>
+                    <h2>Grid Child Placement</h2>
+                    <p>Individual children can span and move across Grid tracks.</p>
+                </div>
+            </div>
+            <div class="placement-grid">
+                <div class="placement-header">Header</div>
+                <div class="placement-sidebar">Sidebar</div>
+                <div class="placement-main">Main Content</div>
+                <div class="placement-widget">Widget</div>
+                <div class="placement-footer">Footer</div>
+            </div>
+        </section>
+        <section class="lesson-section">
+            <div class="lesson-heading">
+                <span>08</span>
+                <div>
+                    <h2>Named Grid Areas</h2>
+                    <p>Building readable layouts using named areas.</p>
+                </div>
+            </div>
+            <div class="area-grid">
+
+                <div class="area-header">HEADER</div>
+                <div class="area-sidebar">SIDEBAR</div>
+                <div class="area-main">MAIN</div>
+                <div class="area-aside">ASIDE</div>
+                <div class="area-footer">FOOTER</div>
+
+            </div>
+        </section>
+
+        <section class="lesson-section">
+            <div class="lesson-heading">
+                <span>09</span>
+                <div>
+                    <h2>Individual Child Alignment</h2>
+                    <p>Override parent alignment for individual Grid children.</p>
+                </div>
+            </div>
+            <div class="self-grid">
+                <div class="self-start">Start</div>
+                <div class="self-center">Center</div>
+                <div class="self-end">End</div>
+            </div>
+        </section>
+
+        <section class="lesson-section">
+            <div class="lesson-heading">
+                <span>10</span>
+                <div>
+                    <h2>Responsive Grid</h2>
+                    <p>Responsive tracks using repeat(), minmax(), auto-fit and fr.</p>
+                </div>
+            </div>
+            <div class="responsive-grid">
+                <article>
+                    <span>HTML</span>
+                    <h3>Semantic Structure</h3>
+                </article>
+
+                <article>
+                    <span>CSS</span>
+                    <h3>Modern Styling</h3>
+                </article>
+
+                <article>
+                    <span>GRID</span>
+                    <h3>2D Layout</h3>
+                </article>
+
+                <article>
+                    <span>RWD</span>
+                    <h3>Responsive Design</h3>
+                </article>
+
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

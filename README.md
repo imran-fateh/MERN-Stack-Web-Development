@@ -110,6 +110,14 @@ Goal: Become a Full Stack MERN Developer
 
 ✅ CSS Flexbox
 
+✅ CSS Transform & Transition
+
+✅ CSS Animation
+
+✅ CSS Variables & Grid Properties
+
+✅ CSS Grid Dashboard 
+
 ---
 
 ## 📁 Repository Structure
@@ -129,7 +137,6 @@ MERN-Stack-Web-Development/
 │       ├── 📂 Daily-Practices/
 │       ├── 📂 Mini-Projects/
 │       ├── 📂 Notes/
-│       ├── 📂 Resources/
 │       └── 📄 README.md
 │
 ├── 📂 Portfolio-Projects/
@@ -151,7 +158,6 @@ MERN-Stack-Web-Development/
 | 📂 Daily-Practices    | Self-practice with real-world examples            |
 | 📂 Mini-Projects      | Small projects built after each topic             |
 | 📂 Notes              | Structured learning notes and revision material   |
-| 📂 Resources          | Helpful links, references and learning resources  |
 | 📂 Portfolio-Projects | Portfolio-ready projects                          |
 | 📂 Projects           | Complete real-world projects                      |
 | 📄 README.md          | Overview of the repository and its structure      |

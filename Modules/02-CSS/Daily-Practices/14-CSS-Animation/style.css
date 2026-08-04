@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f7fb;
+  color: #1e293b;
+}
+
+.pricing-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pricing-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.pricing-header p {
+  font-size: 18px;
+  color: #64748b;
+}
+
+.pricing-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  /* display: flex;
+  flex-direction: column; */
+
+  width: 340px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: 0.4s;
+}
+
+.pricing-card h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.pricing-card h3 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #2563eb;
+}
+
+.pricing-card h3 span {
+  font-size: 18px;
+  color: #64748b;
+}
+
+.pricing-card ul {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+.pricing-card ul li {
+  align-self: flex-start;
+
+  margin: 15px 0;
+  color: #475569;
+}
+
+.pricing-card ul li i {
+  color: #10b981;
+  margin-right: 10px;
+}
+
+.pricing-card button {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.featured {
+  border: 3px solid #2563eb;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2563eb;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pricing-card:hover {
+  transform: translateY(-12px);
+}
+
+.pricing-card button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+  .pricing-header h1 {
+    font-size: 36px;
+  }
+
+  .pricing-card {
+    width: 100%;
+  }
+}
+
+/* Fade In Up */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating Badge */
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(-8px);
+  }
+}
+
+/* Pulse Card */
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+/* Price Glow */
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 0 rgba(37, 99, 235, 0);
+  }
+
+  50% {
+    text-shadow: 0 0 18px rgba(37, 99, 235, 0.6);
+  }
+}
+
+/* Button Shine */
+
+@keyframes shine {
+  from {
+    left: -120%;
+  }
+
+  to {
+    left: 120%;
+  }
+}
+
+.pricing-section {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.pricing-card {
+  opacity: 0;
+
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.pricing-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.pricing-card:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.pricing-card:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.featured {
+  animation:
+    fadeInUp 0.8s ease forwards,
+    pulse 3s ease-in-out infinite;
+
+  animation-delay: 0.5s, 2s;
+}
+
+.popular-badge {
+  animation: floating 2s ease-in-out infinite;
+}
+
+.pricing-card h3 {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.pricing-card button {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.pricing-card button::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: -120%;
+
+  width: 50px;
+
+  height: 100%;
+
+  background: rgba(255, 255, 255, 0.35);
+
+  transform: skewX(-25deg);
+}
+
+.pricing-card button:hover::before {
+  animation: shine 0.8s linear;
+}
+
+.featured:hover {
+  animation-play-state: paused;
+}

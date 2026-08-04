@@ -1,4 +1,4 @@
-# CSS Fonts, Icons & Display Property
+# 📘 Day 08 - CSS Fonts, Icons & Display Property
 
 Day 08 covers CSS fonts, external web fonts, icons, and the CSS display property. These concepts are used to control text appearance, add visual icons, and manage how elements behave in a webpage layout.
 

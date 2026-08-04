@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  
+
+
+
+}
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+}
+
+.transition-transform-page {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 18px;
+  color: #666;
+}
+
+.transition-section,
+.transform-section {
+  margin-bottom: 60px;
+}
+
+.transition-section h2,
+.transform-section h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.transition-cards,
+.transform-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.transition-card,
+.transform-card {
+  width: 250px;
+  padding: 30px 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+
+  transition: 0.4s;
+}
+
+.transition-card h3,
+.transform-card h3 {
+  margin-bottom: 15px;
+}
+
+.transition-card p,
+.transform-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.transition-card:hover {
+  background: #2563eb;
+  color: #fff;
+  transform: translateY(-10px);
+}
+
+.transition-card:hover p {
+  color: #fff;
+}
+
+.transform-card:nth-child(1):hover {
+  transform: translate(20px, -20px);
+  background: #3b82f6;
+  color: #fff;
+}
+
+.transform-card:nth-child(1):hover p {
+  color: #fff;
+}
+
+.transform-card:nth-child(2) {
+  transition: 0.4s;
+}
+
+.transform-card:nth-child(2):hover {
+  transform: rotate(15deg);
+  background: #10b981;
+  color: #fff;
+}
+
+.transform-card:nth-child(2):hover p {
+  color: #fff;
+}
+
+.transform-card:nth-child(3) {
+  transition: 0.4s;
+}
+
+.transform-card:nth-child(3):hover {
+  transform: scale(1.15);
+  background: #f59e0b;
+  color: #fff;
+}
+
+.transform-card:nth-child(3):hover p {
+  color: #fff;
+}
+
+.transform-card:nth-child(4) {
+  transition: 0.4s;
+}
+
+.transform-card:nth-child(4):hover {
+  transform: skew(-10deg);
+  background: #ef4444;
+  color: #fff;
+}
+
+.transform-card:nth-child(4):hover p {
+  color: #fff;
+}

@@ -26,15 +26,15 @@ Goal: Become a Full Stack MERN Developer
 
 ✅ HTML5
 
-🔄 CSS3
+✅ CSS3
 
-⏳ Tailwind CSS
-
-⏳ JavaScript (ES6+)
-
-⏳ TypeScript
+🔄 JavaScript (ES6+)
 
 ⏳ React.js
+
+⏳ Talwind CSS
+
+⏳ TypeScript
 
 ⏳ Next.js
 
@@ -84,7 +84,7 @@ Goal: Become a Full Stack MERN Developer
 
 ---
 
-## 🎨 CSS3 Progress
+## 🎨 CSS3 Topics Covered
 
 ✅ CSS Introduction
 
@@ -117,6 +117,15 @@ Goal: Become a Full Stack MERN Developer
 ✅ CSS Variables & Grid Properties
 
 ✅ CSS Grid Dashboard 
+
+✅ Responsive Design
+
+✅ CSS Variables
+
+✅ Bootstrap 
+
+✅ Tailwind CSS Introductions
+
 
 ---
 

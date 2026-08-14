@@ -1,0 +1,941 @@
+/* =========================================================
+   START CSS RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #172033;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* =========================================================
+   END CSS RESET
+========================================================= */
+
+/* =========================================================
+   START DESIGN VARIABLES
+========================================================= */
+
+:root {
+  --qb-green: #16a34a;
+  --qb-green-dark: #15803d;
+  --qb-green-soft: #ecfdf3;
+  --qb-orange: #f59e0b;
+  --qb-orange-dark: #d97706;
+  --qb-orange-soft: #fff7e6;
+  --qb-red: #ef4444;
+  --qb-dark: #172033;
+  --qb-muted: #64748b;
+  --qb-bg: #f8fafc;
+  --qb-border: #e2e8f0;
+  --qb-white: #ffffff;
+  --qb-radius: 20px;
+  --qb-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+  --qb-shadow-hover: 0 20px 45px rgba(15, 23, 42, 0.13);
+  --qb-transition: 0.3s ease;
+}
+
+/* =========================================================
+   END DESIGN VARIABLES
+========================================================= */
+
+/* =========================================================
+   START NAVBAR
+========================================================= */
+
+.navbar {
+  min-height: 76px;
+}
+
+.navbar-brand {
+  color: var(--qb-dark);
+  font-size: 1.45rem;
+  letter-spacing: -0.5px;
+}
+
+.navbar-brand:hover {
+  color: var(--qb-dark);
+}
+
+.navbar .nav-link {
+  position: relative;
+  color: #475569;
+  font-weight: 500;
+  transition: var(--qb-transition);
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--qb-green);
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+  width: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--qb-green);
+  transform: translateX(-50%);
+  transition: var(--qb-transition);
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+  width: 65%;
+}
+
+.navbar .btn-warning {
+  color: #172033;
+  border: 0;
+  transition: var(--qb-transition);
+}
+
+.navbar .btn-warning:hover {
+  color: #172033;
+  background: var(--qb-orange-dark);
+  transform: translateY(-2px);
+}
+
+.navbar-toggler {
+  border-color: var(--qb-border);
+  box-shadow: none !important;
+}
+
+/* =========================================================
+   END NAVBAR
+========================================================= */
+
+/* =========================================================
+   START HERO
+========================================================= */
+
+.quickbite-hero {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 85% 25%,
+      rgba(245, 158, 11, 0.16),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(22, 163, 74, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #ffffff 0%, #fffdf8 55%, #f0fdf4 100%);
+}
+
+.quickbite-hero::before {
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  top: -170px;
+  right: -80px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.1);
+  filter: blur(60px);
+}
+
+.quickbite-hero::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: -160px;
+  bottom: -160px;
+  border-radius: 50%;
+  background: rgba(22, 163, 74, 0.1);
+  filter: blur(65px);
+}
+
+.quickbite-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.quickbite-hero h1 {
+  max-width: 720px;
+  color: var(--qb-dark);
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+}
+
+.quickbite-hero .lead {
+  max-width: 650px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   END HERO
+========================================================= */
+
+/* =========================================================
+   START SEARCH BOX
+========================================================= */
+
+.search-box {
+  max-width: 680px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: var(--qb-shadow);
+}
+
+.search-box .input-group-text,
+.search-box .form-control {
+  border-color: var(--qb-border);
+}
+
+.search-box .form-control:focus {
+  border-color: var(--qb-green);
+  box-shadow: none;
+}
+
+.search-box .input-group-text {
+  padding-left: 1.1rem;
+}
+
+.search-box .btn-success {
+  background: var(--qb-green);
+  border-color: var(--qb-green);
+  padding-inline: 1.5rem;
+}
+
+.search-box .btn-success:hover {
+  background: var(--qb-green-dark);
+  border-color: var(--qb-green-dark);
+}
+
+/* =========================================================
+   END SEARCH BOX
+========================================================= */
+
+/* =========================================================
+   START HERO FOOD SHOWCASE
+========================================================= */
+
+.hero-food-showcase {
+  position: relative;
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-food-circle {
+  position: relative;
+  width: 330px;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--qb-orange);
+  font-size: 9rem;
+  background: radial-gradient(circle, #ffffff 0%, #fff7e6 55%, #ffedc2 100%);
+  box-shadow:
+    0 30px 70px rgba(245, 158, 11, 0.2),
+    inset 0 0 0 18px rgba(255, 255, 255, 0.65);
+}
+
+.hero-food-circle::before {
+  content: "";
+  position: absolute;
+  inset: -22px;
+  border: 2px dashed rgba(22, 163, 74, 0.25);
+  border-radius: 50%;
+  animation: rotateRing 18s linear infinite;
+}
+
+.hero-food-circle::after {
+  content: "";
+  position: absolute;
+  inset: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.hero-food-circle i {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-floating-card {
+  position: absolute;
+  min-width: 145px;
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--qb-shadow);
+  backdrop-filter: blur(12px);
+}
+
+.hero-floating-card strong {
+  color: var(--qb-dark);
+}
+
+.hero-floating-card small {
+  width: 100%;
+  color: var(--qb-muted);
+  margin-left: 1.55rem;
+  margin-top: -0.35rem;
+}
+
+.hero-rating {
+  top: 45px;
+  left: 15px;
+  animation: floatingOne 4s ease-in-out infinite;
+}
+
+.hero-delivery {
+  right: 5px;
+  bottom: 45px;
+  animation: floatingTwo 4.5s ease-in-out infinite;
+}
+
+@keyframes rotateRing {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floatingOne {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatingTwo {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* =========================================================
+   END HERO FOOD SHOWCASE
+========================================================= */
+
+/* =========================================================
+   START SECTION HEADINGS
+========================================================= */
+
+.section-heading span {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+}
+
+.section-heading h2 {
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.7px;
+}
+
+/* =========================================================
+   END SECTION HEADINGS
+========================================================= */
+
+/* =========================================================
+   START FOOD CATEGORIES
+========================================================= */
+
+.food-category {
+  min-height: 130px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  color: var(--qb-dark);
+  background: var(--qb-white);
+  border: 1px solid var(--qb-border);
+  border-radius: var(--qb-radius);
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.04);
+  transition: var(--qb-transition);
+}
+
+.food-category i {
+  color: var(--qb-orange);
+  font-size: 2rem;
+  transition: var(--qb-transition);
+}
+
+.food-category span {
+  font-weight: 600;
+}
+
+.food-category:hover {
+  color: var(--qb-green);
+  border-color: rgba(22, 163, 74, 0.3);
+  transform: translateY(-6px);
+  box-shadow: var(--qb-shadow);
+}
+
+.food-category:hover i {
+  color: var(--qb-green);
+  transform: scale(1.12);
+}
+
+/* =========================================================
+   END FOOD CATEGORIES
+========================================================= */
+
+/* =========================================================
+   START RESTAURANT CARDS
+========================================================= */
+
+.restaurant-card {
+  overflow: hidden;
+  background: var(--qb-white);
+  border: 1px solid var(--qb-border);
+  border-radius: var(--qb-radius);
+  box-shadow: 0 6px 22px rgba(15, 23, 42, 0.05);
+  transition: var(--qb-transition);
+}
+
+.restaurant-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--qb-shadow-hover);
+}
+
+.restaurant-cover {
+  height: 190px;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.restaurant-cover-one {
+  background: linear-gradient(135deg, #fef3c7, #fed7aa);
+}
+
+.restaurant-cover-two {
+  background: linear-gradient(135deg, #fee2e2, #fecaca);
+}
+
+.restaurant-cover-three {
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+}
+
+.restaurant-cover .badge {
+  color: var(--qb-dark);
+  box-shadow: 0 5px 15px rgba(15, 23, 42, 0.08);
+}
+
+.restaurant-rating {
+  padding: 0.35rem 0.6rem;
+  color: #a16207;
+  background: #fef3c7;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.restaurant-rating i {
+  color: var(--qb-orange);
+}
+
+/* =========================================================
+   END RESTAURANT CARDS
+========================================================= */
+
+/* =========================================================
+   START DISH CARDS
+========================================================= */
+
+.dish-card {
+  height: 100%;
+  overflow: hidden;
+  background: var(--qb-white);
+  border: 1px solid var(--qb-border);
+  border-radius: var(--qb-radius);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+  transition: var(--qb-transition);
+}
+
+.dish-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--qb-shadow-hover);
+}
+
+.dish-visual {
+  position: relative;
+  min-height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.dish-visual i {
+  font-size: 5rem;
+  transition: var(--qb-transition);
+}
+
+.dish-card:hover .dish-visual i {
+  transform: scale(1.1) rotate(-4deg);
+}
+
+.dish-visual .badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.dish-burger {
+  color: #ea580c;
+  background: #fff7ed;
+}
+
+.dish-pizza {
+  color: #dc2626;
+  background: #fef2f2;
+}
+
+.dish-pasta {
+  color: #ca8a04;
+  background: #fefce8;
+}
+
+.dish-dessert {
+  color: #db2777;
+  background: #fdf2f8;
+}
+
+/* =========================================================
+   END DISH CARDS
+========================================================= */
+
+/* =========================================================
+   START OFFER BANNER
+========================================================= */
+
+.offer-banner {
+  position: relative;
+  overflow: hidden;
+  color: var(--qb-dark);
+  background:
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(255, 255, 255, 0.55),
+      transparent 25%
+    ),
+    linear-gradient(135deg, #fef3c7, #fed7aa);
+  box-shadow: var(--qb-shadow);
+}
+
+.offer-banner::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  right: -80px;
+  bottom: -110px;
+  border-radius: 50%;
+  background: rgba(22, 163, 74, 0.12);
+}
+
+.offer-banner .row {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================================================
+   END OFFER BANNER
+========================================================= */
+
+/* =========================================================
+   START PROCESS STEPS
+========================================================= */
+
+.process-step {
+  position: relative;
+  height: 100%;
+  padding: 2rem;
+  background: var(--qb-white);
+  border: 1px solid var(--qb-border);
+  border-radius: var(--qb-radius);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+}
+
+.process-step > i {
+  display: block;
+  color: var(--qb-green);
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.process-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: var(--qb-green);
+  background: var(--qb-green-soft);
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* =========================================================
+   END PROCESS STEPS
+========================================================= */
+
+/* =========================================================
+   START ORDER TABLE
+========================================================= */
+
+.order-table {
+  overflow: hidden;
+  border: 1px solid var(--qb-border);
+  border-radius: var(--qb-radius);
+  background: var(--qb-white);
+}
+
+.order-table .table {
+  margin-bottom: 0;
+}
+
+.order-table th {
+  color: #475569;
+  background: #f8fafc;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.order-table td,
+.order-table th {
+  padding: 1rem;
+  white-space: nowrap;
+}
+
+.order-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* =========================================================
+   END ORDER TABLE
+========================================================= */
+
+/* =========================================================
+   START ORDER TOTAL
+========================================================= */
+
+.order-total-card {
+  height: 90%;
+  padding: 1rem;
+  background: var(--qb-dark);
+  color: var(--qb-white);
+  border-radius: var(--qb-radius);
+  box-shadow: var(--qb-shadow);
+
+  position: relative;
+  top: 44px;
+}
+
+.order-total-card span {
+  color: #86efac;
+}
+
+.order-total-card hr {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.order-total-card .btn-success {
+  background: var(--qb-green);
+  border-color: var(--qb-green);
+}
+
+.order-total-card .btn-success:hover {
+  background: #22c55e;
+  border-color: #22c55e;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   END ORDER TOTAL
+========================================================= */
+
+/* =========================================================
+   START DELIVERY FORM
+========================================================= */
+
+.delivery-form {
+  padding: 2rem;
+  background: var(--qb-white);
+  border: 1px solid var(--qb-border);
+  border-radius: var(--qb-radius);
+  box-shadow: var(--qb-shadow);
+}
+
+.delivery-form .form-label {
+  color: var(--qb-dark);
+  font-weight: 600;
+}
+
+.delivery-form .form-control,
+.delivery-form .form-select,
+.delivery-form .input-group-text {
+  min-height: 50px;
+  border-color: var(--qb-border);
+}
+
+.delivery-form .form-control:focus,
+.delivery-form .form-select:focus {
+  border-color: var(--qb-green);
+  box-shadow: 0 0 0 0.2rem rgba(22, 163, 74, 0.12);
+}
+
+.delivery-form .input-group-text {
+  color: var(--qb-green);
+  background: var(--qb-green-soft);
+}
+
+.delivery-form .form-check-input:checked {
+  background-color: var(--qb-green);
+  border-color: var(--qb-green);
+}
+
+.delivery-form .btn-success {
+  background: var(--qb-green);
+  border-color: var(--qb-green);
+  transition: var(--qb-transition);
+}
+
+.delivery-form .btn-success:hover {
+  background: var(--qb-green-dark);
+  border-color: var(--qb-green-dark);
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   END DELIVERY FORM
+========================================================= */
+
+/* =========================================================
+   START FOOTER
+========================================================= */
+
+footer {
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(22, 163, 74, 0.14),
+      transparent 25%
+    ),
+    #172033 !important;
+}
+
+footer a {
+  transition: var(--qb-transition);
+}
+
+footer a:hover {
+  color: var(--qb-orange) !important;
+}
+
+footer .form-control {
+  min-height: 46px;
+}
+
+footer .btn-warning {
+  min-height: 46px;
+}
+
+/* =========================================================
+   END FOOTER
+========================================================= */
+
+/* =========================================================
+   START RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 991.98px) {
+  .quickbite-hero {
+    min-height: auto;
+    padding-block: 5rem;
+  }
+
+  .hero-food-showcase {
+    min-height: 380px;
+    margin-top: 1rem;
+  }
+
+  .navbar .nav-link::after {
+    display: none;
+  }
+
+  .navbar .navbar-nav {
+    padding-block: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .quickbite-hero {
+    padding-block: 4rem;
+    text-align: center;
+  }
+
+  .quickbite-hero .lead {
+    margin-inline: auto;
+  }
+
+  .search-box {
+    margin-inline: auto;
+  }
+
+  .quickbite-hero .d-flex {
+    justify-content: center;
+  }
+
+  .hero-food-showcase {
+    min-height: 340px;
+  }
+
+  .hero-food-circle {
+    width: 260px;
+    height: 260px;
+    font-size: 7rem;
+  }
+
+  .hero-rating {
+    left: 0;
+  }
+
+  .hero-delivery {
+    right: 0;
+  }
+
+  .section-heading {
+    text-align: center;
+  }
+
+  .restaurant-cover {
+    height: 170px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .quickbite-hero {
+    padding-block: 3.5rem;
+  }
+
+  .quickbite-hero h1 {
+    font-size: 2.35rem;
+    letter-spacing: -1px;
+  }
+
+  .search-box {
+    flex-wrap: wrap;
+  }
+
+  .search-box .input-group-text {
+    border-radius: 12px 0 0 12px;
+  }
+
+  .search-box .form-control {
+    min-width: 0;
+  }
+
+  .search-box .btn {
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .hero-food-showcase {
+    min-height: 300px;
+  }
+
+  .hero-food-circle {
+    width: 220px;
+    height: 220px;
+    font-size: 5.5rem;
+  }
+
+  .hero-food-circle::before {
+    inset: -14px;
+  }
+
+  .hero-floating-card {
+    min-width: 125px;
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
+
+  .hero-rating {
+    top: 20px;
+    left: -5px;
+  }
+
+  .hero-delivery {
+    right: -5px;
+    bottom: 20px;
+  }
+
+  .food-category {
+    min-height: 110px;
+  }
+
+  .dish-visual {
+    min-height: 170px;
+  }
+
+  .delivery-form,
+  .order-total-card {
+    padding: 1.4rem;
+  }
+}
+
+
+
+

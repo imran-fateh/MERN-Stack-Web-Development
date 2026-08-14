@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 16 | Developer Command Center</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- START DASHBOARD -->
+    <div class="dashboard-layout">
+
+        <!-- START SIDEBAR -->
+        <aside class="dashboard-sidebar">
+
+        
+            <a href="#" class="sidebar-brand">
+                <span class="brand-icon">
+                    <i class="fa-solid fa-code"></i>
+                </span>
+                <span class="brand-name">Dev<span>Command</span></span>
+            </a>
+
+            <!-- Main Navigation -->
+            <nav class="sidebar-navigation" aria-label="Dashboard Navigation">
+
+                <p class="navigation-label">Workspace</p>
+
+                <ul class="navigation-list">
+
+                    <li>
+                        <a href="#" class="navigation-link active">
+                            <i class="fa-solid fa-border-all"></i>
+                            <span>Overview</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation-link">
+                            <i class="fa-solid fa-folder-open"></i>
+                            <span>Projects</span>
+                            <span class="navigation-count">6</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation-link">
+                            <i class="fa-solid fa-list-check"></i>
+                            <span>Tasks</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation-link">
+                            <i class="fa-solid fa-code-commit"></i>
+                            <span>Activity</span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="navigation-label">Developer</p>
+
+                <ul class="navigation-list">
+
+                    <li>
+                        <a href="#" class="navigation-link">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <span>Repositories</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation-link">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Resources</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation-link">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Sidebar Status -->
+            <div class="sidebar-status">
+
+                <div class="status-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div>
+                    <strong>Focus Mode</strong>
+                    <span>Development session</span>
+                </div>
+                <span class="status-dot"></span>
+
+            </div>
+
+        </aside>
+        <!-- END SIDEBAR -->
+
+
+        <!-- START DASHBOARD AREA -->
+        <div class="dashboard-area">
+
+            <!-- START HEADER -->
+            <header class="dashboard-header">
+
+                <div class="header-title">
+                    <p>Developer Workspace</p>
+                    <h1>Command Center</h1>
+                </div>
+                <div class="header-actions">
+
+                    <!-- Search -->
+                    <form class="dashboard-search">
+
+                        <label for="dashboard-search" class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                        <input type="search" id="dashboard-search" placeholder="Search projects, tasks...">
+
+                        <span class="search-shortcut">⌘ K</span>
+
+                    </form>
+
+                    <!-- Notification -->
+
+                    <button class="header-button" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+
+                    <!-- Profile -->
+
+                    <div class="developer-profile">
+
+                        <div class="profile-avatar">IF</div>
+
+                        <div class="profile-information">
+                            <strong>Imran Fateh</strong>
+                            <span>Frontend Developer</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </div>
+
+                </div>
+
+            </header>
+            <!-- END HEADER -->
+
+
+            <!-- START MAIN CONTENT -->
+
+            <main class="dashboard-main">
+
+                <!-- START WELCOME PANEL -->
+
+                <section class="welcome-panel">
+
+                    <div class="welcome-content">
+
+                        <span class="welcome-badge">
+                            <i class="fa-solid fa-terminal"></i>
+                            Developer Workspace
+                        </span>
+                        <h2>
+                            Build. Ship.
+                            <span>Improve.</span>
+                        </h2>
+                        <p>
+                            Everything you need to stay focused, manage development
+                            work and keep projects moving forward.
+                        </p>
+                        <div class="welcome-actions">
+                            <a href="#" class="primary-action">
+                                <i class="fa-solid fa-plus"></i>
+                                New Project
+                            </a>
+                            <a href="#" class="secondary-action">
+                                View Workspace
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="welcome-visual">
+                        <div class="code-window">
+
+                            <div class="code-window-header">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="code-window-body">
+                                <p><span>const</span> developer = {</p>
+                                <p>&nbsp;&nbsp;focus: <strong>true</strong>,</p>
+                                <p>&nbsp;&nbsp;building: <strong>"daily"</strong>,</p>
+                                <p>&nbsp;&nbsp;status: <strong>"shipping"</strong></p>
+                                <p>};</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+                <!-- END WELCOME PANEL -->
+
+
+                <!-- START STATISTICS -->
+                <section class="statistics-grid" aria-label="Workspace Statistics">
+
+                    <article class="statistic-card">
+
+                        <div class="statistic-icon">
+                            <i class="fa-solid fa-folder-open"></i>
+                        </div>
+                        <div class="statistic-content">
+                            <span>Active Projects</span>
+                            <strong>08</strong>
+                            <small>
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                2 updated today
+                            </small>
+                        </div>
+
+                    </article>
+
+                    <article class="statistic-card">
+
+                        <div class="statistic-icon">
+                            <i class="fa-solid fa-code-commit"></i>
+                        </div>
+                        <div class="statistic-content">
+                            <span>Commits</span>
+                            <strong>142</strong>
+                            <small>
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                18 this week
+                            </small>
+                        </div>
+
+                    </article>
+
+                    <article class="statistic-card">
+
+                        <div class="statistic-icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="statistic-content">
+                            <span>Tasks Completed</span>
+                            <strong>36</strong>
+                            <small>
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                9 this week
+                            </small>
+                        </div>
+
+                    </article>
+       
+                    <article class="statistic-card">
+
+                        <div class="statistic-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div class="statistic-content">
+                            <span>Focus Time</span>
+                            <strong>27h</strong>
+                            <small>
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                +4.2 hours
+                            </small>
+                        </div>
+
+                    </article>
+
+                </section>
+                <!-- END STATISTICS -->
+
+
+                <!-- START WORKSPACE GRID -->
+                <section class="workspace-grid">
+
+                    <!-- START CODING ACTIVITY -->
+                    <article class="dashboard-card coding-activity-card">
+
+                        <div class="card-header">
+                            <div>
+                                <span class="card-label">Analytics</span>
+                                <h2>Coding Activity</h2>
+                            </div>
+                            <select aria-label="Coding activity period">
+                                <option>This Week</option>
+                                <option>Last Week</option>
+                            </select>
+
+                        </div>
+
+                        <div class="activity-summary">
+
+                            <div>
+                                <strong>27h 42m</strong>
+                                <span>Total coding time</span>
+                            </div>
+                            <span class="activity-growth">
+                                <i class="fa-solid fa-arrow-trend-up"></i>
+                                12.4%
+                            </span>
+
+                        </div>
+
+                        <!-- Activity Chart -->
+                        <div class="activity-chart">
+
+                            <div class="chart-column">
+                                <div class="chart-track">
+                                    <span style="height: 46%;"></span>
+                                </div>
+                                <small>Mon</small>
+                            </div>
+
+                            <div class="chart-column">
+                                <div class="chart-track">
+                                    <span style="height: 70%;"></span>
+                                </div>
+                                <small>Tue</small>
+                            </div>
+
+                            <div class="chart-column">
+                                <div class="chart-track">
+                                    <span style="height: 54%;"></span>
+                                </div>
+                                <small>Wed</small>
+                            </div>
+
+                            <div class="chart-column">
+                                <div class="chart-track">
+                                    <span style="height: 82%;"></span>
+                                </div>
+                                <small>Thu</small>
+                            </div>
+
+                            <div class="chart-column">
+                                <div class="chart-track">
+                                    <span style="height: 64%;"></span>
+                                </div>
+                                <small>Fri</small>
+                            </div>
+
+                            <div class="chart-column">
+                                <div class="chart-track">
+                                    <span style="height: 92%;"></span>
+                                </div>
+                                <small>Sat</small>
+                            </div>
+
+                            <div class="chart-column">
+                                <div class="chart-track">
+                                    <span style="height: 58%;"></span>
+                                </div>
+                                <small>Sun</small>
+                            </div>
+
+                        </div>
+
+                    </article>
+                    <!-- END CODING ACTIVITY -->
+
+
+                    <!-- START CURRENT PROJECT -->
+                    <article class="dashboard-card current-project-card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <span class="card-label">Current Focus</span>
+                                <h2>Current Project</h2>
+                            </div>
+                            <span class="project-status">In Progress</span>
+
+                        </div>
+
+                        <div class="project-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+
+                        <h3>TaskFlow Dashboard</h3>
+                        <p>
+                            Productivity dashboard for managing projects,
+                            priorities and team workflows.
+                        </p>
+                        <div class="technology-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-progress-header">
+                            <span>Progress</span>
+                            <strong>68%</strong>
+                        </div>
+                        <div class="project-progress">
+                            <span></span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-team">
+                                <span>JD</span>
+                                <span>MK</span>
+                                <span>+2</span>
+                            </div>
+                            <a href="#">
+                                Open Project
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+
+                    </article>
+                    <!-- END CURRENT PROJECT -->
+
+
+                    <!-- START RECENT PROJECTS -->
+                    <article class="dashboard-card recent-projects-card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <span class="card-label">Workspace</span>
+                                <h2>Recent Projects</h2>
+                            </div>
+
+                            <a href="#" class="view-all-link">
+                                View All
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="project-list">
+
+                            <div class="project-list-item">
+                                <div class="list-project-icon">
+                                    <i class="fa-solid fa-cloud-sun"></i>
+                                </div>
+                                <div class="list-project-content">
+                                    <strong>Weather Interface</strong>
+                                    <span>Frontend Application</span>
+                                </div>
+                                <div class="project-language">
+                                    <span></span>
+                                    JavaScript
+                                </div>
+
+                                <span class="completed-status">Completed</span>
+                            </div>
+
+                            <div class="project-list-item">
+                                <div class="list-project-icon">
+                                    <i class="fa-solid fa-list-check"></i>
+                                </div>
+
+                                <div class="list-project-content">
+                                    <strong>Task Manager</strong>
+                                    <span>Productivity Application</span>
+                                </div>
+
+                                <div class="project-language">
+                                    <span></span>
+                                    CSS
+                                </div>
+
+                                <span class="building-status">Building</span>
+                            </div>
+
+                            <div class="project-list-item">
+                                <div class="list-project-icon">
+                                    <i class="fa-solid fa-window-maximize"></i>
+                                </div>
+
+                                <div class="list-project-content">
+                                    <strong>Studio Landing Page</strong>
+                                    <span>Responsive Website</span>
+                                </div>
+
+                                <div class="project-language">
+                                    <span></span>
+                                    HTML
+                                </div>
+
+                                <span class="completed-status">Completed</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+                    <!-- END RECENT PROJECTS -->
+
+
+                    <!-- START TODAY TASKS -->
+                    <article class="dashboard-card tasks-card">
+
+                        <div class="card-header">
+                            <div>
+                                <span class="card-label">Focus</span>
+                                <h2>Today's Tasks</h2>
+                            </div>
+                            <span class="task-count">4 Tasks</span>
+
+                        </div>
+
+                        <div class="task-progress">
+                            <div>
+                                <span>Daily Progress</span>
+                                <strong>50%</strong>
+                            </div>
+                            <div class="task-progress-bar">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="task-list">
+
+                            <div class="task-item completed-task">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <div>
+                                    <strong>Review project structure</strong>
+                                    <span>Completed</span>
+                                </div>
+                            </div>
+
+                            <div class="task-item">
+                                <i class="fa-regular fa-circle"></i>
+                                <div>
+                                    <strong>Build dashboard layout</strong>
+                                    <span>In Progress</span>
+                                </div>
+                            </div>
+
+                            <div class="task-item">
+                                <i class="fa-regular fa-circle"></i>
+                                <div>
+                                    <strong>Improve responsive layout</strong>
+                                    <span>Pending</span>
+                                </div>
+                            </div>
+
+                            <div class="task-item">
+                                <i class="fa-regular fa-circle"></i>
+                                <div>
+                                    <strong>Update documentation</strong>
+                                    <span>Pending</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </article>
+                    <!-- END TODAY TASKS -->
+
+
+                    <!-- START RECENT ACTIVITY -->
+                    <article class="dashboard-card recent-activity-card">
+
+                        <div class="card-header">
+                            <div>
+                                <span class="card-label">Timeline</span>
+                                <h2>Recent Activity</h2>
+                            </div>
+
+                            <button class="card-menu" type="button" aria-label="Activity Menu">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+                        </div>
+
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+                                <div class="timeline-icon">
+                                    <i class="fa-solid fa-code-commit"></i>
+                                </div>
+                                <div>
+                                    <strong>New commit pushed</strong>
+                                    <span>Dashboard layout updated</span>
+                                    <small>18 minutes ago</small>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <div>
+                                    <strong>Task completed</strong>
+                                    <span>Navigation structure finished</span>
+                                    <small>1 hour ago</small>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-icon">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <div>
+                                    <strong>Component created</strong>
+                                    <span>Project statistics card</span>
+                                    <small>3 hours ago</small>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </article>
+                    <!-- END RECENT ACTIVITY -->
+
+                </section>
+                <!-- END WORKSPACE GRID -->
+
+            </main>
+            <!-- END MAIN CONTENT -->
+
+        </div>
+        <!-- END DASHBOARD AREA -->
+
+    </div>
+    <!-- END DASHBOARD -->
+
+</body>
+
+</html>

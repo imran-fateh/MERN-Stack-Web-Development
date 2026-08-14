@@ -1,0 +1,1816 @@
+/* ========================= */
+/* Laptop Responsive Styles */
+/* Screens: 1200px and Below */
+/* ========================= */
+
+@media (max-width: 1200px) {
+  /* Header & Navigation */
+  .header-container {
+    width: 94%;
+  }
+
+  .navbar {
+    gap: 2rem;
+  }
+
+  .navbar-link {
+    font-size: 0.95rem;
+  }
+
+  .navbar-link a {
+    font-size: 0.95rem;
+  }
+
+  .navbar-cta {
+    padding: 0.9rem 2rem;
+  }
+
+  .container {
+    width: 94%;
+  }
+
+  .navbar-menu {
+    gap: 2rem;
+  }
+
+  .navbar-list {
+    gap: 1.6rem;
+  }
+
+  .hero {
+    min-height: calc(100svh - 83px);
+    padding: 1.5rem 0;
+  }
+
+  .hero-container {
+    gap: 2rem;
+  }
+
+  .hero-content {
+    flex: 1.05;
+    max-width: 560px;
+  }
+
+  /* Hero Typography */
+  .hero-title {
+    margin-bottom: 0.85rem;
+    font-size: clamp(2.6rem, 4.5vw, 3.2rem);
+  }
+
+  .hero-title span {
+    margin-top: 0.3rem;
+  }
+
+  .hero-role {
+    gap: 0.65rem;
+    margin-bottom: 1rem;
+    font-size: 1.08rem;
+  }
+
+  .hero-description {
+    max-width: 530px;
+    margin-bottom: 1.6rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .hero-button {
+    padding: 0.9rem 2rem;
+    font-size: 0.95rem;
+  }
+
+  .hero-button-primary {
+    margin-right: 0;
+  }
+
+  .hero-image-wrapper {
+    flex: 0.95;
+    min-height: 450px;
+  }
+
+  .hero-profile-image {
+    width: min(100%, 290px);
+  }
+
+  .hero-image-wrapper::before {
+    width: 360px;
+    height: 360px;
+  }
+
+  .floating-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .floating-html {
+    top: 45px;
+    left: 25px;
+  }
+
+  .floating-css {
+    top: 180px;
+    right: 20px;
+  }
+
+  .floating-js {
+    bottom: 45px;
+    left: 15px;
+  }
+
+  .floating-html i,
+  .floating-css i,
+  .floating-js i {
+    font-size: 27px;
+  }
+}
+
+/* ======================== */
+/* max-width: 1024px */
+/* ======================== */
+
+@media (max-width: 1024px) {
+  .journey-section {
+    padding: 80px 20px;
+  }
+
+  .journey-container {
+    max-width: 100%;
+    padding-inline: 20px;
+  }
+
+  .journey-timeline {
+    gap: 40px;
+  }
+
+  /* Remove timeline structure */
+  .journey-line,
+  .journey-node {
+    display: none;
+  }
+
+  .journey-left .journey-card,
+  .journey-right .journey-card {
+    max-width: 460px;
+  }
+
+  .journey-card {
+    padding: 32px 28px;
+  }
+
+  .journey-heading-group {
+    gap: 14px;
+  }
+
+  .journey-heading {
+    font-size: 1.3rem;
+  }
+
+  .journey-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 1.25rem;
+  }
+
+  .journey-meta {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .faq-content {
+    gap: 1.25rem;
+    margin-top: 3rem;
+  }
+
+  .faq-item summary {
+    padding: 1.2rem 1.4rem;
+    font-size: 1rem;
+  }
+
+  .faq-item p {
+    padding: 0 1.4rem 1.4rem;
+    font-size: 0.97rem;
+  }
+
+  .footer-cta {
+    padding: 3rem 2.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 1.8rem;
+  }
+
+  .footer-contact-form {
+    max-width: 100%;
+  }
+}
+
+/* ========================= */
+/* Tablet Responsive Styles */
+/* Screens: 992px and Below */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .navbar {
+    min-height: 76px;
+  }
+
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .navbar-menu {
+    gap: 1.4rem;
+  }
+
+  .navbar-list {
+    gap: 1.1rem;
+  }
+
+  .navbar-link {
+    font-size: 0.92rem;
+  }
+
+  .navbar-cta {
+    padding: 0.85rem 1.7rem;
+    font-size: 0.92rem;
+  }
+
+  /* ========================= */
+  /* Hero Tablet Layout */
+  /* ========================= */
+
+  .hero {
+    min-height: auto;
+    padding: 3.5rem 0 3rem;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 680px;
+  }
+
+  /* Hero Typography */
+
+  .hero-title {
+    margin-bottom: 0.8rem;
+    font-size: clamp(2.5rem, 6vw, 3.2rem);
+    line-height: 1.08;
+  }
+
+  .hero-title span {
+    margin-top: 0.3rem;
+  }
+
+  .hero-role {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+  }
+
+  .hero-description {
+    max-width: 620px;
+    margin: 0 auto 1.6rem;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image-wrapper {
+    flex: none;
+    width: min(100%, 520px);
+    min-height: 350px;
+  }
+
+  .hero-profile-image {
+    width: min(100%, 260px);
+  }
+
+  .hero-image-wrapper::before {
+    width: 320px;
+    height: 320px;
+  }
+
+  .floating-icon {
+    width: 58px;
+    height: 58px;
+  }
+
+  .floating-html {
+    top: 30px;
+    left: 55px;
+  }
+
+  .floating-css {
+    top: 145px;
+    right: 45px;
+  }
+
+  .floating-js {
+    bottom: 30px;
+    left: 45px;
+  }
+
+  .floating-html i,
+  .floating-css i,
+  .floating-js i {
+    font-size: 26px;
+  }
+
+  .expertise-strip {
+    padding: 0.9rem 0;
+  }
+
+  .expertise-group {
+    gap: 2.2rem;
+    padding-right: 2.2rem;
+  }
+
+  .expertise-group span {
+    font-size: 1rem;
+  }
+
+  .expertise-group .expertise-star {
+    font-size: 1.15rem;
+  }
+
+  .expertise-track {
+    animation-duration: 32s;
+  }
+  
+  /* ========================= */
+  /* Journey Tablet Layout */
+  /* ========================= */
+
+  .journey-section {
+    padding: 80px 20px;
+  }
+
+  .journey-container {
+    max-width: 100%;
+    padding-inline: 20px;
+  }
+
+  .journey-timeline {
+    gap: 40px;
+  }
+
+  .journey-left .journey-card,
+  .journey-right .journey-card {
+    max-width: 460px;
+  }
+
+  .journey-card {
+    padding: 32px 28px;
+  }
+
+  .journey-heading-group {
+    gap: 14px;
+  }
+
+  .journey-heading {
+    font-size: 1.3rem;
+  }
+
+  .journey-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 1.25rem;
+  }
+
+  .journey-meta {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  /* ============================== */
+  /* JOURNEY - SMALL LAPTOP */
+
+  /* ============================== */
+
+  .journey-section {
+    padding: 80px 20px;
+  }
+
+  .journey-container {
+    max-width: 100%;
+    padding-inline: 20px;
+  }
+
+  .journey-header {
+    margin-bottom: 50px;
+  }
+
+  .journey-timeline {
+    gap: 32px;
+  }
+
+  /* Remove center timeline on small laptops */
+  .journey-line {
+    display: none;
+  }
+
+  .journey-item {
+    justify-content: center;
+  }
+
+  .journey-left .journey-card,
+  .journey-right .journey-card {
+    width: 100%;
+    max-width: 700px;
+    margin: 0;
+  }
+
+  /* Hide timeline nodes with removed center line */
+  .journey-node {
+    display: none;
+  }
+
+  .journey-card {
+    padding: 30px 28px;
+  }
+
+  .journey-heading {
+    font-size: 1.35rem;
+  }
+
+  .journey-meta {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+}
+
+/* ========================= */
+/* FAQ Tablet Layout */
+/* ========================= */
+
+.faq-content {
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+
+.faq-item summary {
+  padding: 1.2rem 1.4rem;
+  font-size: 1rem;
+}
+
+.faq-item p {
+  padding: 0 1.4rem 1.4rem;
+  font-size: 0.97rem;
+}
+
+/* ========================= */
+/* Footer Tablet Layout */
+/* ========================= */
+
+.footer-cta {
+  padding: 3rem 2.5rem;
+}
+
+.footer-content {
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 1.8rem;
+}
+
+.footer-contact-form {
+  max-width: 100%;
+}
+
+/* ========================= */
+/* Mobile Responsive Styles */
+/* Screens: 768px and Below */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 72px;
+  }
+
+  .navbar-toggle {
+    display: flex;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1200;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(340px, 100%);
+    height: 100vh;
+    padding: 7rem 2rem 2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    box-shadow: -20px 0 50px rgba(0, 0, 0, 0.15);
+    transition: right 0.45s ease;
+    z-index: 1100;
+  }
+
+  .navbar-menu.active {
+    right: 0;
+  }
+
+  .navbar-list {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .navbar-item {
+    width: 100%;
+  }
+
+  .navbar-link {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.05rem;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  }
+
+  .navbar-link::after {
+    display: none;
+  }
+
+  .navbar-cta {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.75rem;
+  }
+
+  /* ========================= */
+  /* Hero Mobile Layout */
+  /* ========================= */
+
+  .hero {
+    padding: 2.5rem 0 2rem;
+  }
+
+  .hero-container {
+    gap: 1.5rem;
+  }
+
+  .hero-content {
+    max-width: 580px;
+  }
+
+  .hero-title {
+    margin-bottom: 0.75rem;
+    font-size: clamp(2.2rem, 8vw, 2.8rem);
+  }
+
+  .hero-title span {
+    margin-top: 0.25rem;
+  }
+
+  .hero-role {
+    gap: 0.5rem;
+    margin-bottom: 0.9rem;
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    max-width: 540px;
+    margin-bottom: 1.4rem;
+    font-size: 0.96rem;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    gap: 0.75rem;
+  }
+
+  .hero-button {
+    padding: 0.85rem 1.8rem;
+    font-size: 0.95rem;
+  }
+
+  .hero-image-wrapper {
+    width: min(100%, 430px);
+    min-height: 300px;
+  }
+
+  .hero-profile-image {
+    width: min(100%, 230px);
+  }
+
+  .hero-image-wrapper::before {
+    width: 280px;
+    height: 280px;
+    filter: blur(40px);
+  }
+
+  .floating-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .floating-html {
+    top: 25px;
+    left: 45px;
+  }
+
+  .floating-css {
+    top: 120px;
+    right: 35px;
+  }
+
+  .floating-js {
+    bottom: 25px;
+    left: 35px;
+  }
+
+  .floating-html i,
+  .floating-css i,
+  .floating-js i {
+    font-size: 24px;
+  }
+
+  .expertise-strip {
+    padding: 0.8rem 0;
+  }
+
+  .expertise-group {
+    gap: 1.7rem;
+    padding-right: 1.7rem;
+  }
+
+  .expertise-group span {
+    font-size: 0.9rem;
+  }
+
+  .expertise-group .expertise-star {
+    font-size: 1rem;
+  }
+
+  .expertise-track {
+    animation-duration: 30s;
+  }
+}
+
+/* ========================= */
+/* About Mobile Preparation */
+/* ========================= */
+
+.about-image-ring,
+.about-floating-card {
+  display: none;
+}
+
+/* ========================= */
+/* Learning Mobile Layout */
+/* ========================= */
+
+.learning {
+  padding: 4.5rem 0;
+}
+
+.learning-header {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto 2.5rem;
+}
+
+.learning-title {
+  margin-bottom: 1.2rem;
+  font-size: clamp(2rem, 6vw, 2.6rem);
+  line-height: 1.2;
+}
+
+.learning-description {
+  max-width: 560px;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.learning-header::after {
+  width: 60px;
+  height: 3px;
+  margin-top: 1.25rem;
+}
+
+.learning-grid-container {
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.learning-card {
+  width: 100%;
+  padding: 1.8rem;
+  border-radius: 20px;
+}
+
+.learning-icon {
+  margin-bottom: 1.2rem;
+}
+
+.learning-icon i {
+  font-size: 2.7rem;
+}
+
+.learning-card-title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.learning-list {
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.learning-list li {
+  gap: 0.7rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.learning-status {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.8rem;
+}
+
+/* ========================= */
+/* Projects Mobile Layout */
+/* ========================= */
+
+.projects-grid-container {
+  grid-template-columns: 1fr;
+}
+
+.project-actions {
+  flex-direction: column;
+}
+
+.project-image-wrapper {
+  height: 220px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.04);
+}
+
+/* ========================= */
+/* Journey Mobile Layout */
+/* ========================= */
+
+.journey-timeline::before {
+  left: 20px;
+  transform: none;
+}
+
+.journey-item {
+  justify-content: flex-start;
+  padding-left: 48px;
+}
+
+.journey-left,
+.journey-right {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.journey-left .journey-card,
+.journey-right .journey-card {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.journey-node {
+  left: 20px;
+  transform: translateX(-50%);
+}
+
+/* ========================= */
+/* FAQ Mobile Layout */
+/* ========================= */
+
+.faq {
+  padding: 4.5rem 0;
+}
+
+.faq-container {
+  width: 92%;
+}
+
+.faq-content {
+  gap: 1rem;
+}
+
+.faq-item {
+  border-radius: 18px;
+}
+
+.faq-item summary {
+  padding: 1rem 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.faq-item summary::after {
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+}
+
+.faq-item p {
+  padding: 0 1.2rem 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* ========================= */
+/* Footer Mobile Layout */
+/* ========================= */
+
+.footer {
+  padding: 4rem 0 1.5rem;
+}
+
+.footer-cta {
+  padding: 2.5rem 1.5rem;
+  border-radius: 24px;
+}
+
+.footer-cta-buttons {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.contact-bottun,
+.whatsapp-button {
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-form-group {
+  grid-template-columns: 1fr;
+}
+
+.footer-content {
+  grid-template-columns: 1fr;
+}
+
+.footer-bottom {
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* ========================= */
+/* Small Mobile Responsive */
+/* Screens: 576px and Below */
+/* ========================= */
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 2rem 0 3.5rem;
+  }
+
+  .hero-container {
+    width: 100%;
+    padding: 0 0.5rem;
+    gap: 0;
+    text-align: left;
+  }
+
+  .hero-image-wrapper {
+    order: 2;
+    width: min(100%, 360px);
+    min-height: 270px;
+    margin-inline: auto;
+    margin-top: 3rem;
+  }
+
+  .hero-profile-image {
+    width: min(100%, 220px);
+  }
+
+  .hero-image-wrapper::before {
+    width: 240px;
+    height: 240px;
+  }
+
+  .hero-image-ring {
+    width: 275px;
+    height: 275px;
+  }
+
+  .floating-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .floating-html {
+    top: 30px;
+    left: 50px;
+  }
+
+  .floating-css {
+    top: 105px;
+    right: 30px;
+  }
+
+  .floating-js {
+    bottom: 25px;
+    left: 30px;
+  }
+
+  .floating-html i,
+  .floating-css i,
+  .floating-js i {
+    font-size: 21px;
+  }
+
+  .hero-content {
+    order: 1;
+    max-width: 100%;
+
+    text-align: left;
+  }
+
+  .hero-title {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 9vw, 2rem);
+    letter-spacing: 2.3px;
+    line-height: 2.3rem;
+
+    text-align: left;
+  }
+
+  .hero-title span {
+    display: block;
+    margin-top: 0;
+    font-size: 2.4rem;
+    letter-spacing: 2.3px;
+
+    text-align: left;
+  }
+
+  .hero-role {
+    justify-content: flex-start;
+    width: 100%;
+    gap: 0.45rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+    line-height: 1rem;
+
+    text-align: left;
+  }
+
+  .hero-divider {
+    margin-inline: 0.15rem;
+  }
+
+  .hero-description {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1.4rem;
+    font-size: 0.95rem;
+    line-height: 1.75;
+
+    text-align: left;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .hero-button {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    max-width: 180px;
+    padding: 0.9rem 0.6rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  /* ========================= */
+  /* About Small Mobile Layout */
+  /* ========================= */
+
+  .about {
+    padding: 3.5rem 0;
+  }
+
+  .about-image-column {
+    display: none;
+  }
+
+  .about-container {
+    display: block;
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .about-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .about-subtitle {
+    margin-bottom: 0.6rem;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.75rem;
+
+    text-align: left;
+  }
+
+  .about-title {
+    margin-bottom: 0.4rem;
+    font-size: clamp(1.2rem, 8vw, 1.7rem);
+    line-height: 2.3rem;
+    text-align: left;
+  }
+
+  .about-title span {
+    display: block;
+    font-size: 1.7rem;
+    letter-spacing: 2.3;
+  }
+
+  .about-description {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    text-align: left;
+  }
+
+  .about-card-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+    width: 100%;
+    margin-bottom: 1.8rem;
+  }
+
+  .about-card {
+    min-width: 0;
+    padding: 1.3rem 0.45rem;
+    border-radius: 16px;
+  }
+
+  .about-card-icon {
+    margin-bottom: 0.7rem;
+    font-size: 1.7rem;
+  }
+
+  .about-card-content {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .about-card-title {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+
+  .about-card-description {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+  }
+
+  .about-actions {
+    gap: 0.75rem;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .about-button {
+    flex: 1;
+    min-width: 0;
+    padding: 0.9rem 0.6rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  /* ========================= */
+  /* Skills Small Mobile Layout */
+  /* ========================= */
+
+  .skills {
+    padding: 3.5rem 0;
+  }
+
+  .skills-container {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .skills-header {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1.6rem;
+    text-align: left;
+  }
+
+  .skills-subtitle {
+    margin-bottom: 0.6rem;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.75rem;
+  }
+
+  .skills-title {
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 8vw, 1.7rem);
+    line-height: 2.3rem;
+    text-align: left;
+  }
+
+  .skills-title span {
+    display: block;
+    font-size: 1.7rem;
+  }
+
+  .skills-description {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    text-align: left;
+  }
+
+  .skills-header::after {
+    width: 55px;
+    height: 3px;
+    margin: 1rem 0 0;
+  }
+
+  .skills-grid-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .skill-card {
+    width: 100%;
+    min-width: 0;
+    padding: 1.4rem 1.2rem;
+    border-radius: 18px;
+  }
+
+  .skill-icon {
+    margin-bottom: 0.8rem;
+  }
+
+  .skill-icon i {
+    font-size: 2.6rem;
+  }
+
+  .skill-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .skill-text {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .skill-progress {
+    width: 100%;
+    height: 8px;
+    margin-bottom: 0.9rem;
+  }
+
+  .skill-level {
+    padding: 0.35rem 0.85rem;
+    font-size: 0.78rem;
+  }
+
+  /* ========================= */
+  /* Learning - Small Mobile */
+  /* ========================= */
+
+  .learning {
+    padding: 3.5rem 0;
+  }
+
+  .learning-container {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .learning-header {
+    max-width: 100%;
+    margin: 0 0 1.6rem;
+    text-align: left;
+  }
+
+  .learning-subtitle {
+    margin-bottom: 0.6rem;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.75rem;
+  }
+
+  .learning-title {
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 8vw, 1.7rem);
+    line-height: 2.3rem;
+    text-align: left;
+  }
+
+  .learning-title span {
+    font-size: 1.7rem;
+    text-align: left;
+  }
+
+  .learning-description {
+    max-width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    text-align: left;
+  }
+
+  .learning-header::after {
+    width: 55px;
+    height: 3px;
+    margin-top: 1rem 0 0;
+  }
+
+  .learning-grid-container {
+    gap: 1rem;
+  }
+
+  .learning-card {
+    min-width: 0;
+    padding: 1.4rem 1.2rem;
+    border-radius: 18px;
+    text-align: left;
+  }
+
+  .learning-icon {
+    margin-bottom: 0.8rem;
+  }
+
+  .learning-icon i {
+    font-size: 2.6rem;
+  }
+
+  .learning-card-title {
+    margin-bottom: 0.8rem;
+    font-size: 1.15rem;
+    line-height: 1.3;
+  }
+
+  .learning-list {
+    gap: 0.65rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .learning-list li {
+    gap: 0.65rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .learning-status {
+    padding: 0.35rem 0.85rem;
+    font-size: 0.78rem;
+  }
+
+  /* ========================= */
+  /* Projects Section - Mobile */
+  /* ========================= */
+
+  .projects {
+    padding: 3.5rem 0;
+  }
+
+  .projects-container {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .projects-header {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1.6rem;
+    text-align: left;
+  }
+
+  .projects-subtitle {
+    margin-bottom: 0.8rem;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.75rem;
+  }
+
+  .projects-title {
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 8vw, 1.7rem);
+    line-height: 2.3rem;
+    text-align: left;
+  }
+
+  .projects-title span {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.7rem;
+  }
+
+  .projects-description {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    text-align: left;
+  }
+
+  .projects-header::after {
+    width: 55px;
+    height: 3px;
+    margin: 1rem 0 0;
+  }
+
+  .journey-section {
+    padding: 70px 16px;
+  }
+
+  .journey-container {
+    padding-inline: 0;
+  }
+
+  .journey-header {
+    width: 100%;
+    margin: 0 0 3rem;
+    text-align: left;
+  }
+
+  .journey-header::after {
+    margin: 1rem 0 0;
+  }
+
+  .journey-title {
+    font-size: clamp(1.2rem, 8vw, 1.7rem);
+    line-height: 1.2;
+  }
+
+  .journey-description {
+    font-size: 1.7rem;
+    line-height: 1.75;
+  }
+
+  .journey-timeline {
+    gap: 32px;
+  }
+
+  .journey-line {
+    display: block;
+    left: 18px;
+    transform: none;
+  }
+
+  .journey-item {
+    justify-content: flex-start;
+    padding-left: 58px;
+  }
+
+  .journey-left,
+  .journey-right {
+    justify-content: flex-start;
+  }
+
+  .journey-left .journey-card,
+  .journey-right .journey-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .journey-node {
+    display: flex;
+    left: 18px;
+    transform: translate(-50%, -50%);
+  }
+
+  .journey-card {
+    padding: 26px 20px;
+    border-radius: 20px;
+  }
+
+  .journey-heading {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .journey-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .journey-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .faq {
+    padding: 3.5rem 0;
+  }
+
+  .faq-container {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .faq .section-heading {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 2rem;
+    text-align: left;
+  }
+
+  .faq .section-subtitle {
+    margin-bottom: 0.8rem;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.75rem;
+  }
+
+  .faq .section-title {
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 8vw, 1.7rem);
+    line-height: 2.3rem;
+    text-align: left;
+    letter-spacing: 2.6px;
+  }
+
+  .faq .section-description {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    text-align: left;
+  }
+
+  .faq .section-heading::after {
+    width: 55px;
+    height: 3px;
+    margin: 1rem 0 0;
+  }
+
+  .faq-content {
+    margin-top: 0;
+  }
+
+  .footer {
+    padding: 3.5rem 0 1.25rem;
+  }
+
+  .footer-container {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .footer-cta {
+    margin-bottom: 2.5rem;
+    padding: 2rem 1.25rem;
+    text-align: left;
+    border-radius: 22px;
+  }
+
+  .footer-badge {
+    margin-bottom: 1rem;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.75rem;
+  }
+
+  .footer-cta h2 {
+    margin-bottom: 1rem;
+    font-size: clamp(1.7rem, 7vw, 2rem);
+    line-height: 1.35;
+  }
+
+  .footer-cta p {
+    max-width: 100%;
+    margin: 0 0 1.8rem;
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .footer-cta-buttons {
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+
+  .footer-contact-form {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .footer-contact-form form {
+    padding: 1.5rem;
+    border-radius: 22px;
+  }
+
+  .footer-contact-form input,
+  .footer-contact-form textarea {
+    padding: 0.95rem 1rem;
+    font-size: 0.95rem;
+    border-radius: 14px;
+  }
+
+  .footer-contact-form textarea {
+    min-height: 150px;
+  }
+
+  .footer-contact-form button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-content {
+    margin: 3rem 0;
+  }
+
+  .footer-column {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .footer-column h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-column p {
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  .footer-column ul {
+    gap: 0.65rem;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+    gap: 0.75rem;
+  }
+
+  .social-links a {
+    width: 46px;
+    height: 46px;
+  }
+
+  .footer hr {
+    margin: 2rem 0;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.3rem;
+    text-align: left;
+    border-radius: 18px;
+  }
+  .footer-copyright p {
+    font-size: 0.88rem;
+    margin-left: 25px;
+  }
+
+  .footer-credit p {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  .footer-credit {
+    text-align: center;
+  }
+
+  .footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ======================== */
+/* max-width: 480px */
+/* ======================== */
+
+@media (max-width: 480px) {
+  .container {
+    width: 94%;
+  }
+
+  .navbar-brand {
+    font-size: 1.15rem;
+  }
+
+  .navbar-menu {
+    width: 100%;
+
+    padding: 6rem 1.5rem 2rem;
+  }
+
+  .navbar-toggle {
+    width: 44px;
+    height: 44px;
+  }
+
+  .navbar-cta {
+    padding: 0.9rem 1.5rem;
+  }
+
+  .expertise-strip {
+    padding: 0.7rem 0;
+  }
+
+  .expertise-group {
+    gap: 1.3rem;
+    padding-right: 1.3rem;
+  }
+
+  .expertise-group span {
+    font-size: 0.82rem;
+  }
+
+  .expertise-group .expertise-star {
+    font-size: 0.9rem;
+  }
+
+  .expertise-track {
+    animation-duration: 28s;
+  }
+
+  .journey-section {
+    padding: 70px 16px;
+  }
+
+  .journey-container {
+    padding-inline: 0;
+  }
+
+  .journey-item {
+    padding-left: 56px;
+  }
+
+  .journey-timeline::before {
+    left: 22px;
+  }
+
+  .journey-card {
+    padding: 24px 20px;
+    border-radius: 20px;
+  }
+
+  .journey-heading {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .journey-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .journey-node {
+    left: 22px;
+    width: 16px;
+    height: 16px;
+    transform: translateX(-50%);
+  }
+
+  .journey-badge {
+    top: -12px;
+    left: 18px;
+    padding: 8px 14px;
+    font-size: 0.75rem;
+  }
+
+  .journey-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .journey-achievements {
+    gap: 10px;
+  }
+
+  .journey-achievement-item {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .faq {
+    padding: 4rem 0;
+  }
+
+  .faq-container {
+    width: 94%;
+  }
+
+  .faq-item {
+    border-radius: 16px;
+  }
+
+  .faq-item summary {
+    padding: 0.95rem 1rem;
+    font-size: 0.9rem;
+    gap: 12px;
+  }
+
+  .faq-item summary::after {
+    width: 28px;
+    height: 28px;
+    font-size: 1.05rem;
+    flex-shrink: 0;
+  }
+
+  .faq-item p {
+    padding: 0 1rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.75;
+  }
+
+  .footer-container {
+    width: 94%;
+  }
+
+  .footer-cta {
+    padding: 2rem 1.2rem;
+  }
+
+  .footer-cta h2 {
+    font-size: 1.8rem;
+  }
+
+  .footer-cta p {
+    font-size: 0.95rem;
+  }
+
+  .footer-column {
+    padding: 1.5rem;
+  }
+
+  .footer-contact-form form {
+    padding: 1.5rem;
+  }
+
+  .footer-contact-form textarea {
+    min-height: 140px;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .back-to-top {
+    width: 50px;
+    height: 50px;
+  }
+}

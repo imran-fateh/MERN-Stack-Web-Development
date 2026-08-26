@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Learn JavaScript operators and expressions with clear explanations, practical examples, arithmetic and assignment operators, increment and decrement, operator precedence, and hands-on practice.">
+    <meta name="keywords"
+        content="JavaScript operators, JavaScript expressions, arithmetic operators, assignment operators, increment decrement, operator precedence">
+    <meta name="author" content="Imran Fateh">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#111827">
+
+    <link rel="canonical" href="https://example.com/Pages/operators.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="JavaScript Operators & Expressions | Learn JavaScript">
+    <meta property="og:description"
+        content="Learn JavaScript operators and expressions through clear explanations, practical examples, and focused practice.">
+    <meta property="og:image" content="../Assets/images/learn-javascript-preview.png">
+    <meta property="og:url" content="https://example.com/Pages/operators.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JavaScript Operators & Expressions">
+    <meta name="twitter:description"
+        content="Learn JavaScript operators and expressions with practical examples and hands-on practice.">
+    <meta name="twitter:image" content="../Assets/images/learn-javascript-preview.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/responsive.css">
+
+    <title>JavaScript Operators &amp; Expressions | Learn JavaScript</title>
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+    <!-- START GLOBAL HEADER -->
+    <header class="site-header">
+        <div class="header-brand">
+            <a href="../index.html" class="brand-link" aria-label="Learn JavaScript Home">
+                <span class="brand-icon" aria-hidden="true">
+                    <i class="fa-brands fa-js"></i>
+                </span>
+                <span class="brand-name">Learn <strong>JavaScript</strong></span>
+            </a>
+        </div>
+
+        <div class="header-search">
+            <label for="topic-search" class="visually-hidden">Search JavaScript topics</label>
+            <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+            <input type="search" id="topic-search" class="topic-search-input" placeholder="Search JavaScript topics..."
+                autocomplete="off">
+            <span class="search-shortcut" aria-hidden="true">Ctrl K</span>
+        </div>
+
+        <div class="header-actions">
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"
+                aria-pressed="false">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                <span>Dark Mode</span>
+            </button>
+
+            <button type="button" class="header-action-button" aria-label="Open bookmarks">
+                <i class="fa-regular fa-bookmark" aria-hidden="true"></i>
+                <span>Bookmarks</span>
+            </button>
+
+            <button type="button" class="header-action-button" aria-label="Open notes">
+                <i class="fa-regular fa-note-sticky" aria-hidden="true"></i>
+                <span>Notes</span>
+            </button>
+
+            <button type="button" class="header-action-button" aria-label="Open settings">
+                <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                <span>Settings</span>
+            </button>
+
+            <button type="button" class="profile-button" aria-label="Open profile menu">
+                <span class="profile-avatar">IF</span>
+                <i class="fa-solid fa-chevron-down profile-arrow" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+    <!-- END GLOBAL HEADER -->
+
+    <!-- START MOBILE NAVIGATION -->
+    <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open navigation menu"
+        aria-controls="sidebar" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+    <!-- END MOBILE NAVIGATION -->
+
+    <div class="app-layout">
+
+        <!-- START SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <span class="sidebar-title">JavaScript Topics</span>
+
+                <button type="button" class="sidebar-close-button" id="sidebar-close-button"
+                    aria-label="Close navigation">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <nav class="topic-navigation" aria-label="JavaScript learning topics">
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="true">
+                        <span>Getting Started</span>
+                        <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="navigation-group-content">
+                        <a href="introduction.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>JavaScript Introduction</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="true">
+                        <span>JavaScript Fundamentals</span>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="navigation-group-content">
+                        <a href="variables.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Variables &amp; User Input</span>
+                        </a>
+
+                        <a href="operators.html" class="topic-navigation-link active" aria-current="page">
+                            <i class="fa-solid fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Operators &amp; Expressions</span>
+                        </a>
+
+                        <a href="data-types.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Data Types &amp; Strings</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Control Flow</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Functions</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Arrays</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Objects</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>DOM &amp; BOM</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Events</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Forms</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Browser APIs</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Asynchronous JavaScript</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Modern JavaScript</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Projects</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+            </nav>
+
+            <div class="sidebar-progress-card">
+                <div class="progress-card-header">
+                    <span>Your Progress</span>
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                </div>
+
+                <div class="progress-card-content">
+                    <div class="progress-circle" aria-label="0 percent completed">
+                        <span class="progress-percentage">0%</span>
+                    </div>
+
+                    <div class="progress-summary">
+                        <span>Completed</span>
+                        <strong id="completed-topic-count">0 / 4 Topics</strong>
+                    </div>
+                </div>
+
+                <a href="#" class="progress-view-button">
+                    View Progress
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </aside>
+        <!-- END SIDEBAR -->
+
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+        <!-- START MAIN CONTENT -->
+        <main class="main-content" id="main-content">
+
+            <!-- START PAGE TOOLBAR -->
+            <div class="page-toolbar">
+
+                <nav class="breadcrumb-navigation" aria-label="Breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">
+                        <i class="fa-solid fa-house" aria-hidden="true"></i>
+                        <span>Home</span>
+                    </a>
+
+                    <i class="fa-solid fa-chevron-right breadcrumb-separator" aria-hidden="true"></i>
+
+                    <span>JavaScript Fundamentals</span>
+
+                    <i class="fa-solid fa-chevron-right breadcrumb-separator" aria-hidden="true"></i>
+
+                    <span class="breadcrumb-current">Operators &amp; Expressions</span>
+                </nav>
+
+                <div class="page-actions">
+                    <button type="button" class="page-action-button" aria-label="Bookmark current topic">
+                        <i class="fa-regular fa-bookmark" aria-hidden="true"></i>
+                        <span>Bookmark</span>
+                    </button>
+
+                    <button type="button" class="page-action-button" aria-label="Share current page">
+                        <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+                        <span>Share</span>
+                    </button>
+                </div>
+
+            </div>
+            <!-- END PAGE TOOLBAR -->
+
+            <div class="topic-page-content">
+
+                <!-- START TOPIC HEADER -->
+                <header class="topic-header">
+                    <div class="topic-header-content">
+
+                        <div class="topic-header-meta">
+                            <span class="topic-category">JavaScript Fundamentals</span>
+                            <span class="topic-number">Topic 03</span>
+                        </div>
+
+                        <h1>Operators &amp; Expressions</h1>
+
+                        <p>
+                            Learn how JavaScript uses operators and operands to create
+                            expressions, perform calculations, assign values, and change
+                            stored values.
+                        </p>
+
+                        <div class="topic-header-details">
+                            <span>
+                                <i class="fa-solid fa-signal" aria-hidden="true"></i>
+                                Beginner
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                                Fundamental
+                            </span>
+
+                            <span>
+                                <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                10 min read
+                            </span>
+                        </div>
+
+                    </div>
+                </header>
+                <!-- END TOPIC HEADER -->
+
+                <!-- START TOPIC CONTENT NAVIGATION -->
+                <aside class="topic-content-navigation" aria-labelledby="content-navigation-title">
+
+                    <div class="content-navigation-header">
+                        <span class="section-eyebrow">On This Page</span>
+                        <h2 id="content-navigation-title">Operators &amp; Expressions</h2>
+                    </div>
+
+                    <nav aria-label="Operators topic sections">
+                        <a href="#what-are-operators">What Are Operators?</a>
+                        <a href="#operands-expressions">Operands &amp; Expressions</a>
+                        <a href="#arithmetic-operators">Arithmetic Operators</a>
+                        <a href="#assignment-operators">Assignment Operators</a>
+                        <a href="#compound-assignment">Compound Assignment</a>
+                        <a href="#increment-decrement">Increment &amp; Decrement</a>
+                        <a href="#prefix-postfix">Prefix &amp; Postfix</a>
+                        <a href="#operator-precedence">Operator Precedence</a>
+                        <a href="#practical-example">Practical Example</a>
+                        <a href="#output">Output</a>
+                        <a href="#important-notes">Important Notes</a>
+                        <a href="#common-mistakes">Common Mistakes</a>
+                        <a href="#quick-revision">Quick Revision</a>
+                    </nav>
+
+                </aside>
+                <!-- END TOPIC CONTENT NAVIGATION -->
+
+                <!-- START TOPIC ARTICLE -->
+                <article class="topic-article">
+
+                    <section class="content-section" id="what-are-operators">
+                        <h2>What Are Operators?</h2>
+
+                        <p>
+                            Operators are special symbols used to perform operations on
+                            values and variables in JavaScript. They allow you to calculate,
+                            compare, assign, modify, and combine values.
+                        </p>
+
+                        <p>
+                            Common operators include arithmetic operators such as
+                            <code>+</code>, <code>-</code>, <code>*</code>, and
+                            <code>/</code>, as well as assignment operators such as
+                            <code>=</code>.
+                        </p>
+                    </section>
+
+                    <section class="content-section" id="operands-expressions">
+                        <h2>Operands &amp; Expressions</h2>
+
+                        <p>
+                            An operand is a value or variable that an operator works on.
+                            An expression is a combination of values, variables, and
+                            operators that produces a result.
+                        </p>
+
+                        <div class="concept-flow">
+                            <div class="concept-flow-step">
+                                <span>01</span>
+                                <strong>Operand</strong>
+                                <p>A value or variable used by an operator.</p>
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right concept-flow-arrow" aria-hidden="true"></i>
+
+                            <div class="concept-flow-step">
+                                <span>02</span>
+                                <strong>Operator</strong>
+                                <p>A symbol that performs an operation.</p>
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right concept-flow-arrow" aria-hidden="true"></i>
+
+                            <div class="concept-flow-step">
+                                <span>03</span>
+                                <strong>Expression</strong>
+                                <p>A combination that produces a value.</p>
+                            </div>
+                        </div>
+
+                        <div class="code-example">
+                            <div class="code-example-header">
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+                            </div>
+
+                            <pre><code>let result = 10 + 5;</code></pre>
+                        </div>
+                    </section>
+
+                    <section class="content-section" id="arithmetic-operators">
+                        <h2>Arithmetic Operators</h2>
+
+                        <p>
+                            Arithmetic operators are used to perform mathematical
+                            calculations with numbers.
+                        </p>
+
+                        <div class="method-list">
+
+                            <div class="method-item">
+                                <div class="method-item-header">
+                                    <code>+</code>
+                                    <span>Addition</span>
+                                </div>
+                                <p>Adds two values together.</p>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-item-header">
+                                    <code>-</code>
+                                    <span>Subtraction</span>
+                                </div>
+                                <p>Subtracts the second value from the first.</p>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-item-header">
+                                    <code>*</code>
+                                    <span>Multiplication</span>
+                                </div>
+                                <p>Multiplies two values.</p>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-item-header">
+                                    <code>/</code>
+                                    <span>Division</span>
+                                </div>
+                                <p>Divides one value by another.</p>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-item-header">
+                                    <code>%</code>
+                                    <span>Remainder</span>
+                                </div>
+                                <p>Returns the remainder after division.</p>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-item-header">
+                                    <code>**</code>
+                                    <span>Exponentiation</span>
+                                </div>
+                                <p>Raises a value to a power.</p>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="content-section" id="assignment-operators">
+                        <h2>Assignment Operators</h2>
+
+                        <p>
+                            Assignment operators store a value in a variable. The basic
+                            assignment operator is <code>=</code>.
+                        </p>
+
+                        <div class="code-example">
+                            <div class="code-example-header">
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+                            </div>
+
+                            <pre><code>let score = 100;
+score = 150;</code></pre>
+                        </div>
+                    </section>
+
+                    <section class="content-section" id="compound-assignment">
+                        <h2>Compound Assignment</h2>
+
+                        <p>
+                            Compound assignment operators combine an arithmetic operation
+                            with assignment. They provide a shorter way to update an
+                            existing variable.
+                        </p>
+
+                        <div class="code-example">
+                            <div class="code-example-header">
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+                            </div>
+
+                            <pre><code>let score = 10;
+
+score += 5;
+score *= 2;</code></pre>
+                        </div>
+
+                        <div class="content-note content-note-tip">
+                            <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+                            <div>
+                                <strong>Tip</strong>
+                                <p>
+                                    Compound assignment is useful when you repeatedly
+                                    update a stored value.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="content-section" id="increment-decrement">
+                        <h2>Increment &amp; Decrement</h2>
+
+                        <p>
+                            The increment operator <code>++</code> increases a value by
+                            one, while the decrement operator <code>--</code> decreases
+                            a value by one.
+                        </p>
+
+                        <div class="code-example">
+                            <div class="code-example-header">
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+                            </div>
+
+                            <pre><code>let count = 5;
+
+count++;
+count--;</code></pre>
+                        </div>
+                    </section>
+
+                    <section class="content-section" id="prefix-postfix">
+                        <h2>Prefix &amp; Postfix</h2>
+
+                        <p>
+                            Increment and decrement operators can be placed before or after
+                            a variable. The position determines whether the value is changed
+                            before or after the expression is evaluated.
+                        </p>
+
+                        <div class="comparison-grid">
+
+                            <div class="comparison-item">
+                                <h3>Prefix</h3>
+
+                                <div class="code-example">
+                                    <div class="code-example-header">
+                                        <span>JavaScript</span>
+                                    </div>
+
+                                    <pre><code>let value = 5;
+let result = ++value;</code></pre>
+                                </div>
+
+                                <p>
+                                    The value is increased first, then used in the expression.
+                                </p>
+                            </div>
+
+                            <div class="comparison-item">
+                                <h3>Postfix</h3>
+
+                                <div class="code-example">
+                                    <div class="code-example-header">
+                                        <span>JavaScript</span>
+                                    </div>
+
+                                    <pre><code>let value = 5;
+let result = value++;</code></pre>
+                                </div>
+
+                                <p>
+                                    The current value is used first, then increased.
+                                </p>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="content-section" id="operator-precedence">
+                        <h2>Operator Precedence</h2>
+
+                        <p>
+                            Operator precedence determines the order in which JavaScript
+                            evaluates operators in an expression.
+                        </p>
+
+                        <div class="code-example">
+                            <div class="code-example-header">
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+                            </div>
+
+                            <pre><code>let result = 10 + 5 * 2;</code></pre>
+                        </div>
+
+                        <div class="output-example" id="precedence-output">
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+                            <code>20</code>
+                        </div>
+
+                        <div class="content-note content-note-important">
+                            <i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i>
+                            <div>
+                                <strong>Important</strong>
+                                <p>
+                                    Multiplication is evaluated before addition in this
+                                    expression. Use parentheses when you want to make the
+                                    intended order explicit.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="content-section" id="practical-example">
+                        <h2>Practical Example</h2>
+
+                        <p>
+                            Operators are commonly used when calculating prices, totals,
+                            scores, quantities, counters, and other values in real
+                            applications.
+                        </p>
+
+                        <div class="practical-example">
+                            <span class="example-label">Real-World Example</span>
+
+                            <p>
+                                A shopping cart can use multiplication to calculate the
+                                price of multiple items and addition to calculate the
+                                final total.
+                            </p>
+                        </div>
+
+                        <div class="code-example">
+                            <div class="code-example-header">
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+                            </div>
+
+                            <pre><code>const price = 500;
+const quantity = 3;
+const total = price * quantity;
+
+console.log(total);</code></pre>
+                        </div>
+                    </section>
+
+                    <section class="content-section" id="output">
+                        <h2>Output</h2>
+
+                        <p>
+                            The previous example calculates the total price by multiplying
+                            the price of one item by the quantity.
+                        </p>
+
+                        <div class="output-example">
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>1500</code>
+                        </div>
+                    </section>
+
+                    <section class="content-section" id="important-notes">
+                        <h2>Important Notes</h2>
+
+                        <ul class="learning-points">
+                            <li>
+                                Operators perform operations on operands.
+                            </li>
+
+                            <li>
+                                An expression produces a value.
+                            </li>
+
+                            <li>
+                                The <code>=</code> operator assigns a value; it does not
+                                compare values.
+                            </li>
+
+                            <li>
+                                Compound assignment operators update existing values.
+                            </li>
+
+                            <li>
+                                Prefix and postfix increment/decrement can produce
+                                different expression results.
+                            </li>
+
+                            <li>
+                                Parentheses can make the intended evaluation order clear.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section class="content-section" id="common-mistakes">
+                        <h2>Common Mistakes</h2>
+
+                        <div class="mistake-list">
+
+                            <article class="mistake-item">
+                                <span class="mistake-icon" aria-hidden="true">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+
+                                <div>
+                                    <h3>Confusing <code>=</code> with comparison</h3>
+                                    <p>
+                                        The <code>=</code> operator assigns a value. It is
+                                        not the same as a comparison operator.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="mistake-item">
+                                <span class="mistake-icon" aria-hidden="true">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+
+                                <div>
+                                    <h3>Ignoring prefix and postfix behavior</h3>
+                                    <p>
+                                        <code>value++</code> and <code>++value</code> do
+                                        not always produce the same expression result.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="mistake-item">
+                                <span class="mistake-icon" aria-hidden="true">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+
+                                <div>
+                                    <h3>Forgetting operator precedence</h3>
+                                    <p>
+                                        Different operators can be evaluated in a specific
+                                        order. Use parentheses when the order matters.
+                                    </p>
+                                </div>
+                            </article>
+
+                        </div>
+                    </section>
+
+                    <section class="content-section" id="quick-revision">
+                        <h2>Quick Revision</h2>
+
+                        <p>
+                            Operators perform actions on operands, while expressions combine
+                            values and operators to produce a result. Remember arithmetic,
+                            assignment, increment/decrement, and operator precedence as the
+                            core foundations of this topic.
+                        </p>
+                    </section>
+
+                </article>
+                <!-- END TOPIC ARTICLE -->
+
+                <!-- START TOPIC PRACTICE -->
+                <section class="topic-practice-section" aria-labelledby="topic-practice-title">
+                    <div class="practice-card">
+
+                        <div class="practice-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <div class="practice-card-content">
+                            <span class="section-eyebrow">Practice</span>
+
+                            <h2 id="topic-practice-title">
+                                Ready to Practice?
+                            </h2>
+
+                            <p>
+                                Practice arithmetic, assignment, increment, decrement,
+                                and operator precedence with focused JavaScript challenges.
+                            </p>
+                        </div>
+
+                        <a href="#" class="primary-button practice-start-button" data-topic-id="javascript-operators">
+                            <span>Start Practice</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+                </section>
+                <!-- END TOPIC PRACTICE -->
+
+                <!-- START FOOTER TOPIC NAVIGATION -->
+                <nav class="footer-topic-navigation" aria-label="Topic navigation">
+
+                    <a href="variables.html" class="footer-navigation-card">
+                        <span class="navigation-direction">
+                            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                            Previous Topic
+                        </span>
+
+                        <strong>Variables &amp; User Input</strong>
+                    </a>
+
+                    <a href="data-types.html" class="footer-navigation-card">
+                        <span class="navigation-direction">
+                            Next Topic
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </span>
+
+                        <strong>Data Types &amp; Strings</strong>
+                    </a>
+
+                </nav>
+                <!-- END FOOTER TOPIC NAVIGATION -->
+
+            </div>
+
+        </main>
+        <!-- END MAIN CONTENT -->
+
+    </div>
+
+    <button type="button" class="back-to-top-button" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="../Js/main.js"></script>
+    <script src="../Js/navigation.js"></script>
+    <script src="../Js/practice.js"></script>
+    <script src="../Js/topics.js"></script>
+
+</body>
+
+</html>

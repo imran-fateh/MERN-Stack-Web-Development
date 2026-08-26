@@ -1,0 +1,391 @@
+/* START MOBILE BASE */
+@media (max-width: 767px) {
+  :root {
+    --header-height: 64px;
+    --sidebar-width: 280px;
+  }
+  .site-header {
+    left: 0;
+    height: var(--header-height);
+    padding: 0 16px 0 68px;
+  }
+  .header-brand {
+    display: block;
+  }
+  .brand-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+  }
+  .brand-name {
+    font-size: 14px;
+  }
+  .header-search {
+    flex: 1;
+    width: auto;
+    max-width: none;
+  }
+  .topic-search-input {
+    height: 38px;
+    padding-right: 14px;
+    padding-left: 38px;
+    font-size: 12px;
+  }
+  .search-shortcut {
+    display: none;
+  }
+  .header-actions {
+    gap: 2px;
+  }
+  .theme-toggle span,
+  .header-action-button span,
+  .profile-arrow {
+    display: none;
+  }
+  .theme-toggle,
+  .header-action-button {
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    padding: 0;
+  }
+  .profile-button {
+    margin-left: 2px;
+  }
+  .profile-avatar {
+    width: 34px;
+    height: 34px;
+  }
+  .mobile-menu-toggle {
+    display: grid;
+    place-items: center;
+    top: 11px;
+    left: 14px;
+    width: 40px;
+    height: 40px;
+  }
+  .sidebar {
+    width: var(--sidebar-width);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  .sidebar.is-open {
+    transform: translateX(0);
+  }
+  .sidebar-close-button {
+    display: block;
+  }
+  .sidebar-overlay.is-visible {
+    display: block;
+  }
+  .main-content {
+    margin-left: 0;
+    padding: calc(var(--header-height) + 20px) 16px 35px;
+  }
+  .page-toolbar {
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .breadcrumb-navigation {
+    flex-wrap: wrap;
+    gap: 7px;
+    font-size: 10px;
+  }
+  .page-actions {
+    gap: 3px;
+  }
+  .page-action-button {
+    width: 34px;
+    height: 34px;
+    justify-content: center;
+    padding: 0;
+  }
+  .page-action-button span {
+    display: none;
+  }
+  .dashboard-hero {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 26px 22px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+  }
+  .dashboard-hero h1 {
+    font-size: clamp(30px, 9vw, 42px);
+    letter-spacing: -1.2px;
+  }
+  .dashboard-hero p {
+    font-size: 13px;
+  }
+  .hero-actions {
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .primary-button,
+  .secondary-button {
+    min-height: 40px;
+    padding: 0 14px;
+    font-size: 11px;
+  }
+  .hero-progress {
+    padding: 16px;
+  }
+  .hero-progress-value {
+    font-size: 21px;
+  }
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .section-heading h2 {
+    font-size: 19px;
+  }
+  .section-link {
+    font-size: 11px;
+  }
+  .overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .overview-card {
+    min-height: 96px;
+    padding: 13px;
+    gap: 10px;
+  }
+  .overview-card-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .overview-card strong {
+    font-size: 17px;
+  }
+  .overview-card-label {
+    font-size: 9px;
+  }
+  .overview-card p {
+    font-size: 8px;
+  }
+  .topic-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .topic-card {
+    min-height: 265px;
+    padding: 18px;
+  }
+  .topic-card-icon {
+    width: 46px;
+    height: 46px;
+    margin: 14px 0 12px;
+    font-size: 15px;
+  }
+  .topic-card-content h3 {
+    font-size: 16px;
+  }
+  .topic-card-content p {
+    font-size: 11px;
+  }
+  .practice-card {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 14px;
+  }
+  .practice-card-content {
+    min-width: calc(100% - 66px);
+  }
+  .practice-card h2 {
+    font-size: 16px;
+  }
+  .practice-card p {
+    font-size: 10px;
+  }
+  .practice-card .primary-button {
+    width: 100%;
+  }
+  .footer-topic-navigation {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .footer-navigation-card:last-child {
+    text-align: left;
+  }
+  .footer-navigation-card:last-child .navigation-direction {
+    justify-content: flex-start;
+  }
+  .back-to-top-button {
+    right: 16px;
+    bottom: 16px;
+    width: 40px;
+    height: 40px;
+  }
+}
+/* END MOBILE BASE */
+
+/* START SMALL MOBILE */
+@media (max-width: 479px) {
+  .site-header {
+    gap: 7px;
+    padding-right: 10px;
+    padding-left: 62px;
+  }
+  .brand-name {
+    display: none;
+  }
+  .header-search {
+    width: auto;
+  }
+  .header-actions {
+    margin-left: 0;
+  }
+  .header-action-button {
+    display: none;
+  }
+  .theme-toggle {
+    display: flex;
+  }
+  .dashboard-hero {
+    padding: 23px 18px;
+  }
+  .dashboard-hero h1 {
+    font-size: 30px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-actions .primary-button,
+  .hero-actions .secondary-button {
+    width: 100%;
+  }
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+  .overview-card {
+    min-height: 78px;
+  }
+  .topic-card-meta {
+    gap: 9px;
+  }
+  .page-actions {
+    display: none;
+  }
+}
+/* END SMALL MOBILE */
+
+/* START TABLET */
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --sidebar-width: 230px;
+  }
+  .site-header {
+    left: var(--sidebar-width);
+    gap: 18px;
+    padding: 0 18px;
+  }
+  .header-actions {
+    gap: 0;
+  }
+  .theme-toggle span,
+  .header-action-button span {
+    display: none;
+  }
+  .theme-toggle,
+  .header-action-button {
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    padding: 0;
+  }
+  .main-content {
+    margin-left: var(--sidebar-width);
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+  .sidebar {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .topic-navigation-link {
+    padding-left: 15px;
+    font-size: 11px;
+  }
+  .sidebar-progress-card {
+    padding: 14px 11px;
+  }
+  .dashboard-hero {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 30px;
+  }
+  .overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .topic-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* END TABLET */
+
+/* START DESKTOP */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .site-header {
+    gap: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .header-actions {
+    gap: 0;
+  }
+  .theme-toggle span,
+  .header-action-button span {
+    display: none;
+  }
+  .theme-toggle,
+  .header-action-button {
+    width: 38px;
+    height: 38px;
+    justify-content: center;
+    padding: 0;
+  }
+  .main-content {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .dashboard-hero {
+    grid-template-columns: minmax(0, 1fr) 270px;
+    gap: 22px;
+    padding: 30px;
+  }
+  .overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* END DESKTOP */
+
+/* START LARGE DESKTOP */
+@media (min-width: 1280px) {
+  .main-content {
+    padding-right: 42px;
+    padding-left: 42px;
+  }
+  .dashboard-hero {
+    grid-template-columns: minmax(0, 1fr) 320px;
+  }
+}
+/* END LARGE DESKTOP */
+
+/* START EXTRA LARGE DESKTOP */
+@media (min-width: 1600px) {
+  .site-header {
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+  .main-content {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+

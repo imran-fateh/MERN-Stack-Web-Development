@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Data Types & Strings | Learn JavaScript</title>
+    <meta name="description"
+        content="Learn JavaScript data types including primitive and non-primitive values, typeof, numbers, strings, booleans, undefined, null, Symbol, BigInt, string concatenation, and template literals.">
+    <meta name="keywords"
+        content="JavaScript data types, JavaScript primitive data types, JavaScript typeof, JavaScript strings, JavaScript boolean, JavaScript undefined, JavaScript null, JavaScript Symbol, JavaScript BigInt, template literals">
+    <meta name="author" content="Imran Fateh">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="data-types.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Data Types & Strings | Learn JavaScript">
+    <meta property="og:description"
+        content="Understand JavaScript data types and learn how different kinds of values behave in practical JavaScript development.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/responsive.css">
+
+    <title>Data Types & Strings | Learn JavaScript</title>
+</head>
+
+<body>
+
+    <!-- START SKIP LINK -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    <!-- END SKIP LINK -->
+
+    <!-- START SITE HEADER -->
+    <header class="site-header">
+
+        <div class="header-brand">
+            <a href="../index.html" class="brand-link" aria-label="Learn JavaScript Home">
+                <span class="brand-icon" aria-hidden="true">
+                    <i class="fa-brands fa-js"></i>
+                </span>
+                <span class="brand-name">Learn <strong>JavaScript</strong></span>
+            </a>
+        </div>
+
+        <!-- I will connect this search field with the global topic search system. -->
+        <div class="header-search">
+            <label for="topic-search" class="visually-hidden">
+                Search JavaScript topics
+            </label>
+
+            <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+
+            <input type="search" id="topic-search" class="topic-search-input" placeholder="Search JavaScript topics..."
+                autocomplete="off">
+
+            <span class="search-shortcut" aria-hidden="true">Ctrl K</span>
+        </div>
+
+        <!-- I will connect these controls with future global functionality. -->
+        <div class="header-actions">
+
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"
+                aria-pressed="false">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                <span>Dark Mode</span>
+            </button>
+
+            <button type="button" class="header-action-button" id="bookmarks-button" aria-label="Open bookmarks">
+                <i class="fa-regular fa-bookmark" aria-hidden="true"></i>
+                <span>Bookmarks</span>
+            </button>
+
+            <button type="button" class="header-action-button" id="notes-button" aria-label="Open notes">
+                <i class="fa-regular fa-note-sticky" aria-hidden="true"></i>
+                <span>Notes</span>
+            </button>
+
+            <button type="button" class="header-action-button" id="settings-button" aria-label="Open settings">
+                <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                <span>Settings</span>
+            </button>
+
+            <button type="button" class="profile-button" id="profile-button" aria-label="Open profile menu"
+                aria-expanded="false">
+                <span class="profile-avatar">IF</span>
+                <i class="fa-solid fa-chevron-down profile-arrow" aria-hidden="true"></i>
+            </button>
+
+        </div>
+
+    </header>
+    <!-- END SITE HEADER -->
+
+    <!-- START MOBILE NAVIGATION -->
+    <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open navigation menu"
+        aria-controls="sidebar" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+    <!-- END MOBILE NAVIGATION -->
+
+    <div class="app-layout">
+
+        <!-- START SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-header">
+                <span class="sidebar-title">JavaScript Topics</span>
+
+                <button type="button" class="sidebar-close-button" id="sidebar-close-button"
+                    aria-label="Close navigation">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <nav class="topic-navigation" aria-label="JavaScript learning topics">
+
+                <!-- I will keep the learning order consistent across every topic page. -->
+                <section class="topic-navigation-group">
+
+                    <button type="button" class="navigation-group-title" aria-expanded="true"
+                        aria-controls="getting-started-topics">
+                        <span>Getting Started</span>
+                        <i class="fa-solid fa-chevron-down navigation-group-arrow" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="navigation-group-content" id="getting-started-topics">
+
+                        <a href="introduction.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>JavaScript Introduction</span>
+                        </a>
+
+                    </div>
+
+                </section>
+
+                <!-- I will keep all completed fundamentals available for direct navigation. -->
+                <section class="topic-navigation-group">
+
+                    <button type="button" class="navigation-group-title" aria-expanded="true"
+                        aria-controls="fundamentals-topics">
+                        <span>JavaScript Fundamentals</span>
+                        <i class="fa-solid fa-chevron-down navigation-group-arrow" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="navigation-group-content" id="fundamentals-topics">
+
+                        <a href="variables.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Variables &amp; User Input</span>
+                        </a>
+
+                        <a href="operators.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Operators &amp; Expressions</span>
+                        </a>
+
+                        <a href="data-types.html" class="topic-navigation-link active" aria-current="page">
+                            <i class="fa-solid fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Data Types &amp; Strings</span>
+                        </a>
+
+                    </div>
+
+                </section>
+
+                <!-- I will unlock this group when control-flow topics are covered. -->
+                <section class="topic-navigation-group">
+
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Control Flow</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+
+                </section>
+
+                <!-- I will populate future groups as the JavaScript course progresses. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Functions</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Arrays</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Objects</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>DOM &amp; BOM</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Events</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Forms</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Browser APIs</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Asynchronous JavaScript</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Modern JavaScript</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Projects</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+            </nav>
+
+            <!-- I will connect this progress component with persistent learning data later. -->
+            <section class="sidebar-progress-card" aria-labelledby="progress-title">
+
+                <div class="progress-card-header">
+                    <span id="progress-title">Your Progress</span>
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                </div>
+
+                <div class="progress-card-content">
+
+                    <div class="progress-circle" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100" aria-label="0 percent completed">
+                        <span class="progress-percentage">0%</span>
+                    </div>
+
+                    <div class="progress-summary">
+                        <span>Completed</span>
+                        <strong id="completed-topic-count">0 / 4 Topics</strong>
+                    </div>
+
+                </div>
+
+                <button type="button" class="progress-view-button" id="view-progress-button">
+                    <span>View Progress</span>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </button>
+
+            </section>
+
+        </aside>
+        <!-- END SIDEBAR -->
+
+        <!-- START SIDEBAR OVERLAY -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+        <!-- END SIDEBAR OVERLAY -->
+
+        <!-- START MAIN CONTENT -->
+        <main class="main-content" id="main-content">
+
+            <!-- START PAGE TOOLBAR -->
+            <div class="page-toolbar">
+
+                <nav class="breadcrumb-navigation" aria-label="Breadcrumb">
+
+                    <a href="../index.html" class="breadcrumb-link">
+                        <i class="fa-solid fa-house" aria-hidden="true"></i>
+                        <span>Home</span>
+                    </a>
+
+                    <i class="fa-solid fa-chevron-right breadcrumb-separator" aria-hidden="true"></i>
+
+                    <span class="breadcrumb-current" aria-current="page">
+                        Data Types &amp; Strings
+                    </span>
+
+                </nav>
+
+                <!-- I will connect these actions with bookmark and sharing functionality later. -->
+                <div class="page-actions">
+
+                    <button type="button" class="page-action-button" id="bookmark-topic-button" aria-pressed="false">
+                        <i class="fa-regular fa-bookmark" aria-hidden="true"></i>
+                        <span>Bookmark</span>
+                    </button>
+
+                    <button type="button" class="page-action-button" id="share-topic-button">
+                        <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+                        <span>Share</span>
+                    </button>
+
+                </div>
+
+            </div>
+            <!-- END PAGE TOOLBAR -->
+
+            <!-- START TOPIC PAGE -->
+            <article class="topic-page-content" id="data-types-topic" data-topic-id="data-types-strings" itemscope
+                itemtype="https://schema.org/TechArticle">
+
+                <!-- START TOPIC HEADER -->
+                <header class="topic-header">
+
+                    <div class="topic-header-content">
+
+                        <div class="topic-header-meta">
+                            <span class="topic-category">JavaScript Fundamentals</span>
+                            <span class="topic-number">04</span>
+                        </div>
+
+                        <h1 itemprop="headline">Data Types &amp; Strings</h1>
+
+                        <p itemprop="description">
+                            Learn how JavaScript represents different kinds of
+                            values and understand primitive data types, type
+                            checking, strings, and template literals.
+                        </p>
+
+                        <div class="topic-header-details">
+
+                            <span>
+                                <i class="fa-solid fa-signal" aria-hidden="true"></i>
+                                Beginner
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                                Fundamental
+                            </span>
+
+                            <span>
+                                <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                12 min read
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </header>
+                <!-- END TOPIC HEADER -->
+
+                <!-- START CONTENT NAVIGATION -->
+                <aside class="topic-content-navigation" aria-label="On this page">
+
+                    <div class="content-navigation-header">
+                        <span class="section-eyebrow">On This Page</span>
+                        <h2>Data Types &amp; Strings</h2>
+                    </div>
+
+                    <nav aria-label="Data types topic sections">
+
+                        <a href="#what-are-data-types">What Are Data Types?</a>
+                        <a href="#primitive-non-primitive">Primitive &amp; Non-Primitive</a>
+                        <a href="#typeof">The typeof Operator</a>
+                        <a href="#number">Number</a>
+                        <a href="#string">String</a>
+                        <a href="#boolean">Boolean</a>
+                        <a href="#undefined">Undefined</a>
+                        <a href="#null">Null</a>
+                        <a href="#symbol">Symbol</a>
+                        <a href="#bigint">BigInt</a>
+                        <a href="#string-concatenation">String Concatenation</a>
+                        <a href="#template-literals">Template Literals</a>
+                        <a href="#practical-example">Practical Example</a>
+                        <a href="#output">Output</a>
+                        <a href="#important-notes">Important Notes</a>
+                        <a href="#common-mistakes">Common Mistakes</a>
+                        <a href="#quick-revision">Quick Revision</a>
+
+                    </nav>
+
+                </aside>
+                <!-- END CONTENT NAVIGATION -->
+
+                <!-- START TOPIC ARTICLE -->
+                <div class="topic-article">
+
+                    <!-- START WHAT ARE DATA TYPES -->
+                    <section class="content-section" id="what-are-data-types">
+
+                        <header>
+                            <span class="section-eyebrow">01 — Foundation</span>
+                            <h2>What Are Data Types?</h2>
+                        </header>
+
+                        <p>
+                            A data type describes what kind of value a piece of
+                            data represents. JavaScript uses data types to
+                            understand how different values should behave.
+                        </p>
+
+                        <p>
+                            For example, <code>25</code> represents a number,
+                            while <code>"Hello"</code> represents a string.
+                        </p>
+
+                        <aside class="content-note content-note-info">
+
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+
+                            <div>
+                                <strong>Why Data Types Matter</strong>
+
+                                <p>
+                                    Knowing the type of a value helps you predict
+                                    how JavaScript will handle it in calculations,
+                                    comparisons, conditions, and application logic.
+                                </p>
+                            </div>
+
+                        </aside>
+
+                    </section>
+                    <!-- END WHAT ARE DATA TYPES -->
+
+                    <!-- START PRIMITIVE NON PRIMITIVE -->
+                    <section class="content-section" id="primitive-non-primitive">
+
+                        <header>
+                            <span class="section-eyebrow">02 — Classification</span>
+                            <h2>Primitive &amp; Non-Primitive Data Types</h2>
+                        </header>
+
+                        <p>
+                            JavaScript data types can broadly be understood as
+                            <strong>primitive</strong> and
+                            <strong>non-primitive</strong> values.
+                        </p>
+
+                        <div class="comparison-grid">
+
+                            <article class="comparison-item">
+
+                                <h3>Primitive</h3>
+
+                                <p>
+                                    Primitive values represent a single value.
+                                    Common primitive types include Number, String,
+                                    Boolean, Undefined, Null, Symbol, and BigInt.
+                                </p>
+
+                            </article>
+
+                            <article class="comparison-item">
+
+                                <h3>Non-Primitive</h3>
+
+                                <p>
+                                    Non-primitive values can represent collections
+                                    or more complex structures. Objects and arrays
+                                    are common examples.
+                                </p>
+
+                            </article>
+
+                        </div>
+
+                        <aside class="content-note content-note-tip">
+
+                            <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+
+                            <div>
+                                <strong>Coming Later</strong>
+
+                                <p>
+                                    Objects and arrays will be explored in depth
+                                    in their dedicated topics. For now, remember
+                                    the basic distinction.
+                                </p>
+                            </div>
+
+                        </aside>
+
+                    </section>
+                    <!-- END PRIMITIVE NON PRIMITIVE -->
+
+                    <!-- START TYPEOF -->
+                    <section class="content-section" id="typeof">
+
+                        <header>
+                            <span class="section-eyebrow">03 — Type Checking</span>
+                            <h2>The <code>typeof</code> Operator</h2>
+                        </header>
+
+                        <p>
+                            The <code>typeof</code> operator helps us determine
+                            the data type of a value.
+                        </p>
+
+                        <div class="code-example">
+
+                            <header class="code-example-header">
+
+                                <span>
+                                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                                    Example
+                                </span>
+
+                                <button type="button" class="copy-code-button" data-copy-target="typeof-code"
+                                    aria-label="Copy typeof example">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    <span>Copy</span>
+                                </button>
+
+                            </header>
+
+                            <pre><code id="typeof-code">let age = 23;
+
+console.log(typeof age);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>"number"</code>
+
+                        </div>
+
+                        <p>
+                            The result tells us that the value stored in
+                            <code>age</code> is a number.
+                        </p>
+
+                    </section>
+                    <!-- END TYPEOF -->
+
+                    <!-- START NUMBER -->
+                    <section class="content-section" id="number">
+
+                        <header>
+                            <span class="section-eyebrow">04 — Primitive Type</span>
+                            <h2>Number</h2>
+                        </header>
+
+                        <p>
+                            The Number type is used for numeric values, including
+                            positive numbers, negative numbers, integers, and
+                            decimal values.
+                        </p>
+
+                        <div class="code-example">
+
+                            <header class="code-example-header">
+
+                                <span>
+                                    <i class="fa-solid fa-hashtag" aria-hidden="true"></i>
+                                    Number Example
+                                </span>
+
+                                <button type="button" class="copy-code-button" data-copy-target="number-code"
+                                    aria-label="Copy number example">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    <span>Copy</span>
+                                </button>
+
+                            </header>
+
+                            <pre><code id="number-code">let age = 23;
+let price = 499.99;
+let temperature = -5;
+
+console.log(typeof price);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>"number"</code>
+
+                        </div>
+
+                    </section>
+                    <!-- END NUMBER -->
+
+                    <!-- START STRING -->
+                    <section class="content-section" id="string">
+
+                        <header>
+                            <span class="section-eyebrow">05 — Primitive Type</span>
+                            <h2>String</h2>
+                        </header>
+
+                        <p>
+                            A String represents text. JavaScript strings can be
+                            written using single quotes, double quotes, or
+                            template literals.
+                        </p>
+
+                        <div class="code-example">
+
+                            <header class="code-example-header">
+
+                                <span>
+                                    <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                                    String Example
+                                </span>
+
+                                <button type="button" class="copy-code-button" data-copy-target="string-code"
+                                    aria-label="Copy string example">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    <span>Copy</span>
+                                </button>
+
+                            </header>
+
+                            <pre><code id="string-code">let firstName = "Imran";
+let language = 'JavaScript';
+
+console.log(typeof firstName);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>"string"</code>
+
+                        </div>
+
+                        <aside class="content-note content-note-info">
+
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+
+                            <div>
+                                <strong>Remember</strong>
+
+                                <p>
+                                    Text inside quotes is treated as a string,
+                                    even when the characters look like numbers.
+                                </p>
+                            </div>
+
+                        </aside>
+
+                    </section>
+                    <!-- END STRING -->
+
+                    <!-- START BOOLEAN -->
+                    <section class="content-section" id="boolean">
+
+                        <header>
+                            <span class="section-eyebrow">06 — Logical Value</span>
+                            <h2>Boolean</h2>
+                        </header>
+
+                        <p>
+                            A Boolean represents one of two logical values:
+                            <code>true</code> or <code>false</code>.
+                        </p>
+
+                        <p>
+                            Boolean values are especially important when JavaScript
+                            makes decisions, such as checking whether a user is
+                            logged in or whether a condition is satisfied.
+                        </p>
+
+                        <div class="code-example">
+
+                            <header class="code-example-header">
+
+                                <span>
+                                    <i class="fa-solid fa-toggle-on" aria-hidden="true"></i>
+                                    Boolean Example
+                                </span>
+
+                                <button type="button" class="copy-code-button" data-copy-target="boolean-code"
+                                    aria-label="Copy boolean example">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    <span>Copy</span>
+                                </button>
+
+                            </header>
+
+                            <pre><code id="boolean-code">let isLoggedIn = true;
+
+console.log(typeof isLoggedIn);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>"boolean"</code>
+
+                        </div>
+
+                        <aside class="content-note content-note-tip">
+
+                            <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+
+                            <div>
+                                <strong>Used Heavily Later</strong>
+
+                                <p>
+                                    Boolean values become especially important
+                                    when we learn comparisons, conditions, and
+                                    control flow.
+                                </p>
+                            </div>
+
+                        </aside>
+
+                    </section>
+                    <!-- END BOOLEAN -->
+
+                    <!-- START UNDEFINED -->
+                    <section class="content-section" id="undefined">
+
+                        <header>
+                            <span class="section-eyebrow">07 — Special Value</span>
+                            <h2>Undefined</h2>
+                        </header>
+
+                        <p>
+                            <code>undefined</code> means a value has not been
+                            assigned to a variable yet.
+                        </p>
+
+                        <div class="code-example">
+
+                            <header class="code-example-header">
+
+                                <span>
+                                    <i class="fa-solid fa-question" aria-hidden="true"></i>
+                                    Undefined Example
+                                </span>
+
+                                <button type="button" class="copy-code-button" data-copy-target="undefined-code"
+                                    aria-label="Copy undefined example">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    <span>Copy</span>
+                                </button>
+
+                            </header>
+
+                            <pre><code id="undefined-code">let userName;
+
+console.log(userName);
+console.log(typeof userName);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <pre><code>undefined
+"undefined"</code></pre>
+
+                        </div>
+
+                    </section>
+                    <!-- END UNDEFINED -->
+
+                    <!-- START NULL -->
+                    <section class="content-section" id="null">
+
+                        <header>
+                            <span class="section-eyebrow">08 — Intentional Empty Value</span>
+                            <h2>Null</h2>
+                        </header>
+
+                        <p>
+                            <code>null</code> represents an intentional absence
+                            of a value. A developer can explicitly assign
+                            <code>null</code> when there is currently no value.
+                        </p>
+
+                        <div class="code-example">
+
+                            <header class="code-example-header">
+
+                                <span>
+                                    <i class="fa-solid fa-ban" aria-hidden="true"></i>
+                                    Null Example
+                                </span>
+
+                                <button type="button" class="copy-code-button" data-copy-target="null-code"
+                                    aria-label="Copy null example">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    <span>Copy</span>
+                                </button>
+
+                            </header>
+
+                            <pre><code id="null-code">let selectedProduct = null;
+
+console.log(selectedProduct);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>null</code>
+
+                        </div>
+
+                        <aside class="content-note content-note-important">
+
+                            <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+
+                            <div>
+                                <strong>JavaScript Quirk</strong>
+
+                                <p>
+                                    <code>typeof null</code> returns
+                                    <code>"object"</code>. This is a historical
+                                    behavior in JavaScript that you should remember.
+                                </p>
+                            </div>
+
+                        </aside>
+
+                    </section>
+                    <!-- END NULL -->
+
+                    <!-- START SYMBOL -->
+                    <section class="content-section" id="symbol">
+
+                        <header>
+                            <span class="section-eyebrow">09 — Primitive Type</span>
+                            <h2>Symbol</h2>
+                        </header>
+
+                        <p>
+                            A Symbol creates a unique primitive value. Symbols
+                            are useful when a unique identifier is needed.
+                        </p>
+
+                        <div class="code-example">
+
+                            <header class="code-example-header">
+
+                                <span>
+                                    <i class="fa-solid fa-fingerprint" aria-hidden="true"></i>
+                                    Symbol Example
+                                </span>
+
+                                <button type="button" class="copy-code-button" data-copy-target="symbol-code"
+                                    aria-label="Copy symbol example">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    <span>Copy</span>
+                                </button>
+
+                            </header>
+
+                            <pre><code id="symbol-code">let firstId = Symbol("id");
+let secondId = Symbol("id");
+
+console.log(firstId === secondId);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>false</code>
+
+                        </div>
+
+                        <p>
+                            Even when two Symbols contain the same description,
+                            each Symbol is unique.
+                        </p>
+
+                    </section>
+                    <!-- END SYMBOL -->
+
+                    <!-- START BIGINT -->
+                    <section class="content-section" id="bigint">
+
+                        <header>
+                            <span class="section-eyebrow">10 — Large Integers</span>
+                            <h2>BigInt</h2>
+                        </header>
+
+                        <p>
+                            BigInt is used for integers that are too large to be
+                            safely represented by the regular Number type.
+                        </p>
+
+                        <div class="code-example">
+
+                            <header class="code-example-header">
+
+                                <span>
+                                    <i class="fa-solid fa-infinity" aria-hidden="true"></i>
+                                    BigInt Example
+                                </span>
+
+                                <button type="button" class="copy-code-button" data-copy-target="bigint-code"
+                                    aria-label="Copy BigInt example">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    <span>Copy</span>
+                                </button>
+
+                            </header>
+
+                            <pre><code id="bigint-code">let largeNumber = 9007199254740993n;
+
+console.log(typeof largeNumber);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>"bigint"</code>
+
+                        </div>
+
+                        <aside class="content-note content-note-warning">
+
+                            <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+
+                            <div>
+                                <strong>Important</strong>
+
+                                <p>
+                                    BigInt values are written with an
+                                    <code>n</code> suffix and should not be
+                                    casually mixed with regular Number values.
+                                </p>
+                            </div>
+
+                        </aside>
+
+                    </section>
+                    <!-- END BIGINT -->
+
+                    <!-- START STRING CONCATENATION -->
+                    <section class="content-section" id="string-concatenation">
+
+                        <header>
+                            <span class="section-eyebrow">11 — Working With Text</span>
+                            <h2>String Concatenation</h2>
+                        </header>
+
+                        <p>
+                            String concatenation means joining strings together.
+                            JavaScript commonly uses the <code>+</code> operator
+                            for this purpose.
+                        </p>
+
+                        <div class="code-example">
+
+                            <header class="code-example-header">
+
+                                <span>
+                                    <i class="fa-solid fa-link" aria-hidden="true"></i>
+                                    Concatenation Example
+                                </span>
+
+                                <button type="button" class="copy-code-button" data-copy-target="concatenation-code"
+                                    aria-label="Copy string concatenation example">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    <span>Copy</span>
+                                </button>
+
+                            </header>
+
+                            <pre><code id="concatenation-code">let firstName = "Imran";
+let lastName = "Fateh";
+
+let fullName = firstName + " " + lastName;
+
+console.log(fullName);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>Imran Fateh</code>
+
+                        </div>
+
+                        <aside class="content-note content-note-info">
+
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+
+                            <div>
+                                <strong>Notice the Difference</strong>
+
+                                <p>
+                                    The <code>+</code> operator can perform
+                                    arithmetic with numbers and concatenation
+                                    when strings are involved.
+                                </p>
+                            </div>
+
+                        </aside>
+
+                    </section>
+                    <!-- END STRING CONCATENATION -->
+
+                    <!-- START TEMPLATE LITERALS -->
+                    <section class="content-section" id="template-literals">
+
+                        <header>
+                            <span class="section-eyebrow">12 — Modern Strings</span>
+                            <h2>Template Literals</h2>
+                        </header>
+
+                        <p>
+                            Template literals provide a convenient way to create
+                            strings and insert values directly into them.
+                        </p>
+
+                        <p>
+                            They use backticks and expressions inside
+                            <code>${...}</code>.
+                        </p>
+
+                        <div class="code-example">
+
+                            <header class="code-example-header">
+
+                                <span>
+                                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                                    Template Literal Example
+                                </span>
+
+                                <button type="button" class="copy-code-button" data-copy-target="template-literal-code"
+                                    aria-label="Copy template literal example">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    <span>Copy</span>
+                                </button>
+
+                            </header>
+
+                            <pre><code id="template-literal-code">let firstName = "Imran";
+let lastName = "Fateh";
+
+console.log(`My name is ${firstName} ${lastName}.`);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>My name is Imran Fateh.</code>
+
+                        </div>
+
+                        <aside class="content-note content-note-tip">
+
+                            <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+
+                            <div>
+                                <strong>Developer Advantage</strong>
+
+                                <p>
+                                    Template literals are often easier to read
+                                    than long strings joined with multiple
+                                    <code>+</code> operators.
+                                </p>
+                            </div>
+
+                        </aside>
+
+                    </section>
+                    <!-- END TEMPLATE LITERALS -->
+
+                    <!-- START PRACTICAL EXAMPLE -->
+                    <section class="content-section" id="practical-example">
+
+                        <header>
+                            <span class="section-eyebrow">13 — Real Development</span>
+                            <h2>Practical Example: User Profile</h2>
+                        </header>
+
+                        <p>
+                            In a real application, different data types commonly
+                            work together. A user profile may contain text,
+                            numbers, and Boolean values at the same time.
+                        </p>
+
+                        <div class="code-example">
+
+                            <header class="code-example-header">
+
+                                <span>
+                                    <i class="fa-solid fa-user" aria-hidden="true"></i>
+                                    Practical Example
+                                </span>
+
+                                <button type="button" class="copy-code-button" data-copy-target="profile-code"
+                                    aria-label="Copy user profile example">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    <span>Copy</span>
+                                </button>
+
+                            </header>
+
+                            <pre><code id="profile-code">let userName = "Imran";
+let userAge = 23;
+let isStudent = true;
+
+console.log(
+  `Name: ${userName}, Age: ${userAge}, Student: ${isStudent}`
+);</code></pre>
+
+                        </div>
+
+                    </section>
+                    <!-- END PRACTICAL EXAMPLE -->
+
+                    <!-- START OUTPUT -->
+                    <section class="content-section" id="output">
+
+                        <header>
+                            <span class="section-eyebrow">Result</span>
+                            <h2>Output</h2>
+                        </header>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Console Output
+                            </span>
+
+                            <code>
+                                Name: Imran, Age: 23, Student: true
+                            </code>
+
+                        </div>
+
+                        <p>
+                            This example shows how different JavaScript data
+                            types can be combined to represent real application
+                            information.
+                        </p>
+
+                    </section>
+                    <!-- END OUTPUT -->
+
+                    <!-- START IMPORTANT NOTES -->
+                    <section class="content-section" id="important-notes">
+
+                        <header>
+                            <span class="section-eyebrow">Key Takeaways</span>
+                            <h2>Important Notes</h2>
+                        </header>
+
+                        <ul class="learning-points">
+
+                            <li>Data types describe the kind of value JavaScript is working with.</li>
+
+                            <li>Primitive values represent individual values.</li>
+
+                            <li>Objects and arrays are examples of non-primitive values.</li>
+
+                            <li><code>typeof</code> can be used to inspect the type of a value.</li>
+
+                            <li>Strings represent text and can be written with quotes.</li>
+
+                            <li>Boolean values are either <code>true</code> or <code>false</code>.</li>
+
+                            <li><code>undefined</code> usually represents an unassigned value.</li>
+
+                            <li><code>null</code> represents an intentional absence of a value.</li>
+
+                            <li>Every Symbol is unique.</li>
+
+                            <li>BigInt is designed for very large integers.</li>
+
+                            <li>Template literals make dynamic strings easier to read.</li>
+
+                        </ul>
+
+                    </section>
+                    <!-- END IMPORTANT NOTES -->
+
+                    <!-- START COMMON MISTAKES -->
+                    <section class="content-section" id="common-mistakes">
+
+                        <header>
+                            <span class="section-eyebrow">Avoid These</span>
+                            <h2>Common Mistakes</h2>
+                        </header>
+
+                        <div class="mistake-list">
+
+                            <article class="mistake-item">
+
+                                <span class="mistake-icon" aria-hidden="true">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+
+                                <div>
+                                    <h3>Confusing Number and String</h3>
+
+                                    <p>
+                                        <code>25</code> is a Number, while
+                                        <code>"25"</code> is a String because
+                                        the second value is inside quotes.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                            <article class="mistake-item">
+
+                                <span class="mistake-icon" aria-hidden="true">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+
+                                <div>
+                                    <h3>Assuming null is undefined</h3>
+
+                                    <p>
+                                        <code>undefined</code> and
+                                        <code>null</code> are different concepts.
+                                        One commonly represents an unassigned
+                                        value, while the other represents an
+                                        intentional empty value.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                            <article class="mistake-item">
+
+                                <span class="mistake-icon" aria-hidden="true">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+
+                                <div>
+                                    <h3>Forgetting the backticks</h3>
+
+                                    <p>
+                                        Template literals require backticks.
+                                        Regular quotes do not provide the same
+                                        interpolation syntax.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                            <article class="mistake-item">
+
+                                <span class="mistake-icon" aria-hidden="true">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+
+                                <div>
+                                    <h3>Expecting typeof null to return null</h3>
+
+                                    <p>
+                                        JavaScript returns
+                                        <code>"object"</code> for
+                                        <code>typeof null</code>. This is a
+                                        historical JavaScript behavior.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+                    <!-- END COMMON MISTAKES -->
+
+                    <!-- START QUICK REVISION -->
+                    <section class="content-section" id="quick-revision">
+
+                        <header>
+                            <span class="section-eyebrow">Quick Revision</span>
+                            <h2>Quick Revision</h2>
+                        </header>
+
+                        <ul class="learning-points">
+
+                            <li><strong>Number:</strong> numeric values.</li>
+
+                            <li><strong>String:</strong> text values.</li>
+
+                            <li><strong>Boolean:</strong> <code>true</code> or <code>false</code>.</li>
+
+                            <li><strong>Undefined:</strong> value has not been assigned.</li>
+
+                            <li><strong>Null:</strong> intentional absence of a value.</li>
+
+                            <li><strong>Symbol:</strong> unique primitive value.</li>
+
+                            <li><strong>BigInt:</strong> very large integers.</li>
+
+                            <li><code>typeof</code> helps identify a value's type.</li>
+
+                            <li>Template literals use backticks and <code>${...}</code>.</li>
+
+                        </ul>
+
+                    </section>
+                    <!-- END QUICK REVISION -->
+
+                    <!-- START PRACTICE -->
+                    <section class="content-section topic-practice-section" id="practice">
+
+                        <header>
+                            <span class="section-eyebrow">Practice</span>
+                            <h2>Ready to Practice?</h2>
+                        </header>
+
+                        <div class="practice-card">
+
+                            <div class="practice-card-icon" aria-hidden="true">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+
+                            <div class="practice-card-content">
+
+                                <h2>Test Your Understanding</h2>
+
+                                <p>
+                                    Practice identifying data types, using
+                                    <code>typeof</code>, combining strings,
+                                    and creating dynamic text with template literals.
+                                </p>
+
+                            </div>
+
+                            <button type="button" class="primary-button" id="start-practice-button"
+                                data-topic="data-types">
+                                <span>Start Practice</span>
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+
+                        </div>
+
+                    </section>
+                    <!-- END PRACTICE -->
+
+                    <!-- START RELATED TOPICS -->
+                    <section class="content-section related-topics-section" id="related-topics">
+
+                        <header>
+                            <span class="section-eyebrow">Continue Learning</span>
+                            <h2>Related Topics</h2>
+                        </header>
+
+                        <nav class="related-topic-links" aria-label="Related JavaScript topics">
+
+                            <a href="operators.html" class="related-topic-link">
+
+                                <span>
+                                    <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+                                    Operators &amp; Expressions
+                                </span>
+
+                                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+
+                            </a>
+
+                            <a href="#" class="related-topic-link">
+
+                                <span>
+                                    <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                                    Control Flow
+                                </span>
+
+                                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+
+                            </a>
+
+                        </nav>
+
+                    </section>
+                    <!-- END RELATED TOPICS -->
+
+                </div>
+                <!-- END TOPIC ARTICLE -->
+
+                <!-- START PREVIOUS NEXT -->
+                <nav class="footer-topic-navigation" aria-label="Topic navigation">
+
+                    <a href="operators.html" class="footer-navigation-card">
+
+                        <span class="navigation-direction">
+                            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                            Previous Topic
+                        </span>
+
+                        <strong>Operators &amp; Expressions</strong>
+
+                    </a>
+
+                    <a href="#" class="footer-navigation-card disabled" aria-disabled="true">
+
+                        <span class="navigation-direction">
+                            Next Topic
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </span>
+
+                        <strong>Coming Soon</strong>
+
+                    </a>
+
+                </nav>
+                <!-- END PREVIOUS NEXT -->
+
+                <meta itemprop="author" content="Imran Fateh">
+                <meta itemprop="dateModified" content="2026-08-26">
+                <meta itemprop="inLanguage" content="en">
+
+            </article>
+            <!-- END TOPIC PAGE -->
+
+        </main>
+        <!-- END MAIN CONTENT -->
+
+    </div>
+
+    <!-- START BACK TO TOP -->
+    <button type="button" class="back-to-top-button" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <!-- END BACK TO TOP -->
+
+    <!-- I will connect this page with the existing global functionality files. -->
+    <script src="../Js/main.js"></script>
+    <script src="../Js/navigation.js"></script>
+    <script src="../Js/practice.js"></script>
+    <script src="../Js/topics.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Learn JavaScript fundamentals from the ground up. Understand what JavaScript is, how browsers execute it, JavaScript engines, JIT compilation, programming versus scripting, and basic browser interaction.">
+    <meta name="keywords"
+        content="JavaScript Introduction, Learn JavaScript, JavaScript History, JavaScript Engine, JIT Compilation, Compiler vs Interpreter, JavaScript Basics">
+    <meta name="author" content="Imran Fateh">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#111827">
+
+    <link rel="canonical" href="https://example.com/Pages/introduction.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="JavaScript Introduction | Learn JavaScript">
+    <meta property="og:description"
+        content="Build a strong JavaScript foundation by understanding its history, execution, engines, JIT compilation, and basic browser interaction.">
+    <meta property="og:image" content="../Assets/images/learn-javascript-preview.png">
+    <meta property="og:url" content="https://example.com/Pages/introduction.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JavaScript Introduction | Learn JavaScript">
+    <meta name="twitter:description"
+        content="Build a strong JavaScript foundation by understanding its history, execution, engines, JIT compilation, and basic browser interaction.">
+    <meta name="twitter:image" content="../Assets/images/learn-javascript-preview.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/responsive.css">
+
+    <title>JavaScript Introduction | Learn JavaScript</title>
+</head>
+
+<body>
+
+    <!-- I will keep the skip link available for keyboard users on every learning page. -->
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+    <!-- I will use this header consistently across the entire learning platform. -->
+    <header class="site-header">
+        <div class="header-brand">
+            <a href="../index.html" class="brand-link" aria-label="Learn JavaScript Home">
+                <span class="brand-icon" aria-hidden="true">
+                    <i class="fa-brands fa-js"></i>
+                </span>
+                <span class="brand-name">Learn <strong>JavaScript</strong></span>
+            </a>
+        </div>
+
+        <!-- I will connect this search field with the global topic search system. -->
+        <div class="header-search">
+            <label for="topic-search" class="visually-hidden">Search JavaScript topics</label>
+            <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+            <input type="search" id="topic-search" class="topic-search-input" placeholder="Search JavaScript topics..."
+                autocomplete="off">
+            <span class="search-shortcut" aria-hidden="true">Ctrl K</span>
+        </div>
+
+        <!-- I will connect these global actions with their respective systems in future development. -->
+        <div class="header-actions">
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"
+                aria-pressed="false">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                <span>Dark Mode</span>
+            </button>
+
+            <button type="button" class="header-action-button" aria-label="Open bookmarks">
+                <i class="fa-regular fa-bookmark" aria-hidden="true"></i>
+                <span>Bookmarks</span>
+            </button>
+
+            <button type="button" class="header-action-button" aria-label="Open notes">
+                <i class="fa-regular fa-note-sticky" aria-hidden="true"></i>
+                <span>Notes</span>
+            </button>
+
+            <button type="button" class="header-action-button" aria-label="Open settings">
+                <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                <span>Settings</span>
+            </button>
+
+            <!-- I will connect this profile menu with future learner preferences. -->
+            <button type="button" class="profile-button" aria-label="Open profile menu">
+                <span class="profile-avatar">IF</span>
+                <i class="fa-solid fa-chevron-down profile-arrow" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- I will use this button to control sidebar navigation on smaller screens. -->
+    <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open navigation menu"
+        aria-controls="sidebar" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <div class="app-layout">
+
+        <!-- I will keep the learning navigation consistent across every topic page. -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <span class="sidebar-title">JavaScript Topics</span>
+                <button type="button" class="sidebar-close-button" id="sidebar-close-button"
+                    aria-label="Close navigation">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <nav class="topic-navigation" aria-label="JavaScript learning topics">
+
+                <!-- I will keep introductory concepts inside this category as the platform grows. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="true">
+                        <span>Getting Started</span>
+                        <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="navigation-group-content">
+                        <a href="introduction.html" class="topic-navigation-link active" aria-current="page">
+                            <i class="fa-solid fa-circle topic-status" aria-hidden="true"></i>
+                            <span>JavaScript Introduction</span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- I will keep currently available fundamentals connected from every topic page. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="true">
+                        <span>JavaScript Fundamentals</span>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="navigation-group-content">
+                        <a href="variables.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Variables &amp; User Input</span>
+                        </a>
+
+                        <a href="operators.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Operators &amp; Expressions</span>
+                        </a>
+
+                        <a href="data-types.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Data Types &amp; Strings</span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- I will unlock this category when the related classes are completed. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Control Flow</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add function topics here when they are introduced. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Functions</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add array topics here when they are introduced. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Arrays</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add object topics here when they are introduced. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Objects</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add DOM and BOM topics here when browser manipulation is introduced. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>DOM &amp; BOM</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add event handling topics here when JavaScript events are introduced. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Events</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add form handling and validation topics here later. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Forms</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add browser APIs here as browser-based JavaScript becomes more advanced. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Browser APIs</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add asynchronous JavaScript topics when promises and async programming are introduced. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Asynchronous JavaScript</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add modern JavaScript features as they are learned. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Modern JavaScript</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add real-world projects here as the learning journey progresses. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Projects</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+            </nav>
+
+            <!-- I will connect this progress area with persistent learning progress in the future. -->
+            <div class="sidebar-progress-card">
+                <div class="progress-card-header">
+                    <span>Your Progress</span>
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                </div>
+
+                <div class="progress-card-content">
+                    <div class="progress-circle" aria-label="0 percent completed">
+                        <span class="progress-percentage">0%</span>
+                    </div>
+
+                    <div class="progress-summary">
+                        <span>Completed</span>
+                        <strong id="completed-topic-count">0 / 4 Topics</strong>
+                    </div>
+                </div>
+
+                <!-- I will connect this button to the complete progress dashboard later. -->
+                <a href="#" class="progress-view-button">
+                    <span>View Progress</span>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </aside>
+
+        <!-- I will use this overlay to control the mobile navigation experience. -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+        <main class="main-content topic-page-content" id="main-content">
+
+            <!-- I will make breadcrumbs reflect the current topic automatically in the future. -->
+            <div class="page-toolbar">
+                <nav class="breadcrumb-navigation" aria-label="Breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">
+                        <i class="fa-solid fa-house" aria-hidden="true"></i>
+                        <span>Home</span>
+                    </a>
+                    <i class="fa-solid fa-chevron-right breadcrumb-separator" aria-hidden="true"></i>
+                    <span class="breadcrumb-category">Getting Started</span>
+                    <i class="fa-solid fa-chevron-right breadcrumb-separator" aria-hidden="true"></i>
+                    <span class="breadcrumb-current" aria-current="page">JavaScript Introduction</span>
+                </nav>
+
+                <!-- I will connect these actions with bookmarks and sharing functionality later. -->
+                <div class="page-actions">
+                    <button type="button" class="page-action-button" aria-label="Bookmark JavaScript Introduction">
+                        <i class="fa-regular fa-bookmark" aria-hidden="true"></i>
+                        <span>Bookmark</span>
+                    </button>
+
+                    <button type="button" class="page-action-button" aria-label="Share JavaScript Introduction">
+                        <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+                        <span>Share</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- I will use this header as the reusable foundation for every topic page. -->
+            <header class="topic-header" data-topic-id="javascript-introduction">
+                <div class="topic-header-content">
+                    <div class="topic-header-meta">
+                        <span class="topic-category">Getting Started</span>
+                        <span class="topic-number">Topic 01</span>
+                    </div>
+
+                    <h1>JavaScript Introduction</h1>
+
+                    <p>
+                        Build a strong foundation in JavaScript by understanding what it is, where it came from,
+                        how browsers execute it, and how JavaScript can interact with users.
+                    </p>
+
+                    <div class="topic-header-details">
+                        <span>
+                            <i class="fa-solid fa-signal" aria-hidden="true"></i>
+                            Beginner
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-list" aria-hidden="true"></i>
+                            8 Core Concepts
+                        </span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- I will use this local navigation to help learners move through long topic pages quickly. -->
+            <aside class="topic-content-navigation" aria-labelledby="content-navigation-title">
+                <div class="content-navigation-header">
+                    <span class="section-eyebrow">On This Page</span>
+                    <h2 id="content-navigation-title">JavaScript Introduction</h2>
+                </div>
+
+                <nav aria-label="Introduction sections">
+                    <a href="#what-is-javascript">What is JavaScript?</a>
+                    <a href="#javascript-history">JavaScript History</a>
+                    <a href="#browser-history">Browser History</a>
+                    <a href="#browser-understanding">How Browsers Understand JavaScript</a>
+                    <a href="#javascript-engine">JavaScript Engine</a>
+                    <a href="#compiler-vs-interpreter">Compiler vs Interpreter</a>
+                    <a href="#jit-compilation">Just-In-Time Compilation</a>
+                    <a href="#programming-vs-scripting">Programming vs Scripting</a>
+                    <a href="#basic-interaction">Basic JavaScript Interaction</a>
+                </nav>
+            </aside>
+
+            <article class="topic-article">
+
+                <!-- I will introduce the purpose of the topic before explaining individual concepts. -->
+                <section class="content-section topic-introduction" id="introduction">
+                    <span class="section-eyebrow">Introduction</span>
+                    <h2>Start With the Big Picture</h2>
+
+                    <p>
+                        JavaScript is one of the core technologies of the modern web. HTML gives a page its structure,
+                        CSS controls its presentation, and JavaScript adds behavior, logic, and interaction.
+                    </p>
+
+                    <p>
+                        Before learning variables, conditions, functions, or the DOM, it is useful to understand what
+                        JavaScript actually is and what happens when the browser receives JavaScript code.
+                    </p>
+
+                    <aside class="content-note content-note-info">
+                        <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+                        <div>
+                            <strong>Learning Goal</strong>
+                            <p>
+                                By the end of this topic, you should be able to explain the role of JavaScript,
+                                describe how a browser executes it, and use basic JavaScript interaction methods.
+                            </p>
+                        </div>
+                    </aside>
+                </section>
+
+                <!-- I will explain the core meaning of JavaScript before moving into its history and internals. -->
+                <section class="content-section" id="what-is-javascript">
+                    <span class="section-eyebrow">01 · Foundation</span>
+                    <h2>What is JavaScript?</h2>
+
+                    <p>
+                        JavaScript is a programming language widely used to add logic, behavior, and interactivity
+                        to web pages and applications. It can respond to user actions, process data, communicate with
+                        servers, update page content, and control application behavior.
+                    </p>
+
+                    <p>
+                        In frontend development, JavaScript works together with HTML and CSS. HTML defines the
+                        structure, CSS defines the visual presentation, and JavaScript controls behavior and logic.
+                    </p>
+
+                    <div class="practical-example">
+                        <span class="example-label">Real-World Example</span>
+                        <p>
+                            When a user clicks a button and a menu opens, a form validates input, or a shopping cart
+                            updates without reloading the page, JavaScript may be responsible for that behavior.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- I will keep historical information concise while preserving the important developer context. -->
+                <section class="content-section" id="javascript-history">
+                    <span class="section-eyebrow">02 · Background</span>
+                    <h2>JavaScript History</h2>
+
+                    <p>
+                        JavaScript was created in the early days of the web to bring programming and interaction
+                        into web browsers. It was designed to make web pages more dynamic and responsive to users.
+                    </p>
+
+                    <p>
+                        Over time, JavaScript evolved from a browser scripting language into a general-purpose
+                        programming language used across frontend applications, backend systems, tooling, and more.
+                    </p>
+
+                    <aside class="content-note content-note-important">
+                        <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+                        <div>
+                            <strong>Why This Matters</strong>
+                            <p>
+                                Understanding this evolution helps explain why modern JavaScript is much larger and
+                                more capable than the simple browser scripts it was originally known for.
+                            </p>
+                        </div>
+                    </aside>
+                </section>
+
+                <!-- I will explain browser history only to the level needed to understand JavaScript execution. -->
+                <section class="content-section" id="browser-history">
+                    <span class="section-eyebrow">03 · Browser</span>
+                    <h2>Browser History</h2>
+
+                    <p>
+                        Web browsers originally focused on displaying documents and following hyperlinks. As the
+                        web became more interactive, browsers needed a way to execute code and respond to user actions.
+                    </p>
+
+                    <p>
+                        JavaScript became an important part of this evolution by allowing websites to perform logic
+                        inside the browser instead of relying only on static HTML documents.
+                    </p>
+
+                    <p>
+                        This is why JavaScript and browsers have developed closely together: the browser provides the
+                        environment in which frontend JavaScript can interact with the page and the user.
+                    </p>
+                </section>
+
+                <!-- I will explain the execution flow visually through text before introducing the engine concept. -->
+                <section class="content-section" id="browser-understanding">
+                    <span class="section-eyebrow">04 · Execution</span>
+                    <h2>How Does the Browser Understand JavaScript?</h2>
+
+                    <p>
+                        A browser cannot simply display JavaScript source code as visual content. It needs a
+                        JavaScript engine to read, process, and execute that code.
+                    </p>
+
+                    <div class="concept-flow" aria-label="JavaScript execution flow">
+                        <div class="concept-flow-step">
+                            <span>01</span>
+                            <strong>JavaScript Code</strong>
+                            <p>You write instructions using JavaScript.</p>
+                        </div>
+
+                        <div class="concept-flow-arrow" aria-hidden="true">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                        <div class="concept-flow-step">
+                            <span>02</span>
+                            <strong>JavaScript Engine</strong>
+                            <p>The engine processes the code.</p>
+                        </div>
+
+                        <div class="concept-flow-arrow" aria-hidden="true">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+
+                        <div class="concept-flow-step">
+                            <span>03</span>
+                            <strong>Execution</strong>
+                            <p>The instructions are executed.</p>
+                        </div>
+                    </div>
+
+                    <aside class="content-note content-note-tip">
+                        <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        <div>
+                            <strong>Developer Perspective</strong>
+                            <p>
+                                When debugging frontend JavaScript, it is useful to remember that your code is being
+                                executed inside a browser environment with its own APIs, engine, and runtime behavior.
+                            </p>
+                        </div>
+                    </aside>
+                </section>
+
+                <!-- I will introduce the JavaScript engine before discussing compilation techniques. -->
+                <section class="content-section" id="javascript-engine">
+                    <span class="section-eyebrow">05 · Runtime</span>
+                    <h2>JavaScript Engine</h2>
+
+                    <p>
+                        A JavaScript engine is the part of a runtime environment responsible for processing and
+                        executing JavaScript code.
+                    </p>
+
+                    <p>
+                        Modern browsers use JavaScript engines that perform multiple optimization steps to execute
+                        code efficiently. The exact internal implementation differs between engines, but the goal is
+                        the same: execute JavaScript correctly and efficiently.
+                    </p>
+
+                    <div class="code-example">
+                        <div class="code-example-header">
+                            <span>
+                                <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                JavaScript
+                            </span>
+                            <button type="button" class="copy-code-button" aria-label="Copy code">
+                                <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+
+                        <pre><code>console.log("Hello World!");</code></pre>
+                    </div>
+
+                    <div class="output-example">
+                        <span class="output-label">
+                            <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                            Output
+                        </span>
+                        <code>Hello World!</code>
+                    </div>
+                </section>
+
+                <!-- I will explain compiler and interpreter concepts at the level needed for JavaScript learners. -->
+                <section class="content-section" id="compiler-vs-interpreter">
+                    <span class="section-eyebrow">06 · Execution Models</span>
+                    <h2>Compiler vs Interpreter</h2>
+
+                    <p>
+                        A compiler generally translates source code into another form before execution, while an
+                        interpreter traditionally executes instructions through a runtime process.
+                    </p>
+
+                    <p>
+                        JavaScript engines are more sophisticated than the simple compiler-versus-interpreter
+                        distinction suggests. Modern engines use multiple techniques to process and optimize code.
+                    </p>
+
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h3>Compiler</h3>
+                            <p>
+                                Translates code before or as part of preparing it for execution, often producing a
+                                form that can be executed efficiently.
+                            </p>
+                        </div>
+
+                        <div class="comparison-item">
+                            <h3>Interpreter</h3>
+                            <p>
+                                Processes and executes instructions through a runtime environment rather than relying
+                                only on traditional ahead-of-time compilation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <aside class="content-note content-note-important">
+                        <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+                        <div>
+                            <strong>Important</strong>
+                            <p>
+                                Do not assume that modern JavaScript engines are simply "interpreters." Modern engines
+                                combine interpretation, compilation, optimization, and runtime techniques.
+                            </p>
+                        </div>
+                    </aside>
+                </section>
+
+                <!-- I will introduce JIT as the next step after the basic compiler and interpreter distinction. -->
+                <section class="content-section" id="jit-compilation">
+                    <span class="section-eyebrow">07 · Optimization</span>
+                    <h2>Just-In-Time Compilation</h2>
+
+                    <p>
+                        Just-In-Time (JIT) compilation is a technique in which code can be compiled and optimized
+                        during program execution rather than being completely compiled long before the program runs.
+                    </p>
+
+                    <p>
+                        Modern JavaScript engines can use runtime information to optimize frequently executed code,
+                        helping JavaScript applications achieve better performance.
+                    </p>
+
+                    <div class="practical-example">
+                        <span class="example-label">Think Like a Developer</span>
+                        <p>
+                            You do not need to memorize the internal JIT pipeline to write JavaScript. What matters
+                            at this stage is understanding that modern engines actively optimize JavaScript while it
+                            runs.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- I will clarify the programming and scripting terminology without turning this into a language theory chapter. -->
+                <section class="content-section" id="programming-vs-scripting">
+                    <span class="section-eyebrow">08 · Language Concepts</span>
+                    <h2>Programming vs Scripting Language</h2>
+
+                    <p>
+                        The terms programming language and scripting language are often used to describe different
+                        ways languages are traditionally used, but the distinction is not absolute.
+                    </p>
+
+                    <p>
+                        JavaScript was historically described as a scripting language because it was commonly used
+                        to control behavior inside web pages. Today, JavaScript is used for much more than browser
+                        scripts, including backend applications, tooling, desktop applications, and other environments.
+                    </p>
+
+                    <aside class="content-note content-note-tip">
+                        <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+                        <div>
+                            <strong>Remember</strong>
+                            <p>
+                                In modern development, focus more on what JavaScript can do and where it runs than on
+                                treating "programming" and "scripting" as completely separate categories.
+                            </p>
+                        </div>
+                    </aside>
+                </section>
+
+                <!-- I will collect the basic browser interaction methods introduced in the first class here. -->
+                <section class="content-section" id="basic-interaction">
+                    <span class="section-eyebrow">09 · First JavaScript Tools</span>
+                    <h2>Basic JavaScript Interaction</h2>
+
+                    <p>
+                        JavaScript can communicate with developers through the browser console and can also interact
+                        with users through browser-provided functions.
+                    </p>
+
+                    <div class="method-list">
+                        <article class="method-item">
+                            <div class="method-item-header">
+                                <code>console.log()</code>
+                                <span>Developer Output</span>
+                            </div>
+                            <p>
+                                Displays information in the browser's developer console and is commonly used while
+                                learning, testing, and debugging JavaScript.
+                            </p>
+                        </article>
+
+                        <article class="method-item">
+                            <div class="method-item-header">
+                                <code>alert()</code>
+                                <span>User Message</span>
+                            </div>
+                            <p>
+                                Displays a browser dialog containing a message and pauses interaction until the dialog
+                                is dismissed.
+                            </p>
+                        </article>
+
+                        <article class="method-item">
+                            <div class="method-item-header">
+                                <code>prompt()</code>
+                                <span>User Input</span>
+                            </div>
+                            <p>
+                                Displays a browser dialog that allows the user to enter a value. The returned value
+                                can then be stored and processed by JavaScript.
+                            </p>
+                        </article>
+
+                        <article class="method-item">
+                            <div class="method-item-header">
+                                <code>confirm()</code>
+                                <span>User Decision</span>
+                            </div>
+                            <p>
+                                Displays a confirmation dialog and returns a Boolean result based on the user's choice.
+                            </p>
+                        </article>
+
+                        <article class="method-item">
+                            <div class="method-item-header">
+                                <code>document.write()</code>
+                                <span>Document Output</span>
+                            </div>
+                            <p>
+                                Writes content into the document stream. It is useful for understanding early browser
+                                scripting examples, but it is generally not the preferred technique for modern UI
+                                development.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- I will use a small number of representative examples instead of copying every classroom example. -->
+                <section class="content-section" id="code-examples">
+                    <span class="section-eyebrow">Practical Examples</span>
+                    <h2>Putting the Basics Together</h2>
+
+                    <p>
+                        These examples demonstrate the basic ideas from this topic without repeating every possible
+                        variation. The goal is to understand the pattern and then practice changing it yourself.
+                    </p>
+
+                    <div class="code-example">
+                        <div class="code-example-header">
+                            <span>
+                                <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                Example 01 · Console Output
+                            </span>
+                            <button type="button" class="copy-code-button" aria-label="Copy code">
+                                <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+
+                        <pre><code>console.log("Hello World!");</code></pre>
+                    </div>
+
+                    <div class="code-example">
+                        <div class="code-example-header">
+                            <span>
+                                <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                Example 02 · User Input
+                            </span>
+                            <button type="button" class="copy-code-button" aria-label="Copy code">
+                                <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+
+                        <pre><code>const userAge = prompt("Please enter your age", 18);
+alert(`You are ${userAge} years old.`);</code></pre>
+                    </div>
+                </section>
+
+                <!-- I will keep important points concise so they can be used during quick revision. -->
+                <section class="content-section" id="important-notes">
+                    <span class="section-eyebrow">Quick Revision</span>
+                    <h2>Important Notes</h2>
+
+                    <ul class="learning-points">
+                        <li>JavaScript adds logic, behavior, and interactivity to web applications.</li>
+                        <li>A JavaScript engine is responsible for processing and executing JavaScript code.</li>
+                        <li>Modern JavaScript engines use multiple execution and optimization techniques.</li>
+                        <li>JIT compilation helps engines optimize code during runtime.</li>
+                        <li><code>console.log()</code> is mainly useful for developer output and debugging.</li>
+                        <li><code>prompt()</code> returns user input that can later be processed by JavaScript.</li>
+                        <li>Browser dialogs are useful for learning basic interaction but are not the primary UI pattern
+                            for modern applications.</li>
+                    </ul>
+                </section>
+
+                <!-- I will document common beginner mistakes so the page teaches both correct and incorrect approaches. -->
+                <section class="content-section" id="common-mistakes">
+                    <span class="section-eyebrow">Debugging Mindset</span>
+                    <h2>Common Mistakes</h2>
+
+                    <div class="mistake-list">
+                        <article class="mistake-item">
+                            <span class="mistake-icon" aria-hidden="true">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <div>
+                                <h3>Confusing JavaScript with Java</h3>
+                                <p>
+                                    JavaScript and Java are different programming languages. Their names may look
+                                    similar, but they have different histories, ecosystems, and language designs.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="mistake-item">
+                            <span class="mistake-icon" aria-hidden="true">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <div>
+                                <h3>Expecting console.log() to appear on the webpage</h3>
+                                <p>
+                                    <code>console.log()</code> writes to the developer console, not directly into the
+                                    visible page content.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="mistake-item">
+                            <span class="mistake-icon" aria-hidden="true">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                            <div>
+                                <h3>Thinking JavaScript is only for browsers</h3>
+                                <p>
+                                    JavaScript can run in multiple environments. Browsers are one important runtime,
+                                    but they are not the only place where JavaScript can be used.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- I will connect concepts to their detailed pages as the documentation grows. -->
+                <section class="content-section related-topics-section" id="related-topics">
+                    <span class="section-eyebrow">Continue Learning</span>
+                    <h2>Related Topics</h2>
+
+                    <p>
+                        The following topics were introduced after the basic JavaScript foundation. Open them when you
+                        are ready to explore the concepts in more detail.
+                    </p>
+
+                    <div class="related-topic-links">
+                        <a href="variables.html" class="related-topic-link">
+                            <span>
+                                <i class="fa-solid fa-box" aria-hidden="true"></i>
+                                Variables &amp; User Input
+                            </span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="operators.html" class="related-topic-link">
+                            <span>
+                                <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+                                Operators &amp; Expressions
+                            </span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="data-types.html" class="related-topic-link">
+                            <span>
+                                <i class="fa-solid fa-database" aria-hidden="true"></i>
+                                Data Types &amp; Strings
+                            </span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- I will connect this practice entry point with topic-specific exercises in the practice system. -->
+                <section class="content-section topic-practice-section" id="practice">
+                    <div class="practice-card">
+                        <div class="practice-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <div class="practice-card-content">
+                            <span class="section-eyebrow">Practice</span>
+                            <h2>Ready to Test Your Understanding?</h2>
+                            <p>
+                                Practice the concepts from this topic with focused questions and small JavaScript
+                                challenges.
+                            </p>
+                        </div>
+
+                        <!-- I will connect this button with the topic-specific practice engine. -->
+                        <button type="button" class="primary-button practice-start-button"
+                            data-topic-id="javascript-introduction">
+                            <span>Start Practice</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </section>
+
+            </article>
+
+            <!-- I will make topic navigation dynamic so every page automatically knows its previous and next topic. -->
+            <nav class="footer-topic-navigation" aria-label="Topic navigation">
+                <a href="../index.html" class="footer-navigation-card">
+                    <span class="navigation-direction">
+                        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                        Back
+                    </span>
+                    <strong>JavaScript Home</strong>
+                </a>
+
+                <a href="variables.html" class="footer-navigation-card">
+                    <span class="navigation-direction">
+                        Next Topic
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </span>
+                    <strong>Variables &amp; User Input</strong>
+                </a>
+            </nav>
+
+        </main>
+    </div>
+
+    <!-- I will use this button for quick navigation after long topic pages become content-heavy. -->
+    <button type="button" class="back-to-top-button" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="../Js/main.js"></script>
+    <script src="../Js/navigation.js"></script>
+    <script src="../Js/practice.js"></script>
+    <script src="../Js/topics.js"></script>
+</body>
+
+</html>

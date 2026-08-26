@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Learn JavaScript variables and user input with clear explanations, practical examples, var, let, const, declaration, initialization, reassignment, redeclaration, and prompt().">
+    <meta name="keywords"
+        content="JavaScript variables, var, let, const, variable declaration, initialization, reassignment, redeclaration, JavaScript prompt, user input">
+    <meta name="author" content="Imran Fateh">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#111827">
+
+    <link rel="canonical" href="https://example.com/Pages/variables.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="JavaScript Variables & User Input | Learn JavaScript">
+    <meta property="og:description"
+        content="Learn JavaScript variables, declaration, initialization, var, let, const, reassignment, redeclaration, and user input with practical examples.">
+    <meta property="og:image" content="../Assets/images/learn-javascript-preview.png">
+    <meta property="og:url" content="https://example.com/Pages/variables.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JavaScript Variables & User Input">
+    <meta name="twitter:description"
+        content="Learn JavaScript variables and user input through clear explanations and practical examples.">
+    <meta name="twitter:image" content="../Assets/images/learn-javascript-preview.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/responsive.css">
+
+    <title>JavaScript Variables &amp; User Input | Learn JavaScript</title>
+</head>
+
+<body>
+
+    <!-- I will add a skip link here for improved keyboard accessibility. -->
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+    <!-- START GLOBAL HEADER -->
+    <header class="site-header">
+
+        <div class="header-brand">
+            <a href="../index.html" class="brand-link" aria-label="Learn JavaScript Home">
+                <span class="brand-icon" aria-hidden="true">
+                    <i class="fa-brands fa-js"></i>
+                </span>
+                <span class="brand-name">Learn <strong>JavaScript</strong></span>
+            </a>
+        </div>
+
+        <!-- I will connect this search field with the JavaScript topic search system. -->
+        <div class="header-search">
+            <label for="topic-search" class="visually-hidden">
+                Search JavaScript topics
+            </label>
+
+            <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+
+            <input type="search" id="topic-search" class="topic-search-input" placeholder="Search JavaScript topics..."
+                autocomplete="off">
+
+            <span class="search-shortcut" aria-hidden="true">
+                Ctrl K
+            </span>
+        </div>
+
+        <!-- I will connect these actions with future platform functionality. -->
+        <div class="header-actions">
+
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"
+                aria-pressed="false">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                <span>Dark Mode</span>
+            </button>
+
+            <button type="button" class="header-action-button" aria-label="Open bookmarks">
+                <i class="fa-regular fa-bookmark" aria-hidden="true"></i>
+                <span>Bookmarks</span>
+            </button>
+
+            <button type="button" class="header-action-button" aria-label="Open notes">
+                <i class="fa-regular fa-note-sticky" aria-hidden="true"></i>
+                <span>Notes</span>
+            </button>
+
+            <button type="button" class="header-action-button" aria-label="Open settings">
+                <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                <span>Settings</span>
+            </button>
+
+            <!-- I will connect this profile menu to future user preferences. -->
+            <button type="button" class="profile-button" aria-label="Open profile menu">
+                <span class="profile-avatar">IF</span>
+                <i class="fa-solid fa-chevron-down profile-arrow" aria-hidden="true"></i>
+            </button>
+
+        </div>
+    </header>
+    <!-- END GLOBAL HEADER -->
+
+    <!-- START MOBILE NAVIGATION -->
+    <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open navigation menu"
+        aria-controls="sidebar" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+    <!-- END MOBILE NAVIGATION -->
+
+    <div class="app-layout">
+
+        <!-- START SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-header">
+                <span class="sidebar-title">
+                    JavaScript Topics
+                </span>
+
+                <button type="button" class="sidebar-close-button" id="sidebar-close-button"
+                    aria-label="Close navigation">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <nav class="topic-navigation" aria-label="JavaScript learning topics">
+
+                <!-- I will keep introductory JavaScript content inside this group. -->
+                <section class="topic-navigation-group">
+
+                    <button type="button" class="navigation-group-title" aria-expanded="true">
+                        <span>Getting Started</span>
+                        <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="navigation-group-content">
+
+                        <a href="introduction.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>JavaScript Introduction</span>
+                        </a>
+
+                    </div>
+                </section>
+
+                <!-- I will keep the currently completed fundamental topics here. -->
+                <section class="topic-navigation-group">
+
+                    <button type="button" class="navigation-group-title" aria-expanded="true">
+                        <span>JavaScript Fundamentals</span>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="navigation-group-content">
+
+                        <a href="variables.html" class="topic-navigation-link active" aria-current="page">
+                            <i class="fa-solid fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Variables &amp; User Input</span>
+                        </a>
+
+                        <a href="operators.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Operators &amp; Expressions</span>
+                        </a>
+
+                        <a href="data-types.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Data Types &amp; Strings</span>
+                        </a>
+
+                    </div>
+                </section>
+
+                <!-- I will unlock this section when control-flow concepts are completed. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Control Flow</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add function concepts when they are covered. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Functions</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add arrays and their methods in the future. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Arrays</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add objects and object methods in the future. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Objects</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add DOM and BOM topics when browser manipulation begins. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>DOM &amp; BOM</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add event handling concepts in the future. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Events</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add forms and validation topics later. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Forms</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add browser APIs as they are introduced. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Browser APIs</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add asynchronous JavaScript after the required fundamentals. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Asynchronous JavaScript</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add modern JavaScript features as they are learned. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Modern JavaScript</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add practical JavaScript projects in the future. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Projects</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+            </nav>
+
+            <!-- I will connect this progress card with persistent learning data later. -->
+            <div class="sidebar-progress-card">
+
+                <div class="progress-card-header">
+                    <span>Your Progress</span>
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                </div>
+
+                <div class="progress-card-content">
+
+                    <div class="progress-circle" aria-label="0 percent completed">
+                        <span class="progress-percentage">
+                            0%
+                        </span>
+                    </div>
+
+                    <div class="progress-summary">
+                        <span>Completed</span>
+                        <strong id="completed-topic-count">
+                            0 / 4 Topics
+                        </strong>
+                    </div>
+
+                </div>
+
+                <a href="#" class="progress-view-button">
+                    View Progress
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+        </aside>
+        <!-- END SIDEBAR -->
+
+        <!-- I will use this overlay for the mobile sidebar experience. -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+        <!-- START MAIN CONTENT -->
+        <main class="main-content" id="main-content">
+
+            <!-- START PAGE TOOLBAR -->
+            <div class="page-toolbar">
+
+                <nav class="breadcrumb-navigation" aria-label="Breadcrumb">
+
+                    <a href="../index.html" class="breadcrumb-link">
+                        <i class="fa-solid fa-house" aria-hidden="true"></i>
+                        <span>Home</span>
+                    </a>
+
+                    <i class="fa-solid fa-chevron-right breadcrumb-separator" aria-hidden="true"></i>
+
+                    <span>JavaScript Fundamentals</span>
+
+                    <i class="fa-solid fa-chevron-right breadcrumb-separator" aria-hidden="true"></i>
+
+                    <span class="breadcrumb-current">
+                        Variables &amp; User Input
+                    </span>
+
+                </nav>
+
+                <!-- I will connect these actions with future bookmark and sharing functionality. -->
+                <div class="page-actions">
+
+                    <button type="button" class="page-action-button" aria-label="Bookmark current topic">
+                        <i class="fa-regular fa-bookmark" aria-hidden="true"></i>
+                        <span>Bookmark</span>
+                    </button>
+
+                    <button type="button" class="page-action-button" aria-label="Share current page">
+                        <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+                        <span>Share</span>
+                    </button>
+
+                </div>
+
+            </div>
+            <!-- END PAGE TOOLBAR -->
+
+            <div class="topic-page-content">
+
+                <!-- START TOPIC HEADER -->
+                <header class="topic-header">
+
+                    <div class="topic-header-content">
+
+                        <div class="topic-header-meta">
+
+                            <span class="topic-category">
+                                JavaScript Fundamentals
+                            </span>
+
+                            <span class="topic-number">
+                                Topic 02
+                            </span>
+
+                        </div>
+
+                        <h1>Variables &amp; User Input</h1>
+
+                        <p>
+                            Learn how JavaScript stores and manages values
+                            using variables, how <code>var</code>,
+                            <code>let</code>, and <code>const</code> behave,
+                            and how to receive basic input from users.
+                        </p>
+
+                        <div class="topic-header-details">
+
+                            <span>
+                                <i class="fa-solid fa-signal" aria-hidden="true"></i>
+                                Beginner
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                                Fundamental
+                            </span>
+
+                            <span>
+                                <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                                12 min read
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </header>
+                <!-- END TOPIC HEADER -->
+
+                <!-- START TOPIC CONTENT NAVIGATION -->
+                <aside class="topic-content-navigation" aria-labelledby="content-navigation-title">
+
+                    <div class="content-navigation-header">
+
+                        <span class="section-eyebrow">
+                            On This Page
+                        </span>
+
+                        <h2 id="content-navigation-title">
+                            Variables &amp; User Input
+                        </h2>
+
+                    </div>
+
+                    <nav aria-label="Variables topic sections">
+
+                        <a href="#what-is-variable">
+                            What Is a Variable?
+                        </a>
+
+                        <a href="#declaration-initialization">
+                            Declaration &amp; Initialization
+                        </a>
+
+                        <a href="#var">
+                            The var Keyword
+                        </a>
+
+                        <a href="#let">
+                            The let Keyword
+                        </a>
+
+                        <a href="#const">
+                            The const Keyword
+                        </a>
+
+                        <a href="#reassignment">
+                            Reassignment
+                        </a>
+
+                        <a href="#redeclaration">
+                            Redeclaration
+                        </a>
+
+                        <a href="#naming-rules">
+                            Naming Variables
+                        </a>
+
+                        <a href="#user-input">
+                            User Input
+                        </a>
+
+                        <a href="#practical-example">
+                            Practical Example
+                        </a>
+
+                        <a href="#output">
+                            Output
+                        </a>
+
+                        <a href="#important-notes">
+                            Important Notes
+                        </a>
+
+                        <a href="#common-mistakes">
+                            Common Mistakes
+                        </a>
+
+                        <a href="#quick-revision">
+                            Quick Revision
+                        </a>
+
+                    </nav>
+
+                </aside>
+                <!-- END TOPIC CONTENT NAVIGATION -->
+
+                <!-- START TOPIC ARTICLE -->
+                <article class="topic-article">
+
+                    <!-- START VARIABLE INTRODUCTION -->
+                    <section class="content-section" id="what-is-variable">
+
+                        <h2>What Is a Variable?</h2>
+
+                        <p>
+                            A variable is a named place used to store a value
+                            so that the program can use that value later.
+                            Instead of repeatedly writing the same data,
+                            we give it a meaningful name and work with that
+                            name.
+                        </p>
+
+                        <div class="practical-example">
+
+                            <span class="example-label">
+                                Simple Idea
+                            </span>
+
+                            <p>
+                                Think of a variable like a labeled box.
+                                The label is the variable name, and the value
+                                inside the box is the stored data.
+                            </p>
+
+                        </div>
+
+                        <div class="content-note content-note-info">
+
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+
+                            <div>
+
+                                <strong>Key Idea</strong>
+
+                                <p>
+                                    A variable gives your program a reusable
+                                    name for a value.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <!-- END VARIABLE INTRODUCTION -->
+
+                    <!-- START DECLARATION INITIALIZATION -->
+                    <section class="content-section" id="declaration-initialization">
+
+                        <h2>Variable Declaration &amp; Initialization</h2>
+
+                        <p>
+                            Declaring a variable means creating it with a
+                            variable keyword. Initialization means giving
+                            that variable its first value.
+                        </p>
+
+                        <div class="concept-flow">
+
+                            <div class="concept-flow-step">
+
+                                <span>01</span>
+
+                                <strong>Declaration</strong>
+
+                                <p>
+                                    Create the variable.
+                                </p>
+
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right concept-flow-arrow" aria-hidden="true"></i>
+
+                            <div class="concept-flow-step">
+
+                                <span>02</span>
+
+                                <strong>Initialization</strong>
+
+                                <p>
+                                    Give the variable its first value.
+                                </p>
+
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right concept-flow-arrow" aria-hidden="true"></i>
+
+                            <div class="concept-flow-step">
+
+                                <span>03</span>
+
+                                <strong>Use the Value</strong>
+
+                                <p>
+                                    Use the variable throughout your code.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="code-example">
+
+                            <div class="code-example-header">
+
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+
+                            </div>
+
+                            <pre><code>let userName = "Imran";
+
+console.log(userName);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>Imran</code>
+
+                        </div>
+
+                    </section>
+                    <!-- END DECLARATION INITIALIZATION -->
+
+                    <!-- START VAR -->
+                    <section class="content-section" id="var">
+
+                        <h2>The <code>var</code> Keyword</h2>
+
+                        <p>
+                            <code>var</code> is the older way of declaring
+                            variables in JavaScript. A variable declared with
+                            <code>var</code> can be redeclared and reassigned.
+                        </p>
+
+                        <div class="code-example">
+
+                            <div class="code-example-header">
+
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+
+                            </div>
+
+                            <pre><code>var userName = "Imran";
+
+var userName = "Fateh";
+
+console.log(userName);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>Fateh</code>
+
+                        </div>
+
+                        <div class="content-note content-note-important">
+
+                            <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+
+                            <div>
+
+                                <strong>Important</strong>
+
+                                <p>
+                                    <code>var</code> allows redeclaration.
+                                    Modern JavaScript generally prefers
+                                    <code>let</code> and <code>const</code>
+                                    when their behavior is more appropriate.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <!-- END VAR -->
+
+                    <!-- START LET -->
+                    <section class="content-section" id="let">
+
+                        <h2>The <code>let</code> Keyword</h2>
+
+                        <p>
+                            <code>let</code> is used when a variable's value
+                            may need to change later. A variable declared
+                            with <code>let</code> cannot be redeclared in
+                            the same scope, but its value can be reassigned.
+                        </p>
+
+                        <div class="code-example">
+
+                            <div class="code-example-header">
+
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+
+                            </div>
+
+                            <pre><code>let score = 50;
+
+score = 80;
+
+console.log(score);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>80</code>
+
+                        </div>
+
+                    </section>
+                    <!-- END LET -->
+
+                    <!-- START CONST -->
+                    <section class="content-section" id="const">
+
+                        <h2>The <code>const</code> Keyword</h2>
+
+                        <p>
+                            <code>const</code> is used when a variable should
+                            not be reassigned after its initial value has
+                            been assigned.
+                        </p>
+
+                        <div class="code-example">
+
+                            <div class="code-example-header">
+
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+
+                            </div>
+
+                            <pre><code>const courseName = "JavaScript";
+
+console.log(courseName);</code></pre>
+
+                        </div>
+
+                        <div class="content-note content-note-important">
+
+                            <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+
+                            <div>
+
+                                <strong>Important</strong>
+
+                                <p>
+                                    A <code>const</code> variable must receive
+                                    its initial value when it is declared,
+                                    and that binding cannot later be
+                                    reassigned.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <!-- END CONST -->
+
+                    <!-- START REASSIGNMENT -->
+                    <section class="content-section" id="reassignment">
+
+                        <h2>Reassignment</h2>
+
+                        <p>
+                            Reassignment means giving an already declared
+                            variable a new value. This is possible with
+                            <code>let</code> and <code>var</code>.
+                        </p>
+
+                        <div class="code-example">
+
+                            <div class="code-example-header">
+
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+
+                            </div>
+
+                            <pre><code>let age = 22;
+
+age = 23;
+
+console.log(age);</code></pre>
+
+                        </div>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>23</code>
+
+                        </div>
+
+                    </section>
+                    <!-- END REASSIGNMENT -->
+
+                    <!-- START REDECLARATION -->
+                    <section class="content-section" id="redeclaration">
+
+                        <h2>Redeclaration</h2>
+
+                        <p>
+                            Redeclaration means declaring the same variable
+                            name again. The behavior depends on the keyword
+                            used.
+                        </p>
+
+                        <div class="comparison-grid">
+
+                            <div class="comparison-item">
+
+                                <h3><code>var</code></h3>
+
+                                <p>
+                                    <code>var</code> allows redeclaration in
+                                    the same scope.
+                                </p>
+
+                                <div class="code-example">
+
+                                    <div class="code-example-header">
+                                        <span>JavaScript</span>
+                                    </div>
+
+                                    <pre><code>var name = "Imran";
+var name = "Fateh";</code></pre>
+
+                                </div>
+
+                            </div>
+
+                            <div class="comparison-item">
+
+                                <h3><code>let</code></h3>
+
+                                <p>
+                                    <code>let</code> does not allow
+                                    redeclaration in the same scope.
+                                </p>
+
+                                <div class="code-example">
+
+                                    <div class="code-example-header">
+                                        <span>JavaScript</span>
+                                    </div>
+
+                                    <pre><code>let name = "Imran";
+// let name = "Fateh";</code></pre>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="content-note content-note-tip">
+
+                            <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+
+                            <div>
+
+                                <strong>Remember</strong>
+
+                                <p>
+                                    Redeclaration and reassignment are not
+                                    the same thing. Redeclaration creates the
+                                    declaration again; reassignment changes
+                                    the existing value.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <!-- END REDECLARATION -->
+
+                    <!-- START NAMING RULES -->
+                    <section class="content-section" id="naming-rules">
+
+                        <h2>Variable Naming</h2>
+
+                        <p>
+                            Meaningful variable names make JavaScript code
+                            easier to understand and maintain.
+                        </p>
+
+                        <ul class="learning-points">
+
+                            <li>
+                                Use letters, digits, underscore
+                                <code>_</code>, or dollar sign
+                                <code>$</code>.
+                            </li>
+
+                            <li>
+                                A variable name should not begin with a digit.
+                            </li>
+
+                            <li>
+                                JavaScript variable names are case-sensitive.
+                            </li>
+
+                            <li>
+                                Do not use reserved JavaScript keywords as
+                                variable names.
+                            </li>
+
+                            <li>
+                                Prefer descriptive names such as
+                                <code>userName</code> instead of unclear names
+                                such as <code>x</code>.
+                            </li>
+
+                        </ul>
+
+                        <div class="code-example">
+
+                            <div class="code-example-header">
+
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+
+                            </div>
+
+                            <pre><code>let firstName = "Imran";
+let userAge = 23;</code></pre>
+
+                        </div>
+
+                    </section>
+                    <!-- END NAMING RULES -->
+
+                    <!-- START USER INPUT -->
+                    <section class="content-section" id="user-input">
+
+                        <h2>User Input</h2>
+
+                        <p>
+                            JavaScript can receive simple input from a user
+                            through the browser's <code>prompt()</code>
+                            function. The browser displays a dialog where
+                            the user can enter a value.
+                        </p>
+
+                        <div class="code-example">
+
+                            <div class="code-example-header">
+
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+
+                            </div>
+
+                            <pre><code>let userName = prompt("Please enter your name");
+
+console.log(userName);</code></pre>
+
+                        </div>
+
+                        <div class="content-note content-note-info">
+
+                            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+
+                            <div>
+
+                                <strong>Important</strong>
+
+                                <p>
+                                    The value received from
+                                    <code>prompt()</code> is treated as user
+                                    input. Converting input into numbers is a
+                                    separate concept that will be developed
+                                    further when type conversion is covered.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <!-- END USER INPUT -->
+
+                    <!-- START PRACTICAL EXAMPLE -->
+                    <section class="content-section" id="practical-example">
+
+                        <h2>Practical Example</h2>
+
+                        <p>
+                            Variables become useful when a program needs to
+                            store information and use it later. A simple
+                            registration or profile form can collect a user's
+                            name and display it back to them.
+                        </p>
+
+                        <div class="practical-example">
+
+                            <span class="example-label">
+                                Real-World Example
+                            </span>
+
+                            <p>
+                                A website can ask for a visitor's name and
+                                then use that stored value to create a
+                                personalized message.
+                            </p>
+
+                        </div>
+
+                        <div class="code-example">
+
+                            <div class="code-example-header">
+
+                                <span>
+                                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                                    JavaScript
+                                </span>
+
+                                <button type="button" class="copy-code-button" aria-label="Copy code">
+                                    <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                                    Copy
+                                </button>
+
+                            </div>
+
+                            <pre><code>let userName = prompt("Please enter your name");
+
+console.log("Welcome " + userName);</code></pre>
+
+                        </div>
+
+                    </section>
+                    <!-- END PRACTICAL EXAMPLE -->
+
+                    <!-- START OUTPUT -->
+                    <section class="content-section" id="output">
+
+                        <h2>Output</h2>
+
+                        <p>
+                            If the user enters <code>Imran</code>, the program
+                            stores that value in the variable and uses it in
+                            the message.
+                        </p>
+
+                        <div class="output-example">
+
+                            <span class="output-label">
+                                <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+                                Output
+                            </span>
+
+                            <code>Welcome Imran</code>
+
+                        </div>
+
+                    </section>
+                    <!-- END OUTPUT -->
+
+                    <!-- START IMPORTANT NOTES -->
+                    <section class="content-section" id="important-notes">
+
+                        <h2>Important Notes</h2>
+
+                        <ul class="learning-points">
+
+                            <li>
+                                A variable stores a value under a meaningful
+                                name.
+                            </li>
+
+                            <li>
+                                Declaration creates a variable, while
+                                initialization gives it its first value.
+                            </li>
+
+                            <li>
+                                <code>var</code> allows redeclaration and
+                                reassignment.
+                            </li>
+
+                            <li>
+                                <code>let</code> allows reassignment but not
+                                redeclaration in the same scope.
+                            </li>
+
+                            <li>
+                                <code>const</code> must be initialized when
+                                declared and cannot be reassigned.
+                            </li>
+
+                            <li>
+                                Redeclaration and reassignment are two
+                                different operations.
+                            </li>
+
+                            <li>
+                                <code>prompt()</code> can be used for simple
+                                browser-based user input.
+                            </li>
+
+                        </ul>
+
+                    </section>
+                    <!-- END IMPORTANT NOTES -->
+
+                    <!-- START COMMON MISTAKES -->
+                    <section class="content-section" id="common-mistakes">
+
+                        <h2>Common Mistakes</h2>
+
+                        <div class="mistake-list">
+
+                            <article class="mistake-item">
+
+                                <span class="mistake-icon" aria-hidden="true">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+
+                                <div>
+
+                                    <h3>Confusing declaration with initialization</h3>
+
+                                    <p>
+                                        Declaring a variable and assigning
+                                        its first value are related but
+                                        separate concepts.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="mistake-item">
+
+                                <span class="mistake-icon" aria-hidden="true">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+
+                                <div>
+
+                                    <h3>Redeclaring a let variable</h3>
+
+                                    <p>
+                                        A <code>let</code> variable cannot be
+                                        declared again in the same scope.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="mistake-item">
+
+                                <span class="mistake-icon" aria-hidden="true">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+
+                                <div>
+
+                                    <h3>Trying to reassign const</h3>
+
+                                    <p>
+                                        A <code>const</code> binding cannot
+                                        be assigned a new value after its
+                                        initialization.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="mistake-item">
+
+                                <span class="mistake-icon" aria-hidden="true">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+
+                                <div>
+
+                                    <h3>Using unclear variable names</h3>
+
+                                    <p>
+                                        Names such as
+                                        <code>userName</code> and
+                                        <code>studentMarks</code> make code
+                                        easier to understand than generic
+                                        names such as <code>a</code> or
+                                        <code>x</code>.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+                    <!-- END COMMON MISTAKES -->
+
+                    <!-- START QUICK REVISION -->
+                    <section class="content-section" id="quick-revision">
+
+                        <h2>Quick Revision</h2>
+
+                        <p>
+                            Variables let JavaScript store and reuse values.
+                            Remember the difference between declaration,
+                            initialization, reassignment, and redeclaration.
+                            Use <code>let</code> when a value may change,
+                            <code>const</code> when reassignment is not
+                            needed, and understand <code>var</code> as the
+                            older variable declaration approach.
+                        </p>
+
+                    </section>
+                    <!-- END QUICK REVISION -->
+
+                </article>
+                <!-- END TOPIC ARTICLE -->
+
+                <!-- START TOPIC PRACTICE -->
+                <section class="topic-practice-section" aria-labelledby="topic-practice-title">
+
+                    <div class="practice-card">
+
+                        <div class="practice-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <div class="practice-card-content">
+
+                            <span class="section-eyebrow">
+                                Practice
+                            </span>
+
+                            <h2 id="topic-practice-title">
+                                Ready to Practice?
+                            </h2>
+
+                            <p>
+                                Practice variables, variable declarations,
+                                reassignment, and user input with focused
+                                JavaScript challenges.
+                            </p>
+
+                        </div>
+
+                        <!-- I will connect this button to the variables practice system later. -->
+                        <a href="#" class="primary-button practice-start-button" data-topic-id="variables-user-input">
+
+                            <span>Start Practice</span>
+
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+
+                        </a>
+
+                    </div>
+
+                </section>
+                <!-- END TOPIC PRACTICE -->
+
+                <!-- START FOOTER TOPIC NAVIGATION -->
+                <nav class="footer-topic-navigation" aria-label="Topic navigation">
+
+                    <a href="introduction.html" class="footer-navigation-card">
+
+                        <span class="navigation-direction">
+
+                            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+
+                            Previous Topic
+
+                        </span>
+
+                        <strong>
+                            JavaScript Introduction
+                        </strong>
+
+                    </a>
+
+                    <a href="operators.html" class="footer-navigation-card">
+
+                        <span class="navigation-direction">
+
+                            Next Topic
+
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+
+                        </span>
+
+                        <strong>
+                            Operators &amp; Expressions
+                        </strong>
+
+                    </a>
+
+                </nav>
+                <!-- END FOOTER TOPIC NAVIGATION -->
+
+            </div>
+
+        </main>
+        <!-- END MAIN CONTENT -->
+
+    </div>
+
+    <!-- I will use this button for quick navigation on long topic pages. -->
+    <button type="button" class="back-to-top-button" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="../Js/main.js"></script>
+    <script src="../Js/navigation.js"></script>
+    <script src="../Js/practice.js"></script>
+    <script src="../Js/topics.js"></script>
+
+</body>
+
+</html>

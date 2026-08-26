@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn JavaScript from fundamentals to advanced concepts with clear explanations, practical examples, interactive code, and hands-on practice.">
+    <meta name="keywords"
+        content="Learn JavaScript, JavaScript tutorial, JavaScript fundamentals, JavaScript examples, JavaScript practice, JavaScript documentation">
+    <meta name="author" content="Imran Fateh">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#111827">
+    <link rel="canonical" href="https://example.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Learn JavaScript | Interactive JavaScript Learning Platform">
+    <meta property="og:description"
+        content="Learn JavaScript through clear explanations, practical examples, interactive code, and hands-on practice.">
+    <meta property="og:image" content="Assets/images/learn-javascript-preview.png">
+    <meta property="og:url" content="https://example.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Learn JavaScript | Interactive JavaScript Learning Platform">
+    <meta name="twitter:description"
+        content="Learn JavaScript through clear explanations, practical examples, interactive code, and hands-on practice.">
+    <meta name="twitter:image" content="Assets/images/learn-javascript-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+    <title>Learn JavaScript | Interactive JavaScript Learning Platform</title>
+</head>
+
+<body>
+
+    <!-- I will add a skip link here for improved keyboard accessibility. -->
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+    <!-- I will use this header for global branding, search, theme, bookmarks, notes, and user controls. -->
+    <header class="site-header">
+        <div class="header-brand">
+            <a href="index.html" class="brand-link" aria-label="Learn JavaScript Home">
+                <span class="brand-icon" aria-hidden="true">
+                    <i class="fa-brands fa-js"></i>
+                </span>
+                <span class="brand-name">Learn <strong>JavaScript</strong></span>
+            </a>
+        </div>
+
+        <!-- I will connect this search field with the JavaScript topic search system. -->
+        <div class="header-search">
+            <label for="topic-search" class="visually-hidden">Search JavaScript topics</label>
+            <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+            <input type="search" id="topic-search" class="topic-search-input" placeholder="Search JavaScript topics..."
+                autocomplete="off">
+            <span class="search-shortcut" aria-hidden="true">Ctrl K</span>
+        </div>
+
+        <!-- I will make these header actions functional with JavaScript in the future. -->
+        <div class="header-actions">
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode"
+                aria-pressed="false">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                <span>Dark Mode</span>
+            </button>
+
+            <button type="button" class="header-action-button" aria-label="Open bookmarks">
+                <i class="fa-regular fa-bookmark" aria-hidden="true"></i>
+                <span>Bookmarks</span>
+            </button>
+
+            <button type="button" class="header-action-button" aria-label="Open notes">
+                <i class="fa-regular fa-note-sticky" aria-hidden="true"></i>
+                <span>Notes</span>
+            </button>
+
+            <button type="button" class="header-action-button" aria-label="Open settings">
+                <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                <span>Settings</span>
+            </button>
+
+            <!-- I will connect this profile menu to future user preferences and learning settings. -->
+            <button type="button" class="profile-button" aria-label="Open profile menu">
+                <span class="profile-avatar">IF</span>
+                <i class="fa-solid fa-chevron-down profile-arrow" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- I will use this mobile button to control the responsive sidebar navigation. -->
+    <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open navigation menu"
+        aria-controls="sidebar" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <!-- I will use this layout as the permanent foundation for the entire learning platform. -->
+    <div class="app-layout">
+
+        <!-- I will expand this sidebar as new JavaScript categories and topics are added. -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <span class="sidebar-title">JavaScript Topics</span>
+                <button type="button" class="sidebar-close-button" id="sidebar-close-button"
+                    aria-label="Close navigation">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <nav class="topic-navigation" aria-label="JavaScript learning topics">
+
+                <!-- I will add future introductory topics inside this navigation group. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="true">
+                        <span>Getting Started</span>
+                        <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="navigation-group-content">
+                        <a href="Pages/introduction.html" class="topic-navigation-link active">
+                            <i class="fa-solid fa-circle topic-status" aria-hidden="true"></i>
+                            <span>JavaScript Introduction</span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- I will keep all current and future JavaScript fundamentals inside this group. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="true">
+                        <span>JavaScript Fundamentals</span>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="navigation-group-content">
+                        <a href="Pages/variables.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Variables &amp; User Input</span>
+                        </a>
+
+                        <a href="Pages/operators.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Operators &amp; Expressions</span>
+                        </a>
+
+                        <a href="Pages/data-types.html" class="topic-navigation-link">
+                            <i class="fa-regular fa-circle topic-status" aria-hidden="true"></i>
+                            <span>Data Types &amp; Strings</span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- I will unlock and populate this category when the related classes are completed. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Control Flow</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add function concepts and related child topics here in the future. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Functions</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add array concepts and methods here when they are covered. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Arrays</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add object concepts and object methods here in the future. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Objects</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add DOM and BOM topics here when browser manipulation is introduced. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>DOM &amp; BOM</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add event handling topics here when JavaScript events are covered. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Events</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add form handling and validation topics here in the future. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Forms</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add browser APIs and practical browser features here later. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Browser APIs</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add promises, async/await, fetch, and related concepts here later. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Asynchronous JavaScript</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add modern JavaScript and ES features here as they are learned. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Modern JavaScript</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+
+                <!-- I will add real-world JavaScript projects here for practical application. -->
+                <section class="topic-navigation-group">
+                    <button type="button" class="navigation-group-title" aria-expanded="false">
+                        <span>Projects</span>
+                        <i class="fa-solid fa-lock navigation-lock" aria-hidden="true"></i>
+                    </button>
+                </section>
+            </nav>
+
+            <!-- I will connect this progress card with persistent learning progress in the future. -->
+            <div class="sidebar-progress-card">
+                <div class="progress-card-header">
+                    <span>Your Progress</span>
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                </div>
+
+                <div class="progress-card-content">
+                    <div class="progress-circle" aria-label="0 percent completed">
+                        <span class="progress-percentage">0%</span>
+                    </div>
+
+                    <div class="progress-summary">
+                        <span>Completed</span>
+                        <strong id="completed-topic-count">0 / 4 Topics</strong>
+                    </div>
+                </div>
+
+                <!-- I will connect this button to the complete progress dashboard later. -->
+                <a href="#" class="progress-view-button">View Progress <i class="fa-solid fa-arrow-right"
+                        aria-hidden="true"></i></a>
+            </div>
+        </aside>
+
+        <!-- I will use this overlay to improve mobile sidebar usability. -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+        <!-- I will keep all learning content inside this semantic main area. -->
+        <main class="main-content" id="main-content">
+
+            <!-- I will make breadcrumbs dynamic when individual topic pages are connected. -->
+            <div class="page-toolbar">
+                <nav class="breadcrumb-navigation" aria-label="Breadcrumb">
+                    <a href="index.html" class="breadcrumb-link">
+                        <i class="fa-solid fa-house" aria-hidden="true"></i>
+                        <span>Home</span>
+                    </a>
+                    <i class="fa-solid fa-chevron-right breadcrumb-separator" aria-hidden="true"></i>
+                    <span class="breadcrumb-current">JavaScript Fundamentals</span>
+                </nav>
+
+                <!-- I will connect bookmark and share actions with JavaScript later. -->
+                <div class="page-actions">
+                    <button type="button" class="page-action-button" aria-label="Bookmark current topic">
+                        <i class="fa-regular fa-bookmark" aria-hidden="true"></i>
+                        <span>Bookmark</span>
+                    </button>
+
+                    <button type="button" class="page-action-button" aria-label="Share current page">
+                        <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+                        <span>Share</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- I will use this hero section as the main learning entry point. -->
+            <section class="dashboard-hero" aria-labelledby="hero-title">
+                <div class="hero-content">
+                    <span class="hero-eyebrow">JavaScript Learning Platform</span>
+                    <h1 id="hero-title">Learn JavaScript</h1>
+                    <p>Learn JavaScript concepts through clear explanations, practical examples, interactive code, and
+                        hands-on practice.</p>
+
+                    <div class="hero-actions">
+                        <a href="Pages/introduction.html" class="primary-button">
+                            <span>Start Learning</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#topics" class="secondary-button">
+                            <span>Explore Topics</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- I will connect this progress component to real user learning data later. -->
+                <div class="hero-progress">
+                    <div class="hero-progress-header">
+                        <span class="hero-progress-label">Your Learning Progress</span>
+                        <strong class="hero-progress-value">0%</strong>
+                    </div>
+
+                    <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100" aria-label="Learning progress">
+                        <span class="progress-bar"></span>
+                    </div>
+
+                    <span class="hero-progress-meta">0 of 4 topics completed</span>
+                </div>
+            </section>
+
+            <!-- I will make these overview statistics dynamic as the platform grows. -->
+            <section class="learning-overview" aria-labelledby="learning-overview-title">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-eyebrow">Learning Overview</span>
+                        <h2 id="learning-overview-title">Continue Your JavaScript Journey</h2>
+                    </div>
+
+                    <a href="#topics" class="section-link">
+                        <span>View All Topics</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="overview-grid">
+                    <article class="overview-card">
+                        <span class="overview-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-book-open"></i>
+                        </span>
+                        <div>
+                            <span class="overview-card-label">Topics</span>
+                            <strong>4</strong>
+                            <p>Available to learn</p>
+                        </div>
+                    </article>
+
+                    <article class="overview-card">
+                        <span class="overview-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                        <div>
+                            <span class="overview-card-label">Completed</span>
+                            <strong>0</strong>
+                            <p>Topics completed</p>
+                        </div>
+                    </article>
+
+                    <article class="overview-card">
+                        <span class="overview-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-code"></i>
+                        </span>
+                        <div>
+                            <span class="overview-card-label">Practice</span>
+                            <strong>0</strong>
+                            <p>Exercises completed</p>
+                        </div>
+                    </article>
+
+                    <article class="overview-card">
+                        <span class="overview-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-fire"></i>
+                        </span>
+                        <div>
+                            <span class="overview-card-label">Learning Streak</span>
+                            <strong>0</strong>
+                            <p>Days learning</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- I will populate these topic cards dynamically when the topic system is connected. -->
+            <section class="topics-section" id="topics" aria-labelledby="topics-title">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-eyebrow">JavaScript Fundamentals</span>
+                        <h2 id="topics-title">Explore Topics</h2>
+                    </div>
+                </div>
+
+                <div class="topic-cards-grid">
+
+                    <article class="topic-card topic-card-featured">
+                        <div class="topic-card-header">
+                            <span class="topic-card-number">01</span>
+                            <span class="topic-card-status">
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                Available
+                            </span>
+                        </div>
+
+                        <div class="topic-card-icon" aria-hidden="true">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+
+                        <div class="topic-card-content">
+                            <h3>JavaScript Introduction</h3>
+                            <p>Understand JavaScript, its history, browser engines, execution, and basic user
+                                interaction.</p>
+
+                            <div class="topic-card-meta">
+                                <span><i class="fa-solid fa-list" aria-hidden="true"></i> 8 Subtopics</span>
+                                <span><i class="fa-solid fa-signal" aria-hidden="true"></i> Beginner</span>
+                            </div>
+                        </div>
+
+                        <a href="Pages/introduction.html" class="topic-card-link">
+                            <span>Start Topic</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="topic-card">
+                        <div class="topic-card-header">
+                            <span class="topic-card-number">02</span>
+                            <span class="topic-card-status">
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                Available
+                            </span>
+                        </div>
+
+                        <div class="topic-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+
+                        <div class="topic-card-content">
+                            <h3>Variables &amp; User Input</h3>
+                            <p>Learn how JavaScript stores data, declares variables, accepts input, and converts values.
+                            </p>
+
+                            <div class="topic-card-meta">
+                                <span><i class="fa-solid fa-list" aria-hidden="true"></i> 10 Subtopics</span>
+                                <span><i class="fa-solid fa-signal" aria-hidden="true"></i> Beginner</span>
+                            </div>
+                        </div>
+
+                        <a href="Pages/variables.html" class="topic-card-link">
+                            <span>Start Topic</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="topic-card">
+                        <div class="topic-card-header">
+                            <span class="topic-card-number">03</span>
+                            <span class="topic-card-status">
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                Available
+                            </span>
+                        </div>
+
+                        <div class="topic-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+
+                        <div class="topic-card-content">
+                            <h3>Operators &amp; Expressions</h3>
+                            <p>Understand operators, operands, expressions, calculations, assignments, and value
+                                changes.</p>
+
+                            <div class="topic-card-meta">
+                                <span><i class="fa-solid fa-list" aria-hidden="true"></i> 9 Subtopics</span>
+                                <span><i class="fa-solid fa-signal" aria-hidden="true"></i> Beginner</span>
+                            </div>
+                        </div>
+
+                        <a href="Pages/operators.html" class="topic-card-link">
+                            <span>Start Topic</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="topic-card">
+                        <div class="topic-card-header">
+                            <span class="topic-card-number">04</span>
+                            <span class="topic-card-status">
+                                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                                Available
+                            </span>
+                        </div>
+
+                        <div class="topic-card-icon" aria-hidden="true">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+
+                        <div class="topic-card-content">
+                            <h3>Data Types &amp; Strings</h3>
+                            <p>Understand JavaScript data types, type checking, strings, concatenation, and template
+                                literals.</p>
+
+                            <div class="topic-card-meta">
+                                <span><i class="fa-solid fa-list" aria-hidden="true"></i> 10 Subtopics</span>
+                                <span><i class="fa-solid fa-signal" aria-hidden="true"></i> Beginner</span>
+                            </div>
+                        </div>
+
+                        <a href="Pages/data-types.html" class="topic-card-link">
+                            <span>Start Topic</span>
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- I will connect this section with the future practice and quiz system. -->
+            <section class="quick-practice-section" aria-labelledby="quick-practice-title">
+                <div class="practice-card">
+                    <div class="practice-card-icon" aria-hidden="true">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <div class="practice-card-content">
+                        <span class="section-eyebrow">Practice</span>
+                        <h2 id="quick-practice-title">Ready to Test Your Knowledge?</h2>
+                        <p>Practice what you have learned with small JavaScript challenges and practical examples.</p>
+                    </div>
+
+                    <a href="#" class="primary-button practice-start-button"
+                        data-topic-id="javascript-introduction">Start Practice</a>
+                </div>
+            </section>
+
+            <!-- I will make previous and next navigation dynamic for every topic page. -->
+            <nav class="footer-topic-navigation" aria-label="Topic navigation">
+                <a href="#" class="footer-navigation-card disabled" aria-disabled="true">
+                    <span class="navigation-direction">
+                        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                        Previous
+                    </span>
+                    <strong>Start Here</strong>
+                </a>
+
+                <a href="Pages/introduction.html" class="footer-navigation-card">
+                    <span class="navigation-direction">
+                        Next Topic
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </span>
+                    <strong>JavaScript Introduction</strong>
+                </a>
+            </nav>
+
+        </main>
+    </div>
+
+    <!-- I will use this button for quick navigation after the page becomes content-heavy. -->
+    <button type="button" class="back-to-top-button" id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="Js/main.js"></script>
+    <script src="Js/navigation.js"></script>
+    <script src="Js/practice.js"></script>
+    <script src="Js/topics.js"></script>
+</body>
+
+</html>

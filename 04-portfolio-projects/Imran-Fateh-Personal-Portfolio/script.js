@@ -1,3 +1,27 @@
+const statusMessages = [
+  "Currently Learning — JavaScript",
+  "Growing — One Project at a Time",
+  "Exploring — Modern Web Technologies",
+  "Focused On — Frontend Development",
+  "Building — Better User Experiences",
+];
+
+const statusElement = document.querySelector(".status-message");
+
+let currentMessage = 0;
+
+setInterval(() => {
+  currentMessage = (currentMessage + 1) % statusMessages.length;
+
+  statusElement.classList.add("status-changing");
+
+  setTimeout(() => {
+    statusElement.textContent = statusMessages[currentMessage];
+
+    statusElement.classList.remove("status-changing");
+  }, 300);
+}, 4000);
+
 // ==============================
 // START RESPONSIVE NAVIGATION
 // ==============================

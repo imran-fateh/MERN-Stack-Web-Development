@@ -7,7 +7,8 @@
   <meta name="description"
     content="Imran Fateh — Computer Science student and aspiring MERN Stack Developer building modern, responsive and user-friendly web experiences.">
   <meta name="author" content="Imran Fateh">
-  <title>Imran Fateh | MERN Stack Learner & CS Student</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <title>Imran Fateh | Aspiring MERN Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,123 +18,207 @@
 </head>
 
 <body>
+
   <!-- ================================ -->
   <!-- START SITE HEADER -->
   <!-- ================================ -->
-  <header class="navbar">
-    <div class="container navbar-container">
+  <header class="site-header">
 
-      <a href="#home" class="navbar-brand" aria-label="Imran Fateh - Home">
-        <span class="navbar-brand-icon">
-          <i class="fa-solid fa-code"></i>
+    <div class="top-bar">
+
+      <div class="top-bar-social">
+        <span class="top-bar-label">Find me on:</span>
+
+        <a href="#" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="#" aria-label="X">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+
+      <div class="top-bar-status" aria-live="polite">
+
+        <span class="status-dot"></span>
+        <span class="status-message">
+          Currently Learning — <strong>JavaScript</strong>
         </span>
 
-        <span class="navbar-brand-text">
-          Imran <span>Fateh</span>
-        </span>
-      </a>
+      </div>
 
-      <nav class="desktop-nav" id="primary-navigation" aria-label="Primary Navigation">
+      <div class="top-bar-brand">
+        <span class="brand-code">&lt;/&gt;</span>
+        <span>Code · Build · Grow</span>
+      </div>
 
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a href="#home" class="navbar-link active">Home</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link">About</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#skills" class="navbar-link">Skills</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#learning" class="navbar-link">Learning</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#projects" class="navbar-link">Projects</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#journey" class="navbar-link">Journey</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#faqs" class="navbar-link">FAQs</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#contact" class="navbar-link navbar-cta">Let's Talk</a>
-          </li>
-        </ul>
-
-      </nav>
-
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
-        aria-controls="mobile-navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
 
+    <!-- ================================ -->
+    <!-- START MAIN NAVBAR -->
+    <!-- ================================ -->
+    <div class="navbar">
+
+      <div class="container navbar-container">
+
+        <a href="#home" class="navbar-brand" aria-label="Imran Fateh - Home">
+
+          <span class="navbar-brand-icon">
+            <i class="fa-solid fa-code"></i>
+          </span>
+          <span class="navbar-brand-text">
+            Imran <span>Fateh</span>
+          </span>
+
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" id="primary-navigation" aria-label="Primary Navigation">
+
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link active">
+                Home
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link">
+                About
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#skills" class="navbar-link">
+                Skills
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#projects" class="navbar-link">
+                Projects
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#journey" class="navbar-link">
+                Journey
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#faqs" class="navbar-link">
+                FAQs
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <a href="#contact" class="navbar-link navbar-cta desktop-cta">
+          Let's Talk
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"
+          aria-controls="mobile-navigation">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- ================================ -->
+    <!-- START MOBILE NAVIGATION -->
+    <!-- ================================ -->
     <nav class="mobile-navigation" id="mobile-navigation" aria-label="Mobile Navigation">
 
       <div class="container mobile-nav-inner">
-        <a href="#home" class="mobile-nav-link active">Home</a>
-        <a href="#about" class="mobile-nav-link">About</a>
-        <a href="#skills" class="mobile-nav-link">Skills</a>
-        <a href="#learning" class="mobile-nav-link">Learning</a>
-        <a href="#projects" class="mobile-nav-link">Projects</a>
-        <a href="#journey" class="mobile-nav-link">Journey</a>
-        <a href="#faqs" class="mobile-nav-link">FAQs</a>
-        <a href="#contact" class="mobile-nav-link mobile-nav-cta">Let's Talk</a>
+        <a href="#home" class="mobile-nav-link active">
+          Home
+        </a>
+        <a href="#about" class="mobile-nav-link">
+          About
+        </a>
+        <a href="#skills" class="mobile-nav-link">
+          Skills
+        </a>
+        <a href="#projects" class="mobile-nav-link">
+          Projects
+        </a>
+        <a href="#journey" class="mobile-nav-link">
+          Journey
+        </a>
+        <a href="#faqs" class="mobile-nav-link">
+          FAQs
+        </a>
+        <a href="#contact" class="mobile-nav-link mobile-nav-cta">
+          Let's Talk
+        </a>
       </div>
-
     </nav>
-    <!-- Mobile Overlay -->
+
     <div class="navbar-overlay"></div>
 
   </header>
-
 
   <main>
     <!-- ================================ -->
     <!-- START HERO SECTION -->
     <!-- ================================ -->
     <section class="hero-section" id="home" aria-labelledby="hero-title">
-      <div class="container hero-container">
-        <div class="hero-content">
 
+      <div class="container hero-container">
+
+        <div class="hero-content">
           <span class="hero-eyebrow">
-            <span class="hero-status-dot"></span>Available for Opportunities</span>
-          <h1 id="hero-title" class="hero-title">Hello, I'm<span class="hero-name">Imran Fateh</span></h1>
-          <h2 class="hero-role">Aspiring MERN Stack Developer</h2>
+            <span class="hero-status-dot" aria-hidden="true"></span>
+            Available for Opportunities
+          </span>
+
+          <h1 id="hero-title" class="hero-title">
+            Building Modern
+            <span class="hero-name">Web Experiences</span>
+          </h1>
+
+          <h2 class="hero-role">
+            Aspiring MERN Stack Developer
+          </h2>
+
           <p class="hero-description">
-            I learn by building practical projects, turning new concepts into real experiences while strengthening my
-            coding, problem-solving, and frontend skills.
+            I turn ideas into real, responsive and user-focused web
+            applications by combining clean code, modern technologies
+            and a continuous learning mindset.
           </p>
 
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary">
               View My Projects
-              <i class="fa-solid fa-arrow-right"></i>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
             </a>
             <a href="#contact" class="btn btn-secondary">
               Let's Talk
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
             </a>
           </div>
 
         </div>
 
-        <div class="hero-visual">
-          <div class="hero-image-wrapper">
+        <div class="hero-visual" aria-label="Developer profile and technologies">
 
-            <div class="hero-ring hero-ring-one"></div>
-            <div class="hero-ring hero-ring-two"></div>
+          <div class="hero-image-wrapper">
+            <div class="hero-circle" aria-hidden="true">
+              <span class="hero-circle-dot hero-circle-dot-one"></span>
+              <span class="hero-circle-dot hero-circle-dot-two"></span>
+              <span class="hero-circle-dot hero-circle-dot-three"></span>
+            </div>
+
             <div class="hero-tech-badge hero-tech-badge-html">
               <i class="fa-brands fa-html5" aria-hidden="true"></i>
               <span>HTML5</span>
-            </div>
-
-            <div class="hero-role-badge hero-role-badge-frontend">
-              <i class="fa-solid fa-code" aria-hidden="true"></i>
-              <span>Frontend Developer</span>
             </div>
 
             <div class="hero-tech-badge hero-tech-badge-css">
@@ -141,14 +226,14 @@
               <span>CSS3</span>
             </div>
 
-            <div class="hero-learning-status">
+            <div class="hero-tech-badge hero-tech-badge-javascript">
+              <i class="fa-brands fa-js" aria-hidden="true"></i>
+              <span>JavaScript</span>
+            </div>
 
-              <span class="hero-status-indicator" aria-hidden="true"></span>
-              <div class="hero-status-content">
-                <span class="hero-status-label">Currently Learning</span>
-                <span class="hero-status-value">JavaScript</span>
-              </div>
-
+            <div class="hero-tech-badge hero-tech-badge-react">
+              <i class="fa-brands fa-react" aria-hidden="true"></i>
+              <span>React.js</span>
             </div>
 
             <div class="hero-image">
@@ -160,9 +245,10 @@
         </div>
 
       </div>
+
       <a href="#about" class="hero-scroll-indicator" aria-label="Scroll to About section">
         <span>Scroll</span>
-        <i class="fa-solid fa-arrow-down"></i>
+        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
       </a>
 
     </section>
@@ -237,7 +323,8 @@
           </h2>
           <p>
             I enjoy turning what I learn into practical work instead of keeping my knowledge limited to theory. I
-            approach development step by step—learning a concept, practicing it, building with it, and improving through
+            approach development step by step—learning a concept, practicing it, building with it, and improving
+            through
             mistakes. My current focus is strengthening my frontend foundation while progressing toward the MERN Stack
             and becoming capable of building complete web applications.
           </p>
@@ -450,10 +537,10 @@
             </div>
 
             <div class="skill-content">
-              <h3>Frontend Practices</h3>
+              <h3>Frontend Development</h3>
               <p>
-                Clean code, organized structure,
-                readable CSS and better implementation habits.
+                Creating responsive and user-friendly interfaces
+                with HTML, CSS, JavaScript and modern design practices.
               </p>
             </div>
 
@@ -799,14 +886,14 @@
               </div>
 
               <div class="project-actions">
-                <a href="#" class="project-link project-link--primary"
-                  aria-label="View Personal Portfolio live project">
+                <a href="https://imran-fateh.github.io/MERN-Stack-Web-Development/04-portfolio-projects/Imran-Fateh-Personal-Portfolio/"
+                  class="project-link project-link--primary" aria-label="View Personal Portfolio live project">
                   Live Demo
                   <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 </a>
 
-                <a href="#" class="project-link project-link--secondary"
-                  aria-label="View Personal Portfolio GitHub repository">
+                <a href="https://github.com/imran-fateh/MERN-Stack-Web-Development/tree/main/04-portfolio-projects/Imran-Fateh-Personal-Portfolio"
+                  class="project-link project-link--secondary" aria-label="View Personal Portfolio GitHub repository">
                   GitHub
                   <i class="fa-brands fa-github"></i>
                 </a>
